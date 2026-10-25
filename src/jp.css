@@ -62,3 +62,5 @@ table.kana td.nk{background:transparent}
 .jl .w,.jl .tk,.jx .w,.jx .tk{white-space:nowrap}
 td .jx,td .jl{word-break:keep-all}
 .kj b{font-family:var(--f-body)}
+td .rom{display:block;font-size:12px;line-height:1.3}
+#vocabtbl .jl{line-height:1.7}

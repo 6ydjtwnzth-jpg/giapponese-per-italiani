@@ -226,10 +226,10 @@ var fr=$("#frasario");if(fr){fr.innerHTML=FRASI.map(function(g){return '<h3>'+es
 var W=[];LESSONS.forEach(function(L,li){(VOC[L.id]||[]).forEach(function(r){W.push([r[0],r[1],r[2],li,L.id]);var s=jsurf(r[0]);if(!DICT[s])DICT[s]=r[1];if(!DICT[r[0]])DICT[r[0]]=r[1]})});
 var TYP={n:"nome",v:"verbo",a:"aggettivo",x:"espressione"};
 function wordHTML(r){return '<span class="jl" lang="ja">'+jpHTML(r[0],true)+'</span>'}
-function lessonLabel(L){return L.kind==="lesson"?"Lezione "+L.n+" · "+L.it:L.it}
-var vt=$("#vocabtbl");if(vt){var rowsV=['<tr><th>Giapponese</th><th>Rōmaji</th><th>Italiano</th><th></th></tr>'];
-  LESSONS.forEach(function(L){var ws=VOC[L.id];if(!ws||!ws.length)return;rowsV.push('<tr class="grp"><td colspan="4">'+esc(lessonLabel(L))+'</td></tr>');
-    ws.forEach(function(r){rowsV.push('<tr><td class="jpc">'+wordHTML(r)+'</td><td class="rom">'+esc(jromaji(r[0]))+'</td><td>'+esc(r[1])+'</td><td><button class="say sm" data-say="'+esc(r[0])+'" aria-label="Ascolta">'+SPK+'</button></td></tr>')})});
+function lessonLabel(L){return L.kind==="lesson"?"Lezione "+L.n+" · "+L.t:L.t}
+var vt=$("#vocabtbl");if(vt){var rowsV=['<tr><th>Giapponese</th><th>Italiano</th><th></th></tr>'];
+  LESSONS.forEach(function(L){var ws=VOC[L.id];if(!ws||!ws.length)return;rowsV.push('<tr class="grp"><td colspan="3">'+esc(lessonLabel(L))+'</td></tr>');
+    ws.forEach(function(r){rowsV.push('<tr><td class="jpc">'+wordHTML(r)+'<span class="rom">'+esc(jromaji(r[0]))+'</span></td><td>'+esc(r[1])+'</td><td><button class="say sm" data-say="'+esc(r[0])+'" aria-label="Ascolta">'+SPK+'</button></td></tr>')})});
   vt.innerHTML=rowsV.join("")}
 function renderWords(el){var ws=VOC[el.getAttribute("data-voc")]||[];
   el.innerHTML=ws.map(function(r){return '<div class="wd"><span class="wi">'+wordHTML(r)+'<span class="ro">'+esc(jromaji(r[0]))+'</span></span><span class="wz">'+esc(r[1])+'</span><button class="say sm" data-say="'+esc(r[0])+'" aria-label="Ascolta">'+SPK+'</button></div>'}).join("")}
