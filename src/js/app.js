@@ -321,7 +321,7 @@ setupReading(document);
   draw()})();
 
 /* ---------- tutto il giapponese nel testo diventa cliccabile ---------- */
-var SKIPJ=".hero-card,.stats,.legend,.lhead,.partttl,.toc,button,.w,.tk,.jl,.jx,.ro,.ro-i,script,style,.tok,.opts,.fc-card,#fcboxes,.toc,.stats,.kicker,.tip,input,select,.fc-range,.kana,rt";
+var SKIPJ=".hero-card,.stats,.legend,.lhead,.partttl,.toc,.kj,button,.w,.tk,.jl,.jx,.ro,.ro-i,script,style,.tok,.opts,.fc-card,#fcboxes,.toc,.stats,.kicker,.tip,input,select,.fc-range,.kana,rt";
 function jpZone(root){var out=[],tw=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,null),n;
   while((n=tw.nextNode())){if(!JRUN.test(n.nodeValue))continue;var p=n.parentElement;if(!p||p.closest(SKIPJ))continue;out.push(n)}
   out.forEach(function(n){var t=document.createElement("template");t.innerHTML=mixHTML(n.nodeValue);n.parentNode.replaceChild(t.content,n)})}

@@ -37,7 +37,7 @@ table.kana td.nk{background:transparent}
 .kc:focus-visible{outline:3px solid var(--c);outline-offset:2px}
 @media (max-width:480px){.kc span{font-size:22px}.kc{min-height:52px;border-radius:12px}table.kana{border-spacing:3px}}
 .kanji-row{display:flex;flex-wrap:wrap;gap:8px}
-.kj{display:grid;grid-template-columns:auto 1fr;gap:0 12px;align-items:center;background:var(--sheet);border-radius:var(--r-sm);padding:10px 14px;box-shadow:var(--shadow);flex:1 1 200px}
+.kj{display:grid;grid-template-columns:auto 1fr;gap:0 12px;align-items:center;background:var(--sheet);border-radius:var(--r-sm);padding:10px 14px;box-shadow:var(--shadow);flex:1 1 140px}
 .kj b{font-size:40px;line-height:1.1;font-weight:500;grid-row:span 2}
 .kj span{font-size:14px;color:var(--muted)}
 .kj i{font-style:normal;font-size:15px}
@@ -59,3 +59,6 @@ table.kana td.nk{background:transparent}
 .nw{display:inline-block;white-space:nowrap}
 .jl .nw>.w,.jl .nw>.tk,.jx .nw>.w,.jx .nw>.tk{margin-right:.04em}
 .jl .nw,.jx .nw{margin-right:.14em}
+.jl .w,.jl .tk,.jx .w,.jx .tk{white-space:nowrap}
+td .jx,td .jl{word-break:keep-all}
+.kj b{font-family:var(--f-body)}

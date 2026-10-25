@@ -624,7 +624,7 @@ table.kana td.nk{background:transparent}
 .kc:focus-visible{outline:3px solid var(--c);outline-offset:2px}
 @media (max-width:480px){.kc span{font-size:22px}.kc{min-height:52px;border-radius:12px}table.kana{border-spacing:3px}}
 .kanji-row{display:flex;flex-wrap:wrap;gap:8px}
-.kj{display:grid;grid-template-columns:auto 1fr;gap:0 12px;align-items:center;background:var(--sheet);border-radius:var(--r-sm);padding:10px 14px;box-shadow:var(--shadow);flex:1 1 200px}
+.kj{display:grid;grid-template-columns:auto 1fr;gap:0 12px;align-items:center;background:var(--sheet);border-radius:var(--r-sm);padding:10px 14px;box-shadow:var(--shadow);flex:1 1 140px}
 .kj b{font-size:40px;line-height:1.1;font-weight:500;grid-row:span 2}
 .kj span{font-size:14px;color:var(--muted)}
 .kj i{font-style:normal;font-size:15px}
@@ -646,6 +646,9 @@ table.kana td.nk{background:transparent}
 .nw{display:inline-block;white-space:nowrap}
 .jl .nw>.w,.jl .nw>.tk,.jx .nw>.w,.jx .nw>.tk{margin-right:.04em}
 .jl .nw,.jx .nw{margin-right:.14em}
+.jl .w,.jl .tk,.jx .w,.jx .tk{white-space:nowrap}
+td .jx,td .jl{word-break:keep-all}
+.kj b{font-family:var(--f-body)}
 
 </style>
 </head>
@@ -739,9 +742,9 @@ table.kana td.nk{background:transparent}
   </div>
   <div class="stats">
     <div class="t-red"><b>23</b><span>lezioni + 3 ripassi · <i lang="ja">課</i></span></div>
-    <div class="t-blue"><b>1</b><span>dialoghi · <i lang="ja">会話</i></span></div>
-    <div class="t-green"><b>27</b><span>esercizi · <i lang="ja">練習</i></span></div>
-    <div class="t-yellow"><b>22</b><span>parole · <i lang="ja">単語</i></span></div>
+    <div class="t-blue"><b>8</b><span>dialoghi · <i lang="ja">会話</i></span></div>
+    <div class="t-green"><b>150</b><span>esercizi · <i lang="ja">練習</i></span></div>
+    <div class="t-yellow"><b>190</b><span>parole · <i lang="ja">単語</i></span></div>
   </div>
   <div class="legend"><span>Come si legge:</span><b lang="ja"><ruby>日本<rt>にほん</rt></ruby></b><span>= furigana, la lettura sopra i kanji</span><span>· <b>rōmaji</b>: le lettere latine sotto il giapponese, solo nelle prime lezioni (si cambia in alto)</span><span>· le parole <b style="color:var(--it);text-decoration:underline dotted;text-underline-offset:4px">in verde</b> si toccano: senti la pronuncia e vedi il significato</span></div>
   <p class="note" id="ttsnote">Premi ▶ per ascoltare una frase intera. La voce è una voce femminile giapponese sintetica (AI). In alto puoi nascondere furigana, rōmaji e traduzioni, e rallentare la voce. I progressi restano salvati in questo browser.</p>
@@ -866,49 +869,548 @@ table.kana td.nk{background:transparent}
 <section class="lesson t-blue early" id="l2" data-kind="lesson">
   <header class="lhead"><div class="lh-text"><div class="kicker"><span>Lezione 2</span><span class="itk" lang="ja">第2課</span></div>
   <h2>Mi chiamo Marco<small lang="ja">じこしょうかい</small></h2></div><svg class="lic" aria-hidden="true"><use href="#i-tag"/></svg></header>
-  <p class="lead">In preparazione.</p>
+  <p class="lead">Presentarsi: dire come ti chiami, di dove sei e che cosa fai. La prima struttura del giapponese è anche la più utile: <b>A は B です</b>, «A è B». Impari anche tre nuove righe di hiragana: た, な, は.</p>
+  <div class="dialog" data-dlg="l2"></div>
+
+  <details class="scopri"><summary><span class="sq">Marco dice マルコ です e イタリア人[じん] です: dov'è il verbo «essere»? E dove sta «io»?</span></summary>
+    <div><p>Il verbo です («è, sono») sta sempre <b>alla fine</b> della frase. E «io» spesso non si dice: se è chiaro chi parla, il soggetto si omette. マルコ です = «(Io) sono Marco».</p></div></details>
+  <div class="rule" data-seal="Regola">
+    <h3>A は B です: «A è B»</h3>
+    <ul class="plain">
+      <li>は indica <b>di che cosa parliamo</b> (il tema). Come particella si legge <b>wa</b>, non «ha».</li>
+      <li>です chiude la frase in modo cortese. Non cambia con la persona: «sono, sei, è, siamo…».</li>
+      <li>Per la domanda basta aggiungere <b>か</b> alla fine. Il punto interrogativo non serve.</li>
+    </ul>
+    <div class="exs">
+      <div data-jp="わたし は マルコ です 。" data-it="Io sono Marco."></div>
+      <div data-jp="ゆき さん は 日本人[にほんじん] です 。" data-it="Yuki è giapponese."></div>
+      <div data-jp="学生[がくせい] です か 。" data-it="Sei uno studente? / È studente?"></div>
+    </div>
+  </div>
+  <div class="rule" data-seal="Regola">
+    <h3>No: じゃ ありません</h3>
+    <p>Per dire «non è» si sostituisce です con <b>じゃ ありません</b> (nello scritto anche では ありません).</p>
+    <div class="exs">
+      <div data-jp="わたし は 先生[せんせい] じゃ ありません 。" data-it="Non sono un insegnante."></div>
+      <div data-jp="いいえ 、 フランス人[じん] じゃ ありません 。 イタリア人[じん] です 。" data-it="No, non sono francese. Sono italiano."></div>
+    </div>
+  </div>
+  <div class="warn"><strong>さん: mai per sé stessi</strong>Dopo il nome degli altri si aggiunge さん (signore, signora, ma anche tra amici): ゆき さん, ロッシ さん. Per te stesso non si usa mai: non dire «マルコ さん です».</div>
+  <h3>Paese + 人[じん] = nazionalità</h3>
+  <div class="exs">
+    <div data-jp="イタリア 、 イタリア人[じん]" data-it="Italia, italiano"></div>
+    <div data-jp="日本[にほん] 、 日本人[にほんじん]" data-it="Giappone, giapponese"></div>
+    <div data-jp="中国[ちゅうごく] 、 中国人[ちゅうごくじん]" data-it="Cina, cinese"></div>
+  </div>
+
+  <div class="speech" data-seal="Nella vita"><h3>Nella vita reale</h3><ul class="plain">
+    <li>はじめまして si dice solo la prima volta che si incontra qualcuno; よろしく お願[ねが]いします chiude la presentazione.</li>
+    <li>I giapponesi spesso si presentano col <b>cognome</b>: たなか です. Il nome si usa tra amici.</li>
+    <li>I nomi stranieri si scrivono in katakana: マルコ, ロッシ. Li imparerai nella lezione 4; per ora leggili con il rōmaji.</li>
+  </ul></div>
+
+  <div class="suono">
+    <h3>Hiragana: た・な・は</h3>
+    <p>Attenzione a tre letture irregolari: <b>ち</b> = chi, <b>つ</b> = tsu, <b>ふ</b> = fu (a metà tra f e h, con le labbra che non si toccano).</p>
+    <div class="tw"><table class="kana" data-k="hira" data-g="base" data-rows="3,4,5"></table></div>
+    <div class="exs">
+      <div data-jp="ねこ" data-it="gatto"></div>
+      <div data-jp="なつ" data-it="estate"></div>
+      <div data-jp="ひと" data-it="persona"></div>
+      <div data-jp="ふね" data-it="nave"></div>
+      <div data-jp="はな" data-it="fiore; naso"></div>
+    </div>
+  </div>
+
+  <div class="words-head"><h3>Le parole della lezione</h3><span>presentarsi</span></div>
+  <div class="words" data-voc="l2"></div>
+  <div class="drill" data-set="l2"></div>
+  <ul class="cando" data-cando="l2">
+    <li>So presentarmi: はじめまして 。 マルコ です 。 よろしく お願[ねが]いします 。</li>
+    <li>So dire di dove sono e che cosa faccio: イタリア人[じん] です 。 学生[がくせい] です 。</li>
+    <li>So fare domande con か e rispondere はい o いいえ, anche con じゃ ありません.</li>
+    <li>So leggere le righe た, な, は (e che は particella si legge wa).</li>
+  </ul>
 
 </section>
 <section class="lesson t-yellow early" id="l3" data-kind="lesson">
   <header class="lhead"><div class="lh-text"><div class="kicker"><span>Lezione 3</span><span class="itk" lang="ja">第3課</span></div>
   <h2>Tutti gli hiragana, doppie e vocali lunghe<small lang="ja">ひらがな</small></h2></div><svg class="lic" aria-hidden="true"><use href="#i-wave"/></svg></header>
-  <p class="lead">In preparazione.</p>
+  <p class="lead">Completi gli hiragana e scopri tre segni che per un italiano sono facili: le <b>doppie</b> (っ piccolo), le <b>vocali lunghe</b> e le sillabe come きゃ. La grammatica nuova è piccola ma utilissima: <b>の</b> («di») e <b>も</b> («anche»).</p>
+  <div class="dialog" data-dlg="l3"></div>
+
+  <details class="scopri"><summary><span class="sq">Nel dialogo si dice とうきょう だいがく の 学生[がくせい]. Che cosa fa の? E perché Ken dice わたし も?</span></summary>
+    <div><p><b>の</b> unisce due nomi come «di»: とうきょう だいがく の 学生 = studente <i>dell'</i>Università di Tokyo. Attenzione all'ordine: in giapponese prima viene chi possiede, poi la cosa: わたし の かさ = «il mio ombrello». <b>も</b> sostituisce は e vuol dire «anche»: わたし も 学生 です = «anch'io sono studente».</p></div></details>
+  <div class="rule" data-seal="Regola">
+    <h3>A の B: «B di A»</h3>
+    <div class="exs">
+      <div data-jp="わたし の かさ" data-it="il mio ombrello"></div>
+      <div data-jp="ゆき さん の ねこ" data-it="il gatto di Yuki"></div>
+      <div data-jp="日本語[にほんご] の 先生[せんせい]" data-it="l'insegnante di giapponese"></div>
+    </div>
+  </div>
+  <div class="rule" data-seal="Regola">
+    <h3>も: «anche»</h3>
+    <p>も prende il posto di は (non si dicono insieme).</p>
+    <div class="exs">
+      <div data-jp="けん さん は 学生[がくせい] です 。 マルコ さん も 学生[がくせい] です 。" data-it="Ken è studente. Anche Marco è studente."></div>
+      <div data-jp="わたし も イタリア人[じん] です 。" data-it="Anch'io sono italiano."></div>
+    </div>
+  </div>
+  <div class="rule" data-seal="Suoni">
+    <h3>Doppie e vocali lunghe: cambiano il significato</h3>
+    <ul class="plain">
+      <li><b>っ piccolo</b> = consonante doppia, come in italiano: きって (kitte, francobollo) ≠ きて (kite, vieni).</li>
+      <li><b>Vocale lunga</b>: dura il doppio. おばあさん (obaasan, nonna) ≠ おばさん (obasan, zia). おう e えい di solito si leggono ō ed ē: がっこう (scuola) si dice «gakkō».</li>
+      <li><b>き + ゃ = きゃ</b>: una sillaba sola (kya). Piccolo ゃ ゅ ょ = ya, yu, yo attaccati.</li>
+    </ul>
+    <div class="exs">
+      <div data-jp="きって 、 きて" data-it="francobollo, vieni"></div>
+      <div data-jp="おばあさん 、 おばさん" data-it="nonna, zia"></div>
+      <div data-jp="がっこう" data-it="scuola"></div>
+      <div data-jp="とうきょう" data-it="Tokyo"></div>
+      <div data-jp="おちゃ 、 きょう" data-it="tè verde, oggi"></div>
+    </div>
+  </div>
+  <div class="warn"><strong>Come per un italiano</strong>Le doppie giapponesi sono proprio come le nostre: una piccola pausa prima della consonante. Gli stranieri fanno fatica, tu no! Fai invece attenzione alle vocali lunghe, che in italiano non distinguiamo.</div>
+
+  <div class="speech" data-seal="Nella vita"><h3>Nella vita reale</h3><ul class="plain">
+    <li>Il giapponese non ha accento d'intensità ma un <b>accento musicale</b> (alto/basso): あめ può essere «pioggia» o «caramella». Imita la voce: la differenza si sente.</li>
+    <li>Nella domanda con か la voce sale alla fine, come in italiano.</li>
+  </ul></div>
+
+  <div class="suono">
+    <h3>Gli ultimi hiragana: ま・や・ら・わ・ん, e i segni ゛ ゜</h3>
+    <p>ら si dice con un colpetto di lingua, a metà tra la nostra r e la l. を si legge <i>o</i> ed è usato solo come particella. Con due trattini ゛ la consonante diventa sonora: か → が, さ → ざ, た → だ, は → ば; con il cerchietto ゜ は → ぱ.</p>
+    <div class="tw"><table class="kana" data-k="hira" data-g="base" data-rows="6,7,8,9,10"></table></div>
+    <div class="tw"><table class="kana" data-k="hira" data-g="dak"></table></div>
+    <div class="exs">
+      <div data-jp="やま" data-it="montagna"></div>
+      <div data-jp="みず" data-it="acqua"></div>
+      <div data-jp="ごはん" data-it="riso; pasto"></div>
+      <div data-jp="でんわ" data-it="telefono"></div>
+    </div>
+  </div>
+
+  <div class="words-head"><h3>Le parole della lezione</h3><span>università e famiglia</span></div>
+  <div class="words" data-voc="l3"></div>
+  <div class="drill" data-set="l3"></div>
+  <ul class="cando" data-cando="l3">
+    <li>So leggere tutti gli hiragana, anche con ゛ ゜.</li>
+    <li>So leggere doppie e vocali lunghe: きって, おばあさん, がっこう.</li>
+    <li>So dire «di» con の: わたし の かさ, 日本語[にほんご] の 先生[せんせい].</li>
+    <li>So dire «anche» con も: わたし も 学生[がくせい] です.</li>
+  </ul>
 
 </section>
 <section class="lesson t-green early" id="l4" data-kind="lesson">
   <header class="lhead"><div class="lh-text"><div class="kicker"><span>Lezione 4</span><span class="itk" lang="ja">第4課</span></div>
   <h2>Che cos&#x27;è? これ・それ・あれ<small lang="ja">これは何ですか</small></h2></div><svg class="lic" aria-hidden="true"><use href="#i-book"/></svg></header>
-  <p class="lead">In preparazione.</p>
+  <p class="lead">Indicare le cose e chiedere che cosa sono. In giapponese ci sono tre «distanze»: vicino a chi parla, vicino a chi ascolta, lontano da tutti e due. È la serie こ・そ・あ・ど, che tornerà spesso. Impari anche i <b>katakana</b>, l'alfabeto delle parole straniere.</p>
+  <div class="dialog" data-dlg="l4"></div>
+
+  <details class="scopri"><summary><span class="sq">Il commesso dice それ è un cuscino, ma Marco poco prima aveva detto これ indicando la stessa cosa. Chi ha sbagliato?</span></summary>
+    <div><p>Nessuno! これ è «questo vicino a me», それ è «codesto, vicino a te». Marco ha in mano l'oggetto e dice これ; il commesso, che lo vede vicino a Marco, dice それ. Per le cose lontane da tutti e due si usa あれ.</p></div></details>
+  <div class="rule" data-seal="Regola">
+    <h3>これ・それ・あれ・どれ</h3>
+    <div class="tw"><table>
+      <tr><th></th><th>vicino a me</th><th>vicino a te</th><th>lontano</th><th>domanda</th></tr>
+      <tr><td>da solo</td><td>これ</td><td>それ</td><td>あれ</td><td>どれ</td></tr>
+      <tr><td>+ nome</td><td>この 〜</td><td>その 〜</td><td>あの 〜</td><td>どの 〜</td></tr>
+    </table></div>
+    <div class="exs">
+      <div data-jp="これ は 何[なん] です か 。" data-it="Che cos'è questo?"></div>
+      <div data-jp="それ は 日本[にほん] の おかし です 。" data-it="Quello è un dolce giapponese."></div>
+      <div data-jp="あの ひと は だれ です か 。" data-it="Chi è quella persona?"></div>
+    </div>
+  </div>
+  <div class="rule" data-seal="Regola">
+    <h3>Chi? Di chi? だれ と だれ の</h3>
+    <div class="exs">
+      <div data-jp="これ は だれ の かばん です か 。" data-it="Di chi è questa borsa?"></div>
+      <div data-jp="わたし の です 。" data-it="È mia."></div>
+    </div>
+    <p>Quando è chiaro di che cosa si parla, il nome dopo の si può togliere: わたし の かばん → わたし の «la mia».</p>
+  </div>
+  <div class="warn"><strong>これ o この?</strong>これ sta da solo: これ は ペン です. この vuole sempre un nome dopo: この ペン は わたし の です. Non si dice «この は».</div>
+
+  <div class="speech" data-seal="Nella vita"><h3>Nella vita reale</h3><ul class="plain">
+    <li>Nei negozi, indicando: これ を ください 。 «Mi dia questo.» (lo vedrai bene nella lezione 8).</li>
+    <li>何[なん] です か 。 detto con un tono sorpreso vale anche «Che cosa c'è?».</li>
+    <li>Molte parole italiane sono entrate in giapponese in katakana: パスタ, ピザ, カプチーノ, ジェラート.</li>
+  </ul></div>
+
+  <div class="suono">
+    <h3>Katakana: カタカナ</h3>
+    <p>Gli stessi suoni degli hiragana, con forme più squadrate. Si usano per parole straniere, nomi stranieri e suoni. <b>ー</b> allunga la vocale. Attenzione a due coppie che si confondono: <b>シ</b> (shi) e <b>ツ</b> (tsu), <b>ソ</b> (so) e <b>ン</b> (n).</p>
+    <div class="tw"><table class="kana" data-k="kata" data-g="base"></table></div>
+    <div class="exs">
+      <div data-jp="コーヒー" data-it="caffè"></div>
+      <div data-jp="パスタ 、 ピザ" data-it="pasta, pizza"></div>
+      <div data-jp="テレビ" data-it="televisione"></div>
+      <div data-jp="スマホ" data-it="smartphone"></div>
+      <div data-jp="マルコ ・ ロッシ" data-it="Marco Rossi"></div>
+    </div>
+  </div>
+
+  <div class="words-head"><h3>Le parole della lezione</h3><span>oggetti di ogni giorno</span></div>
+  <div class="words" data-voc="l4"></div>
+  <div class="drill" data-set="l4"></div>
+  <ul class="cando" data-cando="l4">
+    <li>So chiedere che cos'è una cosa: これ は 何[なん] です か 。</li>
+    <li>So usare これ・それ・あれ e この・その・あの secondo la distanza.</li>
+    <li>So chiedere e dire di chi è: だれ の です か 。 わたし の です 。</li>
+    <li>So leggere i katakana e scrivere il mio nome in katakana.</li>
+  </ul>
 
 </section>
 <section class="lesson t-pink" id="l5" data-kind="lesson">
   <header class="lhead"><div class="lh-text"><div class="kicker"><span>Lezione 5</span><span class="itk" lang="ja">第5課</span></div>
   <h2>La mia famiglia e i numeri<small lang="ja">かぞく</small></h2></div><svg class="lic" aria-hidden="true"><use href="#i-family"/></svg></header>
-  <p class="lead">In preparazione.</p>
+  <p class="lead">Parlare della famiglia, contare e dire l'età. Una particolarità molto giapponese: ci sono due parole per ogni familiare, una per la <b>tua</b> famiglia (modesta) e una per quella <b>degli altri</b> (rispettosa). Arrivano anche i primi kanji: i numeri e 人.</p>
+  <div class="dialog" data-dlg="l5"></div>
+
+  <details class="scopri"><summary><span class="sq">Yuki dice 父[ちち] parlando di suo padre, ma Marco dice お父[とう]さん parlando del padre di Yuki. Perché due parole diverse?</span></summary>
+    <div><p>Per la <b>propria</b> famiglia, parlando con altri, si usano parole semplici e modeste: 父[ちち], 母[はは], 兄[あに]. Per la famiglia <b>degli altri</b> si usano parole rispettose, spesso con お〜さん: お父[とう]さん, お母[かあ]さん, お兄[にい]さん. In casa, ai propri genitori, si dice anche お父さん, お母さん.</p></div></details>
+  <div class="rule" data-seal="Regola">
+    <h3>La famiglia: mia e tua</h3>
+    <div class="tw"><table>
+      <tr><th></th><th>la mia</th><th>la tua / di altri</th></tr>
+      <tr><td>padre</td><td>父[ちち]</td><td>お父[とう]さん</td></tr>
+      <tr><td>madre</td><td>母[はは]</td><td>お母[かあ]さん</td></tr>
+      <tr><td>fratello maggiore</td><td>兄[あに]</td><td>お兄[にい]さん</td></tr>
+      <tr><td>sorella maggiore</td><td>姉[あね]</td><td>お姉[ねえ]さん</td></tr>
+      <tr><td>fratello minore</td><td>弟[おとうと]</td><td>弟[おとうと]さん</td></tr>
+      <tr><td>sorella minore</td><td>妹[いもうと]</td><td>妹[いもうと]さん</td></tr>
+    </table></div>
+  </div>
+  <div class="rule" data-seal="Regola">
+    <h3>C'è / ci sono: います e あります</h3>
+    <p>Per persone e animali si usa <b>います</b>; per cose e piante <b>あります</b>. Chi o che cosa c'è è segnato da <b>が</b>.</p>
+    <div class="exs">
+      <div data-jp="兄[あに] が 一人[ひとり] います 。" data-it="Ho un fratello maggiore. (lett. c'è un fratello)"></div>
+      <div data-jp="ねこ が います 。" data-it="C'è un gatto. / Ho un gatto."></div>
+      <div data-jp="きょうだい が いません 。" data-it="Non ho fratelli."></div>
+      <div data-jp="テレビ が あります 。" data-it="C'è una televisione."></div>
+    </div>
+  </div>
+  <h3>I numeri</h3>
+  <p>Attenzione a 4 (よん, a volte し), 7 (なな, a volte しち) e 9 (きゅう). Le decine si formano come in italiano ma al contrario: 二十[にじゅう] = 2 × 10 = 20; 二十五[にじゅうご] = 25.</p>
+  <div class="tw"><table class="numtbl" data-set="base"></table></div>
+  <div class="rule" data-seal="Regola">
+    <h3>Età e persone: 〜さい e 〜人[にん]</h3>
+    <ul class="plain">
+      <li>Età: numero + さい: 二十[にじゅう]さい = 20 anni. Ma 20 anni si dice anche はたち. 何[なん]さい です か 。 «Quanti anni hai?»</li>
+      <li>Persone: 一人[ひとり], 二人[ふたり], poi numero + 人[にん]: 三人[さんにん], 四人[よにん].</li>
+    </ul>
+    <div class="exs">
+      <div data-jp="何[なん]人[にん] かぞく です か 。 — 四人[よにん] かぞく です 。" data-it="Quanti siete in famiglia? — Siamo in quattro."></div>
+      <div data-jp="妹[いもうと] は 十八[じゅうはっ]さい です 。" data-it="Mia sorella minore ha 18 anni."></div>
+    </div>
+  </div>
+
+  <div class="speech" data-seal="Nella vita"><h3>Nella vita reale</h3><ul class="plain">
+    <li>In giapponese non esiste una parola sola per «fratello» o «sorella»: si dice sempre se è maggiore o minore. Per «fratelli» in generale: きょうだい.</li>
+    <li>I giapponesi chiedono spesso l'età per capire come parlarsi: con chi è più grande si è più formali.</li>
+  </ul></div>
+
+  <div class="suono">
+    <h3>I primi kanji</h3>
+    <p>I kanji sono caratteri che hanno un significato e di solito più letture. Non imparare le letture a memoria: imparale dentro le parole. In questo corso ogni kanji ha sempre i furigana sopra.</p>
+    <div class="kanji-row">
+      <div class="kj"><b>一</b><i>uno</i><span>いち · ひと(つ)</span></div>
+      <div class="kj"><b>二</b><i>due</i><span>に · ふた(つ)</span></div>
+      <div class="kj"><b>三</b><i>tre</i><span>さん · みっ(つ)</span></div>
+      <div class="kj"><b>十</b><i>dieci</i><span>じゅう</span></div>
+      <div class="kj"><b>人</b><i>persona</i><span>ひと · じん · にん</span></div>
+      <div class="kj"><b>父</b><i>padre</i><span>ちち · とう</span></div>
+      <div class="kj"><b>母</b><i>madre</i><span>はは · かあ</span></div>
+    </div>
+  </div>
+
+  <div class="words-head"><h3>Le parole della lezione</h3><span>la famiglia e i numeri</span></div>
+  <div class="words" data-voc="l5"></div>
+  <div class="drill" data-set="l5"></div>
+  <ul class="cando" data-cando="l5">
+    <li>So presentare la mia famiglia: 父[ちち] と 母[はは] と 兄[あに] が います 。</li>
+    <li>So usare le parole giuste per la famiglia degli altri: お父[とう]さん, お母[かあ]さん.</li>
+    <li>So contare da 1 a 99 e dire l'età: 二十[にじゅう]さい です 。</li>
+    <li>So usare います (persone, animali) e あります (cose).</li>
+  </ul>
 
 </section>
 <section class="lesson t-red" id="l6" data-kind="lesson">
   <header class="lhead"><div class="lh-text"><div class="kicker"><span>Lezione 6</span><span class="itk" lang="ja">第6課</span></div>
   <h2>Come stai? Gli aggettivi<small lang="ja">げんきですか</small></h2></div><svg class="lic" aria-hidden="true"><use href="#i-sun"/></svg></header>
-  <p class="lead">In preparazione.</p>
+  <p class="lead">Dire come stai, descrivere persone, città e cibo. Gli aggettivi giapponesi sono di due tipi: quelli in <b>-い</b> e quelli con <b>な</b>. Hanno regole diverse per il negativo, ma una buona notizia: non cambiano mai per maschile/femminile o singolare/plurale.</p>
+  <div class="dialog" data-dlg="l6"></div>
+
+  <details class="scopri"><summary><span class="sq">Yuki dice たかい です e たかくない です, ma per しずか dice しずか じゃ ありません. Perché due negativi diversi?</span></summary>
+    <div><p>たかい è un aggettivo in <b>-い</b>: il negativo si fa cambiando い in <b>くない</b>: たかい → たかくない. しずか è un aggettivo <b>な</b>: si comporta come un nome, quindi il negativo è じゃ ありません, come in 学生 じゃ ありません.</p></div></details>
+  <div class="rule" data-seal="Regola">
+    <h3>Aggettivi in -い</h3>
+    <div class="tw"><table>
+      <tr><th></th><th>sì</th><th>no</th></tr>
+      <tr><td>alto, caro</td><td>たかい です</td><td>たかくない です</td></tr>
+      <tr><td>buono (cibo)</td><td>おいしい です</td><td>おいしくない です</td></tr>
+      <tr><td>buono, bello</td><td>いい です</td><td><b>よくない</b> です</td></tr>
+    </table></div>
+    <p>いい è l'unica eccezione: il negativo è よくない. Davanti a un nome l'aggettivo resta uguale: たかい やま «una montagna alta».</p>
+  </div>
+  <div class="rule" data-seal="Regola">
+    <h3>Aggettivi な</h3>
+    <div class="tw"><table>
+      <tr><th></th><th>sì</th><th>no</th></tr>
+      <tr><td>tranquillo</td><td>しずか です</td><td>しずか じゃ ありません</td></tr>
+      <tr><td>bello, pulito</td><td>きれい です</td><td>きれい じゃ ありません</td></tr>
+      <tr><td>in forma</td><td>元気[げんき] です</td><td>元気[げんき] じゃ ありません</td></tr>
+    </table></div>
+    <p>Davanti a un nome si aggiunge <b>な</b> (da qui il nome):</p>
+    <div class="exs">
+      <div data-jp="しずか な まち" data-it="una città tranquilla"></div>
+      <div data-jp="きれい な へや" data-it="una stanza pulita"></div>
+      <div data-jp="元気[げんき] な 子[こ]ども" data-it="un bambino vivace"></div>
+    </div>
+    <div class="warn"><strong>Trappola</strong>きれい finisce in い ma è un aggettivo な: きれい じゃ ありません, non «きれくない». Anche ゆうめい «famoso» funziona così.</div>
+  </div>
+  <div class="rule" data-seal="Regola">
+    <h3>Molto, non molto: とても e あまり</h3>
+    <div class="exs">
+      <div data-jp="とうきょう は とても にぎやか です 。" data-it="Tokyo è molto vivace."></div>
+      <div data-jp="この ラーメン は あまり たかくない です 。" data-it="Questo ramen non è molto caro."></div>
+    </div>
+    <p><b>あまり</b> si usa solo con il negativo: «non molto».</p>
+  </div>
+
+  <div class="speech" data-seal="Nella vita"><h3>Nella vita reale</h3><ul class="plain">
+    <li>お元気[げんき] です か 。 «Come sta?» si chiede solo a chi non vedi da tempo; con i colleghi di ogni giorno non si usa.</li>
+    <li>Per il tempo: あつい です ね 。 «Fa caldo, eh?» è la frase più comune dell'estate giapponese.</li>
+    <li>Rispondendo a un complimento si usa minimizzare: いいえ 、 まだまだ です 。 «No, ho ancora tanto da imparare».</li>
+  </ul></div>
+
+  <div class="suono">
+    <h3>Kanji: 大・小・山・川・高・元気</h3>
+    <div class="kanji-row">
+      <div class="kj"><b>大</b><i>grande</i><span>おお(きい) · だい</span></div>
+      <div class="kj"><b>小</b><i>piccolo</i><span>ちい(さい) · しょう</span></div>
+      <div class="kj"><b>山</b><i>montagna</i><span>やま · さん</span></div>
+      <div class="kj"><b>川</b><i>fiume</i><span>かわ</span></div>
+      <div class="kj"><b>高</b><i>alto, caro</i><span>たか(い) · こう</span></div>
+      <div class="kj"><b>元気</b><i>in forma</i><span>げんき</span></div>
+    </div>
+    <div class="exs">
+      <div data-jp="大[おお]きい 、 小[ちい]さい" data-it="grande, piccolo"></div>
+      <div data-jp="ふじ山[さん]" data-it="il monte Fuji"></div>
+    </div>
+  </div>
+
+  <div class="words-head"><h3>Le parole della lezione</h3><span>aggettivi e sensazioni</span></div>
+  <div class="words" data-voc="l6"></div>
+  <div class="drill" data-set="l6"></div>
+  <ul class="cando" data-cando="l6">
+    <li>So chiedere e dire come sto: お元気[げんき] です か 。 はい 、 元気[げんき] です 。</li>
+    <li>So descrivere con aggettivi in -い e な, anche al negativo.</li>
+    <li>So mettere un aggettivo davanti a un nome: しずか な まち, たかい やま.</li>
+    <li>So dire «molto» e «non molto»: とても, あまり 〜ない.</li>
+  </ul>
 
 </section>
 <section class="lesson t-blue" id="l7" data-kind="lesson">
   <header class="lhead"><div class="lh-text"><div class="kicker"><span>Lezione 7</span><span class="itk" lang="ja">第7課</span></div>
   <h2>Che cosa fai? I verbi in -masu<small lang="ja">まいにち</small></h2></div><svg class="lic" aria-hidden="true"><use href="#i-chat"/></svg></header>
-  <p class="lead">In preparazione.</p>
+  <p class="lead">Arrivano i verbi! In giapponese il verbo sta <b>sempre alla fine</b> e non cambia con la persona: 食[た]べます vuol dire mangio, mangi, mangia… Per capire chi fa che cosa si usano le <b>particelle</b>: を, に, で, へ.</p>
+  <div class="dialog" data-dlg="l7"></div>
+
+  <details class="scopri"><summary><span class="sq">Marco dice コーヒー を 飲[の]みます e 大学[だいがく] で 勉強[べんきょう]します. Che cosa indicano を e で?</span></summary>
+    <div><p><b>を</b> segna l'oggetto, la cosa che si beve, si mangia, si guarda. <b>で</b> segna il luogo in cui si fa l'azione. L'ordine tipico è: chi は – quando – dove で – che cosa を – verbo. Il verbo è sempre l'ultimo.</p></div></details>
+  <div class="rule" data-seal="Regola">
+    <h3>Il verbo cortese: -ます e -ません</h3>
+    <div class="tw"><table>
+      <tr><th></th><th>sì (presente/futuro)</th><th>no</th></tr>
+      <tr><td>mangiare</td><td>食[た]べます</td><td>食[た]べません</td></tr>
+      <tr><td>bere</td><td>飲[の]みます</td><td>飲[の]みません</td></tr>
+      <tr><td>andare</td><td>行[い]きます</td><td>行[い]きません</td></tr>
+      <tr><td>fare</td><td>します</td><td>しません</td></tr>
+    </table></div>
+    <p>La stessa forma vale per il presente e per il futuro: あした 行[い]きます = «domani vado / andrò».</p>
+  </div>
+  <div class="rule" data-seal="Regola">
+    <h3>Le particelle del verbo</h3>
+    <ul class="plain">
+      <li><b>を</b> (si legge o): l'oggetto. パン を 食[た]べます 。</li>
+      <li><b>で</b>: dove si fa l'azione. うち で 食[た]べます 。</li>
+      <li><b>に</b> o <b>へ</b> (si legge e): dove si va. 大学[だいがく] に 行[い]きます 。</li>
+      <li><b>に</b>: a che ora / in che giorno. 七時[しちじ] に 起[お]きます 。</li>
+    </ul>
+    <div class="exs">
+      <div data-jp="毎朝[まいあさ] コーヒー を 飲[の]みます 。" data-it="Ogni mattina bevo il caffè."></div>
+      <div data-jp="としょかん で 本[ほん] を 読[よ]みます 。" data-it="Leggo libri in biblioteca."></div>
+      <div data-jp="あした 、 きょうと へ 行[い]きます 。" data-it="Domani vado a Kyoto."></div>
+    </div>
+  </div>
+  <div class="rule" data-seal="Regola">
+    <h3>Che lavoro fai?</h3>
+    <div class="exs">
+      <div data-jp="おしごと は 何[なん] です か 。" data-it="Che lavoro fa?"></div>
+      <div data-jp="かいしゃいん です 。 ぎんこう で はたらいて います 。" data-it="Sono impiegato. Lavoro in banca."></div>
+    </div>
+    <p>はたらいて います «lavoro» usa una forma che vedrai nella lezione 18; per ora impara la frase intera.</p>
+  </div>
+  <div class="warn"><strong>Niente «io» e niente «lo»</strong>In giapponese si tolgono le parole già chiare: «Bevi il caffè? — Sì, lo bevo.» diventa コーヒー を 飲[の]みます か 。 — はい 、 飲[の]みます 。</div>
+
+  <div class="speech" data-seal="Nella vita"><h3>Nella vita reale</h3><ul class="plain">
+    <li>Per rifiutare con gentilezza si usa ちょっと… lasciando la frase a metà: «Un caffè? — ちょっと…» vuol dire no, grazie.</li>
+    <li>I giapponesi spesso presentano il lavoro con il nome dell'azienda: トヨタ の たなか です 。</li>
+  </ul></div>
+
+  <div class="suono">
+    <h3>Kanji: 行・来・食・飲・見・学・生・先</h3>
+    <div class="kanji-row">
+      <div class="kj"><b>行</b><i>andare</i><span>い(く) · こう</span></div>
+      <div class="kj"><b>来</b><i>venire</i><span>く(る) · き(ます) · らい</span></div>
+      <div class="kj"><b>食</b><i>mangiare</i><span>た(べる) · しょく</span></div>
+      <div class="kj"><b>飲</b><i>bere</i><span>の(む)</span></div>
+      <div class="kj"><b>見</b><i>vedere</i><span>み(る)</span></div>
+      <div class="kj"><b>学</b><i>studio</i><span>がく</span></div>
+      <div class="kj"><b>生</b><i>vita, nascere</i><span>せい · い(きる)</span></div>
+      <div class="kj"><b>先</b><i>prima, davanti</i><span>せん · さき</span></div>
+    </div>
+    <div class="exs">
+      <div data-jp="学生[がくせい] 、 先生[せんせい]" data-it="studente, insegnante"></div>
+      <div data-jp="食[た]べもの 、 飲[の]みもの" data-it="cibo, bevanda"></div>
+    </div>
+  </div>
+
+  <div class="words-head"><h3>Le parole della lezione</h3><span>azioni di ogni giorno</span></div>
+  <div class="words" data-voc="l7"></div>
+  <div class="drill" data-set="l7"></div>
+  <ul class="cando" data-cando="l7">
+    <li>So usare i verbi in -ます e -ません: 食[た]べます, 食[た]べません.</li>
+    <li>So usare を, で, に, へ per dire che cosa, dove e a che ora.</li>
+    <li>So raccontare che cosa faccio ogni giorno, mettendo il verbo alla fine.</li>
+    <li>So chiedere e dire che lavoro faccio.</li>
+  </ul>
 
 </section>
 <section class="lesson t-yellow" id="l8" data-kind="lesson">
   <header class="lhead"><div class="lh-text"><div class="kicker"><span>Lezione 8</span><span class="itk" lang="ja">第8課</span></div>
   <h2>Al konbini e al caffè<small lang="ja">コンビニで</small></h2></div><svg class="lic" aria-hidden="true"><use href="#i-cup"/></svg></header>
-  <p class="lead">In preparazione.</p>
+  <p class="lead">Fare la spesa al <i>konbini</i> (il minimarket aperto 24 ore) e ordinare al bar. Impari a chiedere il prezzo, a contare gli oggetti con ひとつ, ふたつ… e a dire i numeri grandi: in Giappone i prezzi hanno spesso tre o quattro cifre!</p>
+  <div class="dialog" data-dlg="l8"></div>
+
+  <details class="scopri"><summary><span class="sq">Marco dice おにぎり を 二[ふた]つ ください: dove sta il numero rispetto all'oggetto? È come in italiano?</span></summary>
+    <div><p>No: in giapponese il numero viene <b>dopo</b> l'oggetto e la particella: おにぎり を 二つ «onigiri, due». E per contare le cose si usano parole speciali: ひとつ, ふたつ, みっつ…</p></div></details>
+  <div class="rule" data-seal="Regola">
+    <h3>Chiedere qualcosa: 〜 を ください</h3>
+    <div class="exs">
+      <div data-jp="これ を ください 。" data-it="Mi dia questo, per favore."></div>
+      <div data-jp="コーヒー を 二[ふた]つ ください 。" data-it="Due caffè, per favore."></div>
+      <div data-jp="おちゃ と サンドイッチ を ください 。" data-it="Un tè e un panino, per favore."></div>
+    </div>
+    <p>Più gentile: 〜 を お願[ねが]いします 。 Al bar si sente molto: ホット コーヒー 、 お願[ねが]いします 。</p>
+  </div>
+  <div class="rule" data-seal="Regola">
+    <h3>Contare le cose: ひとつ, ふたつ…</h3>
+    <div class="tw"><table>
+      <tr><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr>
+      <tr><td>一[ひと]つ</td><td>二[ふた]つ</td><td>三[みっ]つ</td><td>四[よっ]つ</td><td>五[いつ]つ</td></tr>
+      <tr><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th></tr>
+      <tr><td>六[むっ]つ</td><td>七[なな]つ</td><td>八[やっ]つ</td><td>九[ここの]つ</td><td>十[とお]</td></tr>
+    </table></div>
+    <p>Servono per quasi tutte le cose, fino a 10. Per le persone hai già visto 一人[ひとり], 二人[ふたり].</p>
+  </div>
+  <h3>Numeri grandi e prezzi</h3>
+  <p>Dopo 9999 il giapponese conta a <b>diecimila</b>: 一万[いちまん] = 10.000. Attenzione ai cambi di suono: 三百[さんびゃく], 六百[ろっぴゃく], 八百[はっぴゃく], 三千[さんぜん], 八千[はっせん].</p>
+  <div class="tw"><table class="numtbl" data-set="big"></table></div>
+  <div class="exs">
+    <div data-jp="いくら です か 。 — 三百[さんびゃく] 五十[ごじゅう] えん です 。" data-it="Quanto costa? — 350 yen."></div>
+    <div data-jp="ぜんぶ で 千[せん] 二百[にひゃく] えん です 。" data-it="In tutto sono 1.200 yen."></div>
+  </div>
+
+  <div class="speech" data-seal="Nella vita"><h3>Nella vita reale</h3><ul class="plain">
+    <li>Alla cassa del konbini ti chiederanno spesso: ふくろ は いります か 。 «Le serve la busta?» (la busta si paga). Rispondi: いいえ 、 だいじょうぶ です 。</li>
+    <li>Con il cibo da scaldare: あたためます か 。 «Glielo scaldo?» — はい 、 お願[ねが]いします 。</li>
+    <li>I soldi si appoggiano sul piattino vicino alla cassa, non direttamente in mano.</li>
+  </ul></div>
+
+  <div class="suono">
+    <h3>Kanji: 円・百・千・万・何・水・茶</h3>
+    <div class="kanji-row">
+      <div class="kj"><b>円</b><i>yen; cerchio</i><span>えん</span></div>
+      <div class="kj"><b>百</b><i>cento</i><span>ひゃく</span></div>
+      <div class="kj"><b>千</b><i>mille</i><span>せん</span></div>
+      <div class="kj"><b>万</b><i>diecimila</i><span>まん</span></div>
+      <div class="kj"><b>何</b><i>che cosa</i><span>なに · なん</span></div>
+      <div class="kj"><b>水</b><i>acqua</i><span>みず · すい</span></div>
+      <div class="kj"><b>茶</b><i>tè</i><span>ちゃ</span></div>
+    </div>
+    <div class="exs">
+      <div data-jp="百円[ひゃくえん] 、 千円[せんえん] 、 一万円[いちまんえん]" data-it="100 yen, 1.000 yen, 10.000 yen"></div>
+      <div data-jp="お水[みず] 、 お茶[ちゃ]" data-it="acqua, tè"></div>
+    </div>
+  </div>
+
+  <div class="words-head"><h3>Le parole della lezione</h3><span>al konbini e al bar</span></div>
+  <div class="words" data-voc="l8"></div>
+  <div class="drill" data-set="l8"></div>
+  <ul class="cando" data-cando="l8">
+    <li>So chiedere qualcosa con 〜 を ください e 〜 を お願[ねが]いします.</li>
+    <li>So contare le cose: 一[ひと]つ, 二[ふた]つ, 三[みっ]つ…</li>
+    <li>So chiedere e capire i prezzi fino a 10.000 yen e oltre.</li>
+    <li>So rispondere alle domande della cassa: busta, scaldare, carta.</li>
+  </ul>
 
 </section>
 <section class="lesson t-green" id="r1" data-kind="review">
   <header class="lhead"><div class="lh-text"><div class="kicker"><span>Ripasso 1</span><span class="itk" lang="ja">復習</span></div>
   <h2>Ripasso 1<small lang="ja">ふくしゅう</small></h2></div><svg class="lic" aria-hidden="true"><use href="#i-loop"/></svg></header>
-  <p class="lead">In preparazione.</p>
+  <p class="lead">Fine della prima parte! Il ripasso non introduce grammatica nuova: rimette insieme le prime otto lezioni. Guarda che cosa sai già, ascolta un breve testo, fai il compito e poi la sfida finale.</p>
+
+  <h3>Che cosa sai già</h3>
+  <div class="summary-grid">
+    <div><b>Kana</b><span>tutti gli hiragana e i katakana, doppie (きって) e vocali lunghe (コーヒー).</span></div>
+    <div><b>A は B です</b><span>マルコ です 。 学生[がくせい] じゃ ありません 。 先生[せんせい] です か 。</span></div>
+    <div><b>の e も</b><span>わたし の かさ 。 わたし も 学生[がくせい] です 。</span></div>
+    <div><b>こ・そ・あ・ど</b><span>これ は 何[なん] です か 。 その 本[ほん] は だれ の です か 。</span></div>
+    <div><b>Famiglia e numeri</b><span>父[ちち] / お父[とう]さん, 二十[にじゅう]さい, 四人[よにん] かぞく.</span></div>
+    <div><b>います / あります</b><span>兄[あに] が います 。 テレビ が あります 。</span></div>
+    <div><b>Aggettivi</b><span>たかくない です 。 しずか じゃ ありません 。 しずか な まち.</span></div>
+    <div><b>Verbi in -ます</b><span>コーヒー を 飲[の]みます 。 うち で 食[た]べます 。 大学[だいがく] に 行[い]きます 。</span></div>
+    <div><b>Al konbini</b><span>おにぎり を 二[ふた]つ ください 。 いくら です か 。 三百[さんびゃく] 円[えん] です 。</span></div>
+  </div>
+
+  <h3>Ascolto: Marco si presenta</h3>
+  <p>Nascondi la traduzione dalle impostazioni in alto, ascolta una volta, poi leggi e ripeti.</p>
+  <div class="exs">
+    <div data-jp="はじめまして 。 マルコ ・ ロッシ です 。" data-it="Piacere. Sono Marco Rossi."></div>
+    <div data-jp="イタリア人[じん] です 。 ミラノ から 来[き]ました 。" data-it="Sono italiano. Vengo da Milano."></div>
+    <div data-jp="二十三[にじゅうさん]さい です 。 とうきょう 大学[だいがく] の 学生[がくせい] です 。" data-it="Ho 23 anni. Sono studente all'Università di Tokyo."></div>
+    <div data-jp="三人[さんにん] かぞく です 。 父[ちち] と 母[はは] が います 。" data-it="Siamo in tre in famiglia: ci sono mio padre e mia madre."></div>
+    <div data-jp="毎朝[まいあさ] コーヒー を 飲[の]みます 。 日本[にほん] の コーヒー は おいしい です 。" data-it="Ogni mattina bevo il caffè. Il caffè giapponese è buono."></div>
+    <div data-jp="でも 、 イタリア の コーヒー は もっと おいしい です ！" data-it="Però il caffè italiano è ancora più buono!"></div>
+  </div>
+
+  <div class="task">
+    <h3>Compito: presentati</h3>
+    <p>Scrivi 5–6 frasi su di te: nome, nazionalità e città, età, famiglia, che cosa studi o fai, una cosa che fai ogni giorno. Scrivile in kana (e qualche kanji se vuoi), poi leggile ad alta voce tre volte.</p>
+    <details class="model"><summary><span class="sq">Guarda un esempio</span></summary>
+      <div class="exs">
+        <div data-jp="はじめまして 。 ジュリア です 。" data-it="Piacere. Sono Giulia."></div>
+        <div data-jp="イタリア人[じん] です 。 ローマ から 来[き]ました 。" data-it="Sono italiana. Vengo da Roma."></div>
+        <div data-jp="二十[はたち] です 。 大学[だいがく] で けいざい を 勉強[べんきょう]します 。" data-it="Ho vent'anni. All'università studio economia."></div>
+        <div data-jp="四人[よにん] かぞく です 。 弟[おとうと] が 一人[ひとり] います 。" data-it="Siamo in quattro. Ho un fratello minore."></div>
+        <div data-jp="毎日[まいにち] 日本語[にほんご] を 勉強[べんきょう]します 。 よろしく お願[ねが]いします 。" data-it="Ogni giorno studio giapponese. Piacere di conoscervi."></div>
+      </div>
+    </details>
+  </div>
+
+  <div class="drill" data-set="r1"></div>
+  <ul class="cando" data-cando="r1">
+    <li>So presentarmi in 5–6 frasi.</li>
+    <li>So leggere tutti i kana.</li>
+    <li>So chiedere che cos'è, di chi è e quanto costa.</li>
+    <li>So raccontare la mia giornata con i verbi in -ます.</li>
+  </ul>
 
 </section>
 <div class="partttl">Parte seconda · La vita di tutti i giorni<span class="lvl">A1.2</span></div>
@@ -1163,6 +1665,204 @@ VOC.l1=[
  ["おはよう ございます","buongiorno (al mattino)","x"],["こんにちは","buongiorno, ciao","x"],["こんばんは","buonasera","x"],["さようなら","arrivederci","x"],["ありがとう ございます","grazie","x"],["すみません","mi scusi; grazie","x"],
  ["はい","sì","x"],["いいえ","no; di niente","x"],["どうぞ","prego, tenga","x"],["じゃあ また","allora, a presto","x"],
  ["あい","amore","n"],["いえ","casa","n"],["うえ","sopra","n"],["あお","blu (colore)","n"],["かお","viso","n"],["あさ","mattina","n"],["すし","sushi","n"],["いす","sedia","n"],["えき","stazione","n"],["かさ","ombrello","n"],["あき","autunno","n"],["せき","posto a sedere","n"]
+];
+
+/* ---- l2 ---- */
+DLG.l2=[["A","はじめまして 。 たなか ゆき です 。","Piacere. Sono Yuki Tanaka."],["B","はじめまして 。 マルコ です 。","Piacere. Sono Marco."],["A","マルコ さん は 学生[がくせい] です か 。","Marco, sei uno studente?"],["B","はい 、 学生[がくせい] です 。 イタリア人[じん] です 。","Sì, sono uno studente. Sono italiano."],["A","そう です か 。 わたし は 先生[せんせい] です 。","Ah, davvero? Io sono un'insegnante."],["B","えっ 、 先生[せんせい] です か 。","Oh, è un'insegnante?"],["A","はい 。 日本語[にほんご] の 先生[せんせい] です 。 よろしく お願[ねが]いします 。","Sì. Insegno giapponese. Piacere di conoscerti."],["B","よろしく お願[ねが]いします 。","Piacere mio."]];
+EX.l2=[
+ {q:"Ascolta: che cosa significa?",au:"わたし は 学生[がくせい] です 。",o:["Sono uno studente.","Sono un insegnante.","Non sono uno studente."],e:"学生 = studente."},
+ {q:"Ascolta: di che nazionalità è?",au:"ロッシ さん は イタリア人[じん] です 。",o:["italiana","giapponese","francese"],e:"イタリア人 = italiano."},
+ {q:"Come si legge は in わたし は マルコ です?",o:["wa","ha","ba"],e:"Come particella は si legge wa."},
+ {q:"«Non sono giapponese.»",o:["日本人[にほんじん] じゃ ありません 。","日本人[にほんじん] です か 。","日本人[にほんじん] です 。"],e:"Negativo: じゃ ありません."},
+ {q:"Per trasformare una frase in domanda si aggiunge:",o:["か alla fine","は all'inizio","です all'inizio"],e:"学生 です か。 = È studente?"},
+ {q:"Presentandoti dici:",o:["マルコ です 。","マルコ さん です 。","さん マルコ です 。"],e:"さん non si usa mai per sé stessi."},
+ {q:"Come si legge つ?",o:["tsu","tu","chi"],e:"つ = tsu."},
+ {q:"Ascolta e scegli la parola:",au:"ねこ",o:["ねこ","ねこう","のこ"],e:"ねこ = gatto."},
+ {t:"ord",q:"Componi: «Yuki è giapponese.»",w:["ゆき さん","は","日本人[にほんじん]","です","。"],a:["ゆき さん は 日本人[にほんじん] です 。"]},
+ {t:"type",q:"Completa: わたし ___ マルコ です 。",a:["は"],full:"わたし は マルコ です 。"},
+ {t:"type",q:"Completa: 学生[がくせい] です ___ 。 (domanda)",a:["か"],full:"学生[がくせい] です か 。"},
+ {t:"dict",au:"はじめまして 。"},
+ {t:"say",it:"Presentati: «Piacere. Sono (il tuo nome). Sono italiano/a. Piacere di conoscerla.»",jp:"はじめまして 。 マルコ です 。 イタリア人[じん] です 。 よろしく お願[ねが]いします 。",e:"Al posto di マルコ di' il tuo nome."},
+ {t:"say",it:"Chiedi a Yuki se è un'insegnante.",jp:"ゆき さん は 先生[せんせい] です か 。"}
+];
+VOC.l2=[
+ ["はじめまして","piacere (la prima volta)","x"],["よろしく お願[ねが]いします","piacere di conoscerla","x"],["わたし","io","n"],["〜 さん","signor/signora (dopo il nome)","x"],["学生[がくせい]","studente","n"],["先生[せんせい]","insegnante","n"],
+ ["日本[にほん]","Giappone","n"],["日本人[にほんじん]","giapponese (persona)","n"],["日本語[にほんご]","lingua giapponese","n"],["イタリア","Italia","n"],["イタリア人[じん]","italiano (persona)","n"],["イタリア語[ご]","lingua italiana","n"],["中国[ちゅうごく]","Cina","n"],["フランス","Francia","n"],
+ ["そう です か","ah, davvero?","x"],["です","è, sono (cortese)","x"],["じゃ ありません","non è, non sono","x"],
+ ["ねこ","gatto","n"],["なつ","estate","n"],["ひと","persona","n"],["はな","fiore; naso","n"],["ふね","nave","n"],["て","mano","n"],["くち","bocca","n"]
+];
+
+/* ---- l3 ---- */
+DLG.l3=[["A","マルコ さん は とうきょう だいがく の 学生[がくせい] です か 。","Marco, sei uno studente dell'Università di Tokyo?"],["B","はい 、 そう です 。 けん さん も 学生[がくせい] です か 。","Sì, esatto. Anche tu sei studente, Ken?"],["A","はい 、 わたし も 学生[がくせい] です 。 けいざい の 学生[がくせい] です 。","Sì, anch'io sono studente. Studio economia."],["B","そう です か 。 あ 、 それ は けん さん の かさ です か 。","Ah, davvero? Oh, quello è il tuo ombrello?"],["A","いいえ 、 わたし の かさ じゃ ありません 。 ゆき さん の です 。","No, non è il mio ombrello. È di Yuki."],["B","ゆき さん の ？ じゃあ 、 これ も ゆき さん の です か 。","Di Yuki? Allora anche questo è di Yuki?"],["A","はい 、 たぶん 。","Sì, probabilmente."]];
+EX.l3=[
+ {q:"Ascolta: di chi è l'ombrello?",au:"それ は ゆき さん の かさ です 。",o:["di Yuki","di Ken","di Marco"],e:"ゆき さん の かさ = l'ombrello di Yuki."},
+ {q:"Ascolta: che cosa significa?",au:"わたし も 学生[がくせい] です 。",o:["Anch'io sono studente.","Io non sono studente.","Sono uno studente?"],e:"も = anche."},
+ {q:"«il mio gatto»",o:["わたし の ねこ","ねこ の わたし","わたし も ねこ"],e:"Prima chi possiede, poi la cosa."},
+ {q:"«Anche Ken è italiano?»",o:["けん さん も イタリア人[じん] です か 。","けん さん は も イタリア人[じん] です か 。","けん さん の イタリア人[じん] です か 。"],e:"も prende il posto di は."},
+ {q:"Come si legge きって?",o:["kitte","kite","kiite"],e:"っ piccolo = doppia."},
+ {q:"Ascolta e scegli la parola:",au:"おばあさん",o:["おばあさん","おばさん","おじさん"],e:"おばあさん (vocale lunga) = nonna; おばさん = zia."},
+ {q:"Ascolta e scegli la parola:",au:"きょう",o:["きょう","きよう","こう"],e:"きょう = oggi, una sola sillaba kyō."},
+ {q:"Quale kana si legge «ga»?",o:["が","か","ぱ"],e:"か + ゛ = が."},
+ {q:"を come particella si legge:",o:["o","wo","wa"],e:"を si legge o."},
+ {t:"ord",q:"Componi: «È l'insegnante di giapponese.»",w:["日本語[にほんご]","の","先生[せんせい]","です","。"],a:["日本語[にほんご] の 先生[せんせい] です 。"]},
+ {t:"type",q:"Scrivi come si legge: がっこう",a:["がっこう"],full:"がっこう",e:"Si legge gakkō."},
+ {t:"type",q:"Completa: わたし ___ 学生[がくせい] です 。 (anch'io)",a:["も"],full:"わたし も 学生[がくせい] です 。"},
+ {t:"dict",au:"とうきょう"},
+ {t:"say",it:"Di' che sei uno studente di giapponese.",jp:"日本語[にほんご] の 学生[がくせい] です 。"},
+ {t:"say",it:"Un amico dice 学生[がくせい] です. Rispondi «anch'io sono studente».",jp:"わたし も 学生[がくせい] です 。"}
+];
+VOC.l3=[
+ ["だいがく","università","n"],["がっこう","scuola","n"],["けいざい","economia","n"],["かさ","ombrello","n"],["それ","quello (vicino a te)","x"],["これ","questo","x"],["たぶん","probabilmente","x"],["そう です","sì, esatto","x"],
+ ["きって","francobollo","n"],["おばあさん","nonna; signora anziana","n"],["おじいさん","nonno; signore anziano","n"],["おばさん","zia; signora","n"],["おじさん","zio; signore","n"],["とうきょう","Tokyo","n"],["おちゃ","tè verde","n"],["きょう","oggi","n"],
+ ["やま","montagna","n"],["みず","acqua","n"],["ごはん","riso cotto; pasto","n"],["でんわ","telefono","n"],["あめ","pioggia; caramella","n"],["はし","ponte; bacchette","n"]
+];
+
+/* ---- l4 ---- */
+DLG.l4=[["A","いらっしゃいませ 。","Benvenuto!"],["B","すみません 、 これ は 何[なん] です か 。","Scusi, che cos'è questo?"],["A","それ は まくら です 。","Quello è un cuscino."],["B","まくら ？ じゃあ 、 あれ は 何[なん] です か 。","Un cuscino? E quello là che cos'è?"],["A","あれ は ふろしき です 。 日本[にほん] の ふくろ です よ 。","Quello è un furoshiki. È una borsa giapponese, sa."],["B","へえ 、 きれい です ね 。 この ふろしき は いくら です か 。","Oh, che bello! Quanto costa questo furoshiki?"],["A","千[せん] えん です 。","Mille yen."],["B","じゃあ 、 これ を ください 。","Allora prendo questo."]];
+EX.l4=[
+ {q:"Ascolta: che cosa chiede?",au:"これ は 何[なん] です か 。",o:["Che cos'è questo?","Di chi è questo?","Dov'è questo?"],e:"何 です か = che cos'è?"},
+ {q:"Ascolta: di chi è la borsa?",au:"それ は せんせい の かばん です 。",o:["dell'insegnante","dello studente","mia"],e:"せんせい の かばん = la borsa dell'insegnante."},
+ {q:"L'oggetto è in mano a te. Dici:",o:["これ","それ","あれ"],e:"これ = vicino a chi parla."},
+ {q:"L'oggetto è lontano da tutti e due:",o:["あれ","それ","これ"],e:"あれ = lontano da tutti e due."},
+ {q:"«Questo libro è mio.»",o:["この ほん は わたし の です 。","これ ほん は わたし の です 。","この は わたし の ほん です 。"],e:"この + nome."},
+ {q:"«Chi è quella persona?»",o:["あの ひと は だれ です か 。","あれ ひと は 何[なん] です か 。","あの ひと は どれ です か 。"],e:"だれ = chi."},
+ {q:"Come si legge コーヒー?",o:["kōhī","kohi","kōfi"],e:"ー allunga la vocale."},
+ {q:"Quale katakana è «tsu»?",o:["ツ","シ","ソ"],e:"ツ = tsu; シ = shi."},
+ {q:"Ascolta e scegli la parola:",au:"テレビ",o:["テレビ","デレビ","テルビ"],e:"テレビ = televisione."},
+ {t:"ord",q:"Componi: «Di chi è questo ombrello?»",w:["この","かさ","は","だれ","の","です","か","。"],a:["この かさ は だれ の です か 。"]},
+ {t:"type",q:"Completa: ___ は 何[なん] です か 。 (questo, vicino a me)",a:["これ"],full:"これ は 何[なん] です か 。"},
+ {t:"type",q:"Scrivi come si legge: パスタ",a:["パスタ"],full:"パスタ"},
+ {t:"dict",au:"それ は わたし の です 。"},
+ {t:"say",it:"In un negozio, indica un oggetto vicino al commesso e chiedi che cos'è.",jp:"すみません 、 それ は 何[なん] です か 。"},
+ {t:"say",it:"Di' che il telefono è tuo.",jp:"それ は わたし の でんわ です 。",e:"Anche: わたし の です."}
+];
+VOC.l4=[
+ ["これ","questo (vicino a me)","x"],["それ","quello (vicino a te)","x"],["あれ","quello (lontano)","x"],["どれ","quale?","x"],["この","questo + nome","x"],["その","quel + nome (vicino a te)","x"],["あの","quel + nome (lontano)","x"],
+ ["何[なん]","che cosa?","x"],["だれ","chi?","x"],["ほん","libro","n"],["かばん","borsa, zaino","n"],["ペン","penna","n"],["まくら","cuscino","n"],["ふろしき","furoshiki (telo per avvolgere)","n"],["ふくろ","busta, sacchetto","n"],["おかし","dolci, snack","n"],
+ ["コーヒー","caffè","n"],["テレビ","televisione","n"],["スマホ","smartphone","n"],["パスタ","pasta","n"],["ピザ","pizza","n"],["いらっしゃいませ","benvenuto (nei negozi)","x"],["きれい","bello, pulito","a"],["いくら","quanto costa?","x"]
+];
+
+/* ---- l5 ---- */
+DLG.l5=[["A","ゆき さん 、 それ は かぞく の しゃしん です か 。","Yuki, è una foto della tua famiglia?"],["B","はい 。 これ が 父[ちち] で 、 これ が 母[はは] です 。","Sì. Questo è mio padre e questa è mia madre."],["A","いい しゃしん です ね 。 この ひと は ？","Bella foto. E questa persona?"],["B","姉[あね] です 。 二十五[にじゅうご]さい です 。","È mia sorella maggiore. Ha 25 anni."],["A","何[なん]人[にん] かぞく です か 。","Quanti siete in famiglia?"],["B","五人[ごにん] かぞく です 。 弟[おとうと] も います 。 マルコ さん は ？","Siamo in cinque. Ho anche un fratello minore. E tu, Marco?"],["A","わたし は 三人[さんにん] かぞく です 。 きょうだい は いません 。 でも 、 いぬ が います 。","Noi siamo in tre. Non ho fratelli. Però ho un cane."]];
+EX.l5=[
+ {q:"Ascolta: quanti sono in famiglia?",au:"四人[よにん] かぞく です 。",o:["quattro","tre","sette"],e:"四人 = よにん, quattro persone."},
+ {q:"Ascolta: quanti anni ha?",au:"兄[あに] は 二十八[にじゅうはっ]さい です 。",o:["28","18","82"],e:"二十八 = 28."},
+ {q:"Parlando di TUA madre con un collega dici:",o:["母[はは]","お母[かあ]さん","母[はは]さん"],e:"Per la propria famiglia: 母."},
+ {q:"Parlando del padre di Yuki dici:",o:["お父[とう]さん","父[ちち]","父[ちち]さん"],e:"Per la famiglia degli altri: お父さん."},
+ {q:"«C'è un gatto.»",o:["ねこ が います 。","ねこ が あります 。","ねこ は です 。"],e:"Animali: います."},
+ {q:"«C'è un libro.»",o:["ほん が あります 。","ほん が います 。","ほん の あります 。"],e:"Cose: あります."},
+ {q:"Come si dice «due persone»?",o:["二人[ふたり]","二人[ににん]","二[に]さい"],e:"一人 ひとり, 二人 ふたり, poi さんにん…"},
+ {q:"十五 si legge:",o:["じゅうご","ごじゅう","じゅうよん"],e:"10 + 5 = じゅうご; ごじゅう = 50."},
+ {t:"ord",q:"Componi: «Ho un fratello minore.»",w:["弟[おとうと]","が","一人[ひとり]","います","。"],a:["弟[おとうと] が 一人[ひとり] います 。"]},
+ {t:"type",q:"Scrivi in kana o rōmaji il numero 34:",a:["三十四[さんじゅうよん]","三十四[さんじゅうし]"],full:"三十四[さんじゅうよん]",e:"さん + じゅう + よん."},
+ {t:"type",q:"Completa: 何[なん]さい ___ か 。 (Quanti anni hai?)",a:["です"],full:"何[なん]さい です か 。"},
+ {t:"dict",au:"父[ちち] と 母[はは] が います 。"},
+ {t:"say",it:"Di' quanti siete in famiglia e chi c'è (es. padre, madre e una sorella maggiore).",jp:"四人[よにん] かぞく です 。 父[ちち] と 母[はは] と 姉[あね] が います 。"},
+ {t:"say",it:"Chiedi a Yuki quanti anni ha sua sorella maggiore.",jp:"お姉[ねえ]さん は 何[なん]さい です か 。"}
+];
+VOC.l5=[
+ ["かぞく","famiglia","n"],["父[ちち]","(mio) padre","n"],["母[はは]","(mia) madre","n"],["お父[とう]さん","padre (di altri); papà","n"],["お母[かあ]さん","madre (di altri); mamma","n"],["兄[あに]","(mio) fratello maggiore","n"],["お兄[にい]さん","fratello maggiore (di altri)","n"],
+ ["姉[あね]","(mia) sorella maggiore","n"],["お姉[ねえ]さん","sorella maggiore (di altri)","n"],["弟[おとうと]","fratello minore","n"],["妹[いもうと]","sorella minore","n"],["きょうだい","fratelli e sorelle","n"],["しゃしん","foto","n"],["いぬ","cane","n"],
+ ["一人[ひとり]","una persona; da solo","n"],["二人[ふたり]","due persone","n"],["〜 人[にん]","… persone","x"],["〜 さい","… anni (età)","x"],["います","c'è, ci sono (persone, animali)","v"],["あります","c'è, ci sono (cose)","v"],["と","e (tra nomi)","x"],["でも","però","x"],["いい","buono, bello","a"]
+];
+
+/* ---- l6 ---- */
+DLG.l6=[["A","ゆき さん 、 お元気[げんき] です か 。","Yuki, come stai?"],["B","はい 、 元気[げんき] です 。 マルコ さん は ？","Bene, grazie. E tu, Marco?"],["A","元気[げんき] です 。 でも 、 とうきょう は ちょっと あつい です ね 。","Bene. Però a Tokyo fa un po' caldo, eh?"],["B","そう です ね 。 ミラノ は どう です か 。","Eh sì. E Milano com'è?"],["A","ミラノ も にぎやか です 。 でも 、 とうきょう は もっと 大[おお]きい です 。","Anche Milano è vivace. Ma Tokyo è più grande."],["B","とうきょう の アパート は どう です か 。","E il tuo appartamento a Tokyo com'è?"],["A","きれい です が 、 あまり 大[おお]きくない です 。 それに 、 たかい です 。","È pulito, ma non è molto grande. E poi è caro."],["B","とうきょう は たかい です から ね 。","Eh, Tokyo è cara."]];
+EX.l6=[
+ {q:"Ascolta: com'è il ramen?",au:"この ラーメン は おいしい です 。",o:["buono","caro","piccolo"],e:"おいしい = buono (cibo)."},
+ {q:"Ascolta: com'è la stanza?",au:"へや は あまり 大[おお]きくない です 。",o:["non molto grande","molto grande","molto piccola"],e:"あまり + negativo = non molto."},
+ {q:"Negativo di たかい:",o:["たかくない です","たかい じゃ ありません","たかくな です"],e:"-い → -くない."},
+ {q:"Negativo di しずか:",o:["しずか じゃ ありません","しずかくない です","しずかない です"],e:"Aggettivo な: じゃ ありません."},
+ {q:"Negativo di いい:",o:["よくない です","いくない です","いい じゃ ありません"],e:"Eccezione: いい → よくない."},
+ {q:"«una città tranquilla»",o:["しずか な まち","しずか まち","しずかい まち"],e:"Aggettivo な davanti a un nome: + な."},
+ {q:"«una montagna alta»",o:["たかい やま","たかい な やま","たかく やま"],e:"Aggettivo in -い davanti al nome: invariato."},
+ {q:"きれい è un aggettivo…",o:["な (きれい な へや)","in -い (きれくない)","non è un aggettivo"],e:"Trappola: きれい è な."},
+ {q:"Completa: この へや は ___ きれい じゃ ありません 。",o:["あまり","とても","もっと"],e:"あまり + negativo."},
+ {t:"ord",q:"Componi: «Tokyo è molto vivace.»",w:["とうきょう","は","とても","にぎやか","です","。"],a:["とうきょう は とても にぎやか です 。"]},
+ {t:"type",q:"Negativo: さむい です → ___ です 。",a:["さむくない"],full:"さむくない です 。"},
+ {t:"type",q:"Davanti a un nome: ゆうめい ___ ひと (una persona famosa)",a:["な"],full:"ゆうめい な ひと"},
+ {t:"dict",au:"あつい です ね 。"},
+ {t:"say",it:"Chiedi a un amico che non vedi da tempo come sta.",jp:"お元気[げんき] です か 。"},
+ {t:"say",it:"Descrivi la tua città: «È tranquilla, ma non è molto grande.»",jp:"しずか です が 、 あまり 大[おお]きくない です 。"}
+];
+VOC.l6=[
+ ["元気[げんき]","in forma, in salute","a"],["大[おお]きい","grande","a"],["小[ちい]さい","piccolo","a"],["たかい","alto; caro","a"],["やすい","economico","a"],["おいしい","buono (cibo)","a"],["あつい","caldo","a"],["さむい","freddo (tempo)","a"],
+ ["あたらしい","nuovo","a"],["ふるい","vecchio (cose)","a"],["おもしろい","interessante, divertente","a"],["しずか","tranquillo","a"],["にぎやか","vivace, animato","a"],["ゆうめい","famoso","a"],["しんせつ","gentile","a"],
+ ["とても","molto","x"],["あまり","(con negativo) non molto","x"],["ちょっと","un po'","x"],["もっと","di più","x"],["どう","come?","x"],["まち","città, quartiere","n"],["へや","stanza","n"],["アパート","appartamento","n"],["ラーメン","ramen","n"],["が","ma (tra due frasi)","x"]
+];
+
+/* ---- l7 ---- */
+DLG.l7=[["A","マルコ さん 、 毎日[まいにち] 何[なに] を します か 。","Marco, che cosa fai ogni giorno?"],["B","毎朝[まいあさ] コーヒー を 飲[の]みます 。 それから 、 大学[だいがく] に 行[い]きます 。","Ogni mattina bevo un caffè. Poi vado all'università."],["A","大学[だいがく] で 何[なに] を 勉強[べんきょう]します か 。","Che cosa studi all'università?"],["B","日本語[にほんご] と れきし を 勉強[べんきょう]します 。 ゆき さん は ？","Studio giapponese e storia. E tu, Yuki?"],["A","わたし は かいしゃいん です 。 ぎんこう で はたらいて います 。","Io sono impiegata. Lavoro in banca."],["B","ばん ごはん は うち で 食[た]べます か 。","La cena la mangi a casa?"],["A","はい 。 でも 、 金曜日[きんようび] は ともだち と 食[た]べます 。","Sì. Però il venerdì mangio con gli amici."],["B","いい です ね 。 わたし も 行[い]きます ！","Che bello. Vengo anch'io!"]];
+EX.l7=[
+ {q:"Ascolta: che cosa beve ogni mattina?",au:"毎朝[まいあさ] おちゃ を 飲[の]みます 。",o:["tè verde","caffè","acqua"],e:"おちゃ = tè verde."},
+ {q:"Ascolta: dove mangia?",au:"うち で 食[た]べます 。",o:["a casa","all'università","al ristorante"],e:"うち で = a casa."},
+ {q:"«Non bevo il caffè.»",o:["コーヒー を 飲[の]みません 。","コーヒー を 飲[の]みます 。","コーヒー が 飲[の]みません 。"],e:"Negativo: -ません."},
+ {q:"Particella per l'oggetto: パン ___ 食[た]べます 。",o:["を","で","に"],e:"を = oggetto."},
+ {q:"Particella per il luogo dell'azione: としょかん ___ 本[ほん] を 読[よ]みます 。",o:["で","に","を"],e:"で = dove si fa l'azione."},
+ {q:"Particella per la destinazione: 大学[だいがく] ___ 行[い]きます 。",o:["に","で","を"],e:"に (o へ) = dove si va."},
+ {q:"Dove va il verbo nella frase giapponese?",o:["sempre alla fine","dopo il soggetto","all'inizio"],e:"Il verbo chiude la frase."},
+ {q:"«Domani vado a Kyoto.» Che forma ha il verbo?",o:["行[い]きます (la stessa del presente)","行[い]きました","行[い]きません"],e:"-ます vale per presente e futuro."},
+ {t:"ord",q:"Componi: «Leggo un libro in biblioteca.»",w:["としょかん","で","本[ほん]","を","読[よ]みます","。"],a:["としょかん で 本[ほん] を 読[よ]みます 。"]},
+ {t:"ord",q:"Componi: «Ogni mattina bevo il caffè.»",w:["毎朝[まいあさ]","コーヒー","を","飲[の]みます","。"],a:["毎朝[まいあさ] コーヒー を 飲[の]みます 。"]},
+ {t:"type",q:"Negativo: 見[み]ます → ___",a:["見[み]ません"],full:"見[み]ません"},
+ {t:"type",q:"Completa: テレビ ___ 見[み]ます 。",a:["を"],full:"テレビ を 見[み]ます 。"},
+ {t:"dict",au:"大学[だいがく] に 行[い]きます 。"},
+ {t:"say",it:"Racconta: «Ogni mattina bevo il caffè e poi vado all'università.»",jp:"毎朝[まいあさ] コーヒー を 飲[の]みます 。 それから 、 大学[だいがく] に 行[い]きます 。"},
+ {t:"say",it:"Chiedi a un collega che lavoro fa.",jp:"おしごと は 何[なん] です か 。"}
+];
+VOC.l7=[
+ ["食[た]べます","mangiare","v"],["飲[の]みます","bere","v"],["行[い]きます","andare","v"],["来[き]ます","venire","v"],["かえります","tornare (a casa)","v"],["見[み]ます","vedere, guardare","v"],["読[よ]みます","leggere","v"],["します","fare","v"],["勉強[べんきょう]します","studiare","v"],["起[お]きます","alzarsi","v"],["ねます","dormire, andare a letto","v"],
+ ["毎日[まいにち]","ogni giorno","n"],["毎朝[まいあさ]","ogni mattina","n"],["あした","domani","n"],["ばん ごはん","cena","n"],["うち","casa (mia)","n"],["としょかん","biblioteca","n"],["ともだち","amico","n"],["れきし","storia","n"],["パン","pane","n"],
+ ["おしごと","lavoro (di altri)","n"],["かいしゃいん","impiegato","n"],["ぎんこう","banca","n"],["それから","poi, e poi","x"],["何[なに]","che cosa?","x"],["金曜日[きんようび]","venerdì","n"]
+];
+
+/* ---- l8 ---- */
+DLG.l8=[["A","いらっしゃいませ 。","Benvenuto!"],["B","すみません 、 この おにぎり は いくら です か 。","Scusi, quanto costa questo onigiri?"],["A","百五十[ひゃくごじゅう] 円[えん] です 。","150 yen."],["B","じゃあ 、 おにぎり を 二[ふた]つ と お茶[ちゃ] を ください 。","Allora due onigiri e un tè, per favore."],["A","はい 。 ぜんぶ で 四百五十[よんひゃくごじゅう] 円[えん] です 。 ふくろ は いります か 。","Certo. In tutto sono 450 yen. Le serve la busta?"],["B","いいえ 、 だいじょうぶ です 。 カード で いい です か 。","No, va bene così. Posso pagare con la carta?"],["A","はい 、 どうぞ 。 ありがとう ございました 。","Sì, prego. Grazie!"]];
+EX.l8=[
+ {q:"Ascolta: quanto costa?",au:"三百[さんびゃく] 円[えん] です 。",o:["300 yen","3.000 yen","30 yen"],e:"三百 = さんびゃく = 300."},
+ {q:"Ascolta: quanto costa?",au:"千[せん] 八百[はっぴゃく] 円[えん] です 。",o:["1.800 yen","1.008 yen","8.100 yen"],e:"千 = 1.000, 八百 = 800."},
+ {q:"Ascolta: che cosa chiede la cassiera?",au:"ふくろ は いります か 。",o:["Le serve la busta?","Glielo scaldo?","Paga con la carta?"],e:"ふくろ = busta; いります = serve."},
+ {q:"«Tre caffè, per favore.»",o:["コーヒー を 三[みっ]つ ください 。","三[みっ]つ を コーヒー ください 。","コーヒー を 三[さん] ください 。"],e:"Oggetto を numero ください."},
+ {q:"10.000 si dice:",o:["一万[いちまん]","十千[じゅうせん]","千万[せんまん]"],e:"Il giapponese conta per diecimila: 万."},
+ {q:"600 si legge:",o:["ろっぴゃく","ろくひゃく","ろっびゃく"],e:"Cambio di suono: ろっぴゃく."},
+ {q:"Alla domanda あたためます か 。 vuoi che te lo scaldino. Rispondi:",o:["はい 、 お願[ねが]いします 。","いいえ 、 だいじょうぶ です 。","いくら です か 。"],e:"はい 、 お願いします = sì, per favore."},
+ {q:"«Quanto costa?»",o:["いくら です か 。","何[なに] です か 。","どこ です か 。"],e:"いくら = quanto (prezzo)."},
+ {t:"ord",q:"Componi: «Due onigiri, per favore.»",w:["おにぎり","を","二[ふた]つ","ください","。"],a:["おにぎり を 二[ふた]つ ください 。"]},
+ {t:"type",q:"Scrivi il prezzo 5.000 yen (in kana o rōmaji):",a:["五千[ごせん] 円[えん]","五千円[ごせんえん]"],full:"五千[ごせん] 円[えん]"},
+ {t:"type",q:"Come si conta «quattro cose»? ___",a:["四[よっ]つ"],full:"四[よっ]つ"},
+ {t:"dict",au:"これ を ください 。"},
+ {t:"say",it:"Al bar: chiedi un caffè caldo, per favore.",jp:"ホット コーヒー 、 お願[ねが]いします 。"},
+ {t:"say",it:"Chiedi quanto costa questo (vicino a te) e se puoi pagare con la carta.",jp:"これ は いくら です か 。 カード で いい です か 。"}
+];
+VOC.l8=[
+ ["コンビニ","konbini, minimarket","n"],["おにぎり","onigiri (polpetta di riso)","n"],["サンドイッチ","panino, tramezzino","n"],["お茶[ちゃ]","tè verde","n"],["お水[みず]","acqua","n"],["ホット","caldo (bevanda)","x"],["アイス","freddo, con ghiaccio","x"],["ケーキ","torta, dolce","n"],
+ ["〜 円[えん]","… yen","x"],["百[ひゃく]","cento","n"],["千[せん]","mille","n"],["一万[いちまん]","diecimila","n"],["いくら","quanto costa?","x"],["ぜんぶ で","in tutto","x"],["ください","mi dia, per favore","x"],["お願[ねが]いします","per favore","x"],
+ ["一[ひと]つ","uno (cosa)","n"],["二[ふた]つ","due (cose)","n"],["三[みっ]つ","tre (cose)","n"],["ふくろ","busta","n"],["いります","serve, è necessario","v"],["あたためます","scaldare","v"],["カード","carta (di credito)","n"],["だいじょうぶ","va bene, a posto","a"]
+];
+
+/* ---- r1 ---- */
+EX.r1=[
+ {q:"Ascolta: di dove viene?",au:"ミラノ から 来[き]ました 。",o:["da Milano","da Roma","da Tokyo"],e:"〜 から 来ました = vengo da…"},
+ {q:"Ascolta: quanti anni ha?",au:"二十三[にじゅうさん]さい です 。",o:["23","32","13"],e:"二十三 = 23."},
+ {q:"Ascolta: che cosa compra?",au:"おにぎり を 三[みっ]つ ください 。",o:["tre onigiri","due onigiri","un tè"],e:"三つ = tre."},
+ {q:"Ascolta: quanto costa?",au:"二千[にせん] 五百[ごひゃく] 円[えん] です 。",o:["2.500 yen","5.200 yen","250 yen"],e:"二千 = 2.000, 五百 = 500."},
+ {q:"«Non sono un insegnante.»",o:["先生[せんせい] じゃ ありません 。","先生[せんせい] です か 。","先生[せんせい] くない です 。"],e:"Nome + じゃ ありません."},
+ {q:"«Anche Yuki è giapponese.»",o:["ゆき さん も 日本人[にほんじん] です 。","ゆき さん は も 日本人[にほんじん] です 。","ゆき さん の 日本人[にほんじん] です 。"],e:"も sostituisce は."},
+ {q:"L'oggetto è vicino al tuo interlocutore:",o:["それ","これ","あれ"],e:"それ = vicino a chi ascolta."},
+ {q:"Parli di TUO fratello maggiore:",o:["兄[あに]","お兄[にい]さん","兄[あに]さん"],e:"Famiglia propria: 兄."},
+ {q:"«C'è un cane.»",o:["いぬ が います 。","いぬ が あります 。","いぬ を います 。"],e:"Animali: います."},
+ {q:"Negativo di おいしい:",o:["おいしくない です","おいしい じゃ ありません","おいしくな です"],e:"-い → -くない."},
+ {q:"«una persona gentile» (しんせつ è な)",o:["しんせつ な ひと","しんせつ ひと","しんせつい ひと"],e:"Aggettivo な + な + nome."},
+ {q:"Particella: 大学[だいがく] ___ 勉強[べんきょう]します 。",o:["で","を","へ"],e:"で = dove si fa l'azione."},
+ {q:"Particella: パン ___ 食[た]べます 。",o:["を","で","に"],e:"を = oggetto."},
+ {q:"Come si legge きょう?",o:["kyō","kiyō","kō"],e:"き + piccolo ょ = kyo, poi う allunga."},
+ {t:"ord",q:"Componi: «Ogni giorno studio il giapponese.»",w:["毎日[まいにち]","日本語[にほんご]","を","勉強[べんきょう]します","。"],a:["毎日[まいにち] 日本語[にほんご] を 勉強[べんきょう]します 。"]},
+ {t:"ord",q:"Componi: «Di chi è questa borsa?»",w:["この","かばん","は","だれ","の","です","か","。"],a:["この かばん は だれ の です か 。"]},
+ {t:"type",q:"Completa: これ ___ 何[なん] です か 。",a:["は"],full:"これ は 何[なん] です か 。"},
+ {t:"type",q:"Negativo cortese di 行[い]きます:",a:["行[い]きません"],full:"行[い]きません"},
+ {t:"dict",au:"わたし の かぞく は 四人[よにん] です 。"},
+ {t:"say",it:"Presentati: nome, nazionalità, che cosa studi o fai.",jp:"はじめまして 。 マルコ です 。 イタリア人[じん] です 。 学生[がくせい] です 。 よろしく お願[ねが]いします 。",e:"Usa il tuo nome e il tuo lavoro."},
+ {t:"say",it:"Al konbini: chiedi due onigiri e un tè, e quanto costa in tutto.",jp:"おにぎり を 二[ふた]つ と お茶[ちゃ] を ください 。 ぜんぶ で いくら です か 。"}
 ];
 
 /* ---- frasi ---- */
@@ -1583,7 +2283,7 @@ setupReading(document);
   draw()})();
 
 /* ---------- tutto il giapponese nel testo diventa cliccabile ---------- */
-var SKIPJ=".hero-card,.stats,.legend,.lhead,.partttl,.toc,button,.w,.tk,.jl,.jx,.ro,.ro-i,script,style,.tok,.opts,.fc-card,#fcboxes,.toc,.stats,.kicker,.tip,input,select,.fc-range,.kana,rt";
+var SKIPJ=".hero-card,.stats,.legend,.lhead,.partttl,.toc,.kj,button,.w,.tk,.jl,.jx,.ro,.ro-i,script,style,.tok,.opts,.fc-card,#fcboxes,.toc,.stats,.kicker,.tip,input,select,.fc-range,.kana,rt";
 function jpZone(root){var out=[],tw=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,null),n;
   while((n=tw.nextNode())){if(!JRUN.test(n.nodeValue))continue;var p=n.parentElement;if(!p||p.closest(SKIPJ))continue;out.push(n)}
   out.forEach(function(n){var t=document.createElement("template");t.innerHTML=mixHTML(n.nodeValue);n.parentNode.replaceChild(t.content,n)})}
@@ -1760,12 +2460,13 @@ function openReview(){var ws=reviewWords();if(ws.length<4)return;
 /* ---------- scheda dell'unità ---------- */
 var SH=document.createElement("div");SH.className="sheet-back";SH.hidden=true;SH.innerHTML='<div class="sheet" role="dialog" aria-modal="true"></div>';document.body.appendChild(SH);
 var sheet=$(".sheet",SH);SH.addEventListener("click",function(e){if(e.target===SH)closeModal()});
+function plainText(el){var c=el.cloneNode(true);$$(".ro-i,rt",c).forEach(function(x){x.remove()});return c.textContent.replace(/\s+/g," ").trim()}
 function nextStep(id){var ss=stepsOf(id),d=P.done[id]||{};for(var i=0;i<ss.length;i++)if(!d[ss[i].key])return ss[i];return ss[ss.length-1]}
 function openSheet(id){var i=uIdx(id),U=UNITS[i],ss=stepsOf(id),d=P.done[id]||{},open=unlocked(i),nx=nextStep(id),s=sec(id),ld=$("p.lead",s);
   sheet.className="sheet t-"+U.color;
   var kick=U.kind==="lesson"?"Lezione "+U.n+" · 第"+U.n+"課":"Ripasso · 復習";
   sheet.innerHTML='<div class="sh-grab" aria-hidden="true"></div><div class="sh-head"><svg class="sh-ic" aria-hidden="true"><use href="#'+U.icon+'"/></svg><div><div class="sh-k">'+esc(kick)+'</div><h3>'+esc(U.t)+'</h3><i lang="ja">'+esc(U.j)+'</i></div>'+starHTML(P.stars[id]||0)+'</div>'+
-    (ld?'<p class="sh-lead">'+esc(ld.textContent)+'</p>':'')+
+    (ld?'<p class="sh-lead">'+esc(plainText(ld))+'</p>':'')+
     (open?'<ol class="sh-steps">'+ss.map(function(st){var ok=st.k==="test"?passed(id):!!d[st.key];return '<li><button class="srow'+(ok?" ok":"")+(st===nx&&!ok?" nx":"")+'" type="button" data-k="'+st.key+'"><svg aria-hidden="true"><use href="#'+st.icon+'"/></svg><span><b>'+esc(st.zh)+'</b><i lang="ja">'+st.it+'</i></span><span class="sst">'+(ok?'<svg aria-label="fatto"><use href="#i-check"/></svg>':'')+'</span></button></li>'}).join("")+'</ol>'
       :'<div class="sh-lock"><svg aria-hidden="true"><use href="#i-lock"/></svg><p>Supera la sfida della lezione precedente per aprire questa.'+(firstOfWorld(i)&&U.w>1?' Sai già un po\' di giapponese? Fai il test di livello: se lo superi puoi partire da qui.':'')+'</p></div>')+
     '<div class="sh-acts">'+(open?'<button class="btn pri sh-go" type="button">'+(pathStarted(id)?(passed(id)?"Rifai la sfida":"Continua: "+esc(nx.zh)):"Comincia")+'</button>':(firstOfWorld(i)&&U.w>1?'<button class="btn pri sh-skip" type="button">Test di livello</button>':''))+

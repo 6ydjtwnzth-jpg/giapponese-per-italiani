@@ -165,12 +165,13 @@ function openReview(){var ws=reviewWords();if(ws.length<4)return;
 /* ---------- scheda dell'unità ---------- */
 var SH=document.createElement("div");SH.className="sheet-back";SH.hidden=true;SH.innerHTML='<div class="sheet" role="dialog" aria-modal="true"></div>';document.body.appendChild(SH);
 var sheet=$(".sheet",SH);SH.addEventListener("click",function(e){if(e.target===SH)closeModal()});
+function plainText(el){var c=el.cloneNode(true);$$(".ro-i,rt",c).forEach(function(x){x.remove()});return c.textContent.replace(/\s+/g," ").trim()}
 function nextStep(id){var ss=stepsOf(id),d=P.done[id]||{};for(var i=0;i<ss.length;i++)if(!d[ss[i].key])return ss[i];return ss[ss.length-1]}
 function openSheet(id){var i=uIdx(id),U=UNITS[i],ss=stepsOf(id),d=P.done[id]||{},open=unlocked(i),nx=nextStep(id),s=sec(id),ld=$("p.lead",s);
   sheet.className="sheet t-"+U.color;
   var kick=U.kind==="lesson"?"Lezione "+U.n+" · 第"+U.n+"課":"Ripasso · 復習";
   sheet.innerHTML='<div class="sh-grab" aria-hidden="true"></div><div class="sh-head"><svg class="sh-ic" aria-hidden="true"><use href="#'+U.icon+'"/></svg><div><div class="sh-k">'+esc(kick)+'</div><h3>'+esc(U.t)+'</h3><i lang="ja">'+esc(U.j)+'</i></div>'+starHTML(P.stars[id]||0)+'</div>'+
-    (ld?'<p class="sh-lead">'+esc(ld.textContent)+'</p>':'')+
+    (ld?'<p class="sh-lead">'+esc(plainText(ld))+'</p>':'')+
     (open?'<ol class="sh-steps">'+ss.map(function(st){var ok=st.k==="test"?passed(id):!!d[st.key];return '<li><button class="srow'+(ok?" ok":"")+(st===nx&&!ok?" nx":"")+'" type="button" data-k="'+st.key+'"><svg aria-hidden="true"><use href="#'+st.icon+'"/></svg><span><b>'+esc(st.zh)+'</b><i lang="ja">'+st.it+'</i></span><span class="sst">'+(ok?'<svg aria-label="fatto"><use href="#i-check"/></svg>':'')+'</span></button></li>'}).join("")+'</ol>'
       :'<div class="sh-lock"><svg aria-hidden="true"><use href="#i-lock"/></svg><p>Supera la sfida della lezione precedente per aprire questa.'+(firstOfWorld(i)&&U.w>1?' Sai già un po\' di giapponese? Fai il test di livello: se lo superi puoi partire da qui.':'')+'</p></div>')+
     '<div class="sh-acts">'+(open?'<button class="btn pri sh-go" type="button">'+(pathStarted(id)?(passed(id)?"Rifai la sfida":"Continua: "+esc(nx.zh)):"Comincia")+'</button>':(firstOfWorld(i)&&U.w>1?'<button class="btn pri sh-skip" type="button">Test di livello</button>':''))+
