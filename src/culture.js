@@ -1,0 +1,1 @@
+var CULT=CULT||{};

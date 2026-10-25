@@ -1,0 +1,1814 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Giapponese per italiani · 日本語</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Noto+Sans+JP:wght@400;500;700;900&display=swap">
+<script>try{var t=localStorage.getItem("giapponese-per-italiani-v1-theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<meta name="description" content="Corso di giapponese per italiani: 23 lezioni dai kana al livello A2 (JLPT N5–N4), con dialoghi da ascoltare, furigana, esercizi corretti in automatico, flashcard e cultura giapponese a confronto con l'Italia.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2714%27 fill=%27%23ea4a2a%27/%3E%3Ctext x=%2732%27 y=%2745%27 font-size=%2734%27 text-anchor=%27middle%27 fill=%27white%27 font-family=%27sans-serif%27%3E%E3%81%82%3C/text%3E%3C/svg%3E">
+<style>
+/* Direzione: poster italiano contemporaneo (per il corso di giapponese) alla Olimpia Zagnoli — forme piatte, colori pieni (pomodoro, cobalto, sole, basilico, rosa),
+   geometrie morbide. Indice a sinistra, colonna di lettura; ogni lezione ha un suo colore e una sua icona. */
+:root{
+  --paper:#fff6f1; --sheet:#ffffff; --ink:#1a1720; --muted:#645c6e; --line:#f0e1d9; --line2:#e4d2c8;
+  --red:#ea4a2a; --blue:#2b50d8; --yellow:#ffc532; --green:#12965a; --pink:#ff9fb6; --white:#ffffff;
+  --red-soft:#ffe3da; --blue-soft:#e4e9ff; --yellow-soft:#fff1c7; --green-soft:#d8f3e5; --pink-soft:#ffe6ee;
+  --on-red:#ffffff; --on-blue:#ffffff; --on-yellow:#1a1720; --on-green:#ffffff; --on-pink:#1a1720;
+  --it:#0b7f6a; --it-bg:#d6f2ea; --masc:#2b50d8; --fem:#d8391b;
+  --ok:#11804b; --ok-bg:#daf3e5; --bad:#c9341a; --bad-bg:#ffe2da; --warn:#9a5a00;
+  --c:var(--blue); --c-soft:var(--blue-soft); --on:var(--on-blue);
+  --r:26px; --r-sm:16px;
+  --shadow:0 1px 0 rgba(26,23,32,.04),0 16px 32px -20px rgba(26,23,32,.38);
+  --f-disp:"Bricolage Grotesque","Noto Sans JP",system-ui,sans-serif;
+  --f-body:"Noto Sans JP","Hiragino Sans","Yu Gothic",system-ui,-apple-system,sans-serif;
+  --f-it:"Noto Sans JP","Hiragino Sans","Yu Gothic",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#14111a; --sheet:#1f1b27; --ink:#f5f0f7; --muted:#b5abc0; --line:#2f2938; --line2:#3d3548;
+  --red:#ff6b4d; --blue:#7d97ff; --yellow:#ffcc4d; --green:#3fd28e; --pink:#ffa3ba;
+  --red-soft:#3a1f1c; --blue-soft:#1e2448; --yellow-soft:#3a3016; --green-soft:#15352a; --pink-soft:#3c2030;
+  --on-red:#1c0b07; --on-blue:#0b1032; --on-yellow:#1c1503; --on-green:#04200f; --on-pink:#2a0c17;
+  --it:#4fe0b8; --it-bg:#123a31; --masc:#93a9ff; --fem:#ff8a70;
+  --ok:#5ee09a; --ok-bg:#133526; --bad:#ff8b74; --bad-bg:#3d1d18; --warn:#ffc04d;
+  --shadow:0 1px 0 rgba(0,0,0,.3),0 18px 36px -20px rgba(0,0,0,.85);
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#14111a; --sheet:#1f1b27; --ink:#f5f0f7; --muted:#b5abc0; --line:#2f2938; --line2:#3d3548;
+  --red:#ff6b4d; --blue:#7d97ff; --yellow:#ffcc4d; --green:#3fd28e; --pink:#ffa3ba;
+  --red-soft:#3a1f1c; --blue-soft:#1e2448; --yellow-soft:#3a3016; --green-soft:#15352a; --pink-soft:#3c2030;
+  --on-red:#1c0b07; --on-blue:#0b1032; --on-yellow:#1c1503; --on-green:#04200f; --on-pink:#2a0c17;
+  --it:#4fe0b8; --it-bg:#123a31; --masc:#93a9ff; --fem:#ff8a70;
+  --ok:#5ee09a; --ok-bg:#133526; --bad:#ff8b74; --bad-bg:#3d1d18; --warn:#ffc04d;
+  --shadow:0 1px 0 rgba(0,0,0,.3),0 18px 36px -20px rgba(0,0,0,.85);
+  color-scheme:dark}
+.t-red{--c:var(--red);--c-soft:var(--red-soft);--on:var(--on-red)}
+.t-blue{--c:var(--blue);--c-soft:var(--blue-soft);--on:var(--on-blue)}
+.t-yellow{--c:var(--yellow);--c-soft:var(--yellow-soft);--on:var(--on-yellow)}
+.t-green{--c:var(--green);--c-soft:var(--green-soft);--on:var(--on-green)}
+.t-pink{--c:var(--pink);--c-soft:var(--pink-soft);--on:var(--on-pink)}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.8;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 80px;
+  -webkit-font-smoothing:antialiased;transition:background .25s,color .25s}
+[lang="it"],.it,.it-l{font-family:var(--f-it)}
+a{color:var(--blue)}
+h1,h2,h3{text-wrap:balance;line-height:1.25;margin:0}
+p{margin:0}
+button,select{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--blue);outline-offset:2px;border-radius:6px}
+b,strong{font-weight:700}
+.m{color:var(--masc);font-weight:700}.f{color:var(--fem);font-weight:700}
+.st{text-decoration:underline;text-decoration-color:var(--red);text-decoration-thickness:3px;text-underline-offset:5px;font-weight:700}
+::selection{background:var(--yellow);color:#1a1720}
+
+.book{max-width:1220px;margin:0 auto;display:grid;gap:24px;grid-template-columns:1fr}
+@media (min-width:1000px){.book{gap:56px;grid-template-columns:250px minmax(0,1fr)}}
+main{min-width:0;max-width:820px;display:flex;flex-direction:column;gap:84px}
+
+/* indice */
+.toc{font-family:var(--f-body);font-size:14px;padding-top:68px}
+@media (min-width:1000px){.toc{position:sticky;top:env(safe-area-inset-top,0px);align-self:start;max-height:100vh;overflow:auto;padding-block:28px 24px;scrollbar-width:thin}}
+.toc details{background:var(--sheet);border-radius:var(--r-sm);box-shadow:var(--shadow);padding:6px 8px}
+.toc summary{cursor:pointer;font-family:var(--f-disp);font-weight:800;font-size:15px;padding:8px 8px;list-style:none;display:flex;justify-content:space-between;align-items:center}
+.toc summary::-webkit-details-marker{display:none}
+.toc summary::after{content:"";width:9px;height:9px;border-right:2.5px solid currentColor;border-bottom:2.5px solid currentColor;transform:rotate(45deg);transition:transform .2s;margin-right:4px}
+.toc details[open] summary::after{transform:rotate(-135deg)}
+.toc ol{list-style:none;margin:2px 0 8px;padding:0;display:flex;flex-direction:column;gap:1px}
+.toc .part{font-size:11px;letter-spacing:.14em;color:var(--muted);margin-top:12px;padding:4px 8px;font-weight:700}
+.toc a{display:flex;justify-content:space-between;align-items:center;gap:8px;text-decoration:none;color:var(--ink);padding:6px 8px;border-radius:10px;transition:background .15s}
+.toc a:hover{background:var(--c-soft)}
+.toc .dot{width:10px;height:10px;border-radius:50%;background:var(--c);flex:none;margin-right:8px}
+.toc a>span:first-child{display:flex;align-items:center;flex:1;min-width:0}
+.toc .sc{color:var(--muted);font-variant-numeric:tabular-nums;font-size:12px;white-space:nowrap}
+.toc .sc.done{color:var(--ok);font-weight:700}
+.toc .sc.done::before{content:"✓ "}
+
+/* copertina */
+.hero{padding-top:8px;display:grid;gap:22px}
+@media (min-width:1000px){.hero{padding-top:28px}}
+.hero-card{--c:var(--blue);--on:var(--on-blue);background:var(--blue);color:var(--on-blue);border-radius:34px;overflow:hidden;display:grid;grid-template-columns:1fr;position:relative}
+@media (min-width:720px){.hero-card{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);align-items:end}}
+.hero-text{padding:32px 26px 8px;display:flex;flex-direction:column;gap:14px;position:relative;z-index:1}
+@media (min-width:720px){.hero-text{padding:44px 8px 40px 40px}}
+.hero .eyebrow{font-family:var(--f-disp);font-weight:700;font-size:13px;letter-spacing:.14em;opacity:.85}
+.hero .ciao{font-family:var(--f-disp);font-weight:800;font-size:clamp(72px,15vw,128px);line-height:.85;letter-spacing:-.045em;color:var(--yellow)}
+.hero h1{font-family:var(--f-body);font-weight:900;font-size:clamp(30px,5vw,44px);letter-spacing:.02em;line-height:1.2}
+.hero .sub{font-size:17px;opacity:.9;max-width:30em}
+.cta{display:inline-flex;align-items:center;gap:10px;align-self:flex-start;margin-top:6px;background:var(--yellow);color:#1a1720;font-family:var(--f-disp);font-weight:800;font-size:16px;text-decoration:none;padding:12px 22px;border-radius:999px;transition:transform .15s}
+.cta:hover{transform:translateY(-2px) rotate(-1deg)}
+.hero-art{display:block;width:100%;height:auto;max-height:330px}
+@media (min-width:720px){.hero-art{max-height:none}}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+@media (max-width:620px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.stats div{background:var(--c-soft);border-radius:var(--r-sm);padding:14px 16px;display:flex;flex-direction:column;gap:2px}
+.stats b{font-family:var(--f-disp);font-size:38px;line-height:1;font-weight:800;color:var(--c);letter-spacing:-.02em}
+.stats span{font-size:13px;color:var(--muted)}
+.stats i{font-family:var(--f-it);font-style:italic}
+.legend{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:14px;color:var(--muted);align-items:baseline}
+.legend b{font-size:16px}
+.note{font-size:14px;color:var(--muted);background:var(--sheet);border-radius:var(--r-sm);padding:12px 16px;box-shadow:var(--shadow)}
+
+/* mappa delle lezioni */
+.map{display:flex;flex-direction:column;gap:18px}
+.map h2{font-family:var(--f-disp);font-weight:800;font-size:clamp(26px,4vw,34px);letter-spacing:-.01em}
+.map h2 small{font-family:var(--f-it);font-weight:500;font-size:.55em;color:var(--muted);margin-left:10px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:12px}
+@media (max-width:420px){.tiles{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}}
+.tile{position:relative;overflow:hidden;background:var(--c);color:var(--on);border-radius:22px;padding:14px 14px 16px;min-height:150px;display:flex;flex-direction:column;justify-content:flex-end;gap:2px;text-decoration:none;transition:transform .18s}
+.tile:hover{transform:translateY(-3px) rotate(-1.2deg)}
+.tile:nth-child(even):hover{transform:translateY(-3px) rotate(1.2deg)}
+.tile .n{position:absolute;top:8px;left:14px;font-family:var(--f-disp);font-weight:800;font-size:44px;line-height:1;letter-spacing:-.04em}
+.tile svg{position:absolute;top:10px;right:10px;width:46px;height:46px}
+.tile b{font-size:15px;line-height:1.35;font-weight:900}
+.tile i{font-family:var(--f-it);font-size:13px;opacity:.85}
+.tile .sc{font-size:12px;font-weight:700;font-variant-numeric:tabular-nums;min-height:1em}
+.tile .sc.done::before{content:"✓ "}
+
+/* lezioni */
+main{counter-reset:lez}
+section.lesson{display:flex;flex-direction:column;gap:24px;scroll-margin-top:20px}
+section.lesson[id^="l"]{counter-increment:lez}
+.lhead{background:var(--c);color:var(--on);border-radius:var(--r);padding:24px 22px 26px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:end;position:relative;overflow:hidden}
+.lhead::after{content:"";position:absolute;width:220px;height:220px;border-radius:50%;background:var(--on);opacity:.08;right:-60px;top:-90px}
+.lic{width:clamp(64px,14vw,96px);height:clamp(64px,14vw,96px);position:relative;z-index:1}
+.kicker{font-family:var(--f-disp);font-size:13px;letter-spacing:.12em;font-weight:700;display:flex;gap:12px;align-items:baseline;flex-wrap:wrap;opacity:.95}
+section.lesson[id^="l"] .kicker::before{content:counter(lez,decimal-leading-zero);font-size:58px;line-height:.8;font-weight:800;letter-spacing:-.05em;margin-right:2px}
+.kicker .itk{font-family:var(--f-it);font-style:italic;letter-spacing:0;font-size:15px;font-weight:500}
+.lhead h2{font-family:var(--f-body);font-size:clamp(26px,4.6vw,38px);font-weight:900;letter-spacing:.01em;margin-top:10px}
+.lhead h2 small{display:block;font-family:var(--f-it);font-weight:500;font-style:italic;font-size:.56em;margin-top:6px;letter-spacing:0;opacity:.92}
+.lhead .w{color:inherit;text-decoration-color:currentColor}
+.lhead .w:hover{background:rgba(255,255,255,.18)}
+h3{font-family:var(--f-body);font-size:22px;font-weight:900;margin-top:14px}
+h3::before{content:"";display:inline-block;width:12px;height:12px;border-radius:50%;background:var(--c);margin-right:10px;vertical-align:.12em}
+.rule h3::before,.speech h3::before,.dl-head h3::before,.map h3::before{display:none}
+h4{font-size:14px;letter-spacing:.04em;color:var(--muted);margin:6px 0 -8px;font-weight:700}
+.lead{font-size:19px;color:var(--muted);line-height:1.75}
+ul.plain{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:8px}
+ul.plain li::marker{color:var(--c)}
+.partttl{display:flex;align-items:center;gap:12px;font-family:var(--f-disp);font-size:14px;letter-spacing:.16em;font-weight:800;margin-bottom:-52px}
+.partttl::before{content:"";width:46px;height:14px;flex:none;background:radial-gradient(circle 7px at 7px 7px,var(--red) 98%,transparent) ,radial-gradient(circle 7px at 23px 7px,var(--yellow) 98%,transparent),radial-gradient(circle 7px at 39px 7px,var(--blue) 98%,transparent)}
+.partttl::after{content:"";flex:1;height:2px;background:var(--line2);border-radius:2px}
+
+/* riquadri */
+.rule{position:relative;background:var(--sheet);border-radius:var(--r);padding:34px 22px 22px;display:flex;flex-direction:column;gap:12px;box-shadow:var(--shadow)}
+.rule::before{content:attr(data-seal);position:absolute;top:-13px;left:20px;background:var(--c);color:var(--on);font-family:var(--f-body);font-size:13px;font-weight:900;padding:4px 14px;letter-spacing:.14em;border-radius:999px}
+.rule h3{margin:0;font-size:20px}
+.formula{font-family:var(--f-disp);font-weight:700;font-size:16px;background:var(--c-soft);padding:10px 16px;border-radius:12px;overflow-x:auto}
+.warn{background:var(--yellow-soft);border-radius:var(--r-sm);padding:16px 18px;position:relative}
+.warn strong{font-size:13px;letter-spacing:.08em;color:var(--warn);display:flex;align-items:center;gap:8px;margin-bottom:2px;font-weight:900}
+.warn strong::before{content:"!";display:inline-grid;place-items:center;width:20px;height:20px;border-radius:50%;background:var(--yellow);color:#1a1720;font-family:var(--f-disp);font-size:13px}
+.speech{position:relative;border-radius:var(--r);padding:34px 22px 22px;display:flex;flex-direction:column;gap:10px;background:var(--c-soft)}
+.speech::before{content:attr(data-seal);position:absolute;top:-13px;left:20px;background:var(--ink);color:var(--paper);font-size:13px;font-weight:900;padding:4px 14px;letter-spacing:.14em;border-radius:999px}
+.speech h3{margin:0;font-size:20px}
+.xref{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--ink);background:var(--sheet);border-radius:var(--r-sm);padding:12px 16px;box-shadow:var(--shadow);font-weight:700;transition:transform .15s}
+.xref:hover{transform:translateX(4px)}
+.xref svg{width:40px;height:40px;flex:none;color:var(--blue);--c:var(--blue-soft)}
+.xref span::after{content:" →";color:var(--blue)}
+
+/* esempi */
+.exs{display:flex;flex-direction:column;gap:6px}
+.ex{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 16px;align-items:center;padding:10px 12px 10px 16px;background:var(--sheet);border-radius:var(--r-sm);transition:background .2s,box-shadow .2s}
+.rule .ex,.speech .ex{background:var(--paper)}
+.ex-body{min-width:0;display:flex;flex-direction:column;gap:1px}
+.it-l{font-size:21px;font-weight:500;line-height:1.4;letter-spacing:-.005em}
+.tr{color:var(--muted);font-size:15px}
+.ex.now{box-shadow:inset 0 0 0 2.5px var(--c);background:var(--c-soft)}
+body.no-tr .tr{display:none!important}
+.say{display:inline-grid;place-items:center;width:40px;height:40px;border-radius:50%;border:0;background:var(--c);color:var(--on);cursor:pointer;flex:none;transition:transform .15s,filter .15s}
+.say:hover{transform:scale(1.08)}
+.say:active{transform:scale(.94)}
+.say svg{width:15px;height:15px;margin-left:2px}
+.say.sm{width:32px;height:32px}
+.say.sm svg{width:12px;height:12px}
+.w{cursor:pointer;border-radius:5px;padding:0 1px;color:var(--it);text-decoration:underline dotted;text-decoration-color:color-mix(in srgb,var(--it) 55%,transparent);text-decoration-thickness:2px;text-underline-offset:5px;transition:background .12s}
+.w:hover,.w:focus-visible{background:var(--it-bg);text-decoration-style:solid}
+.m .w,.f .w{color:inherit;text-decoration-color:currentColor}
+.conj .end{text-decoration:none}
+
+/* tabelle */
+.tw{overflow-x:auto;border-radius:var(--r-sm);background:var(--sheet);box-shadow:var(--shadow)}
+.rule .tw{box-shadow:none;border:1.5px solid var(--line)}
+table{border-collapse:collapse;width:100%;font-size:16px}
+th,td{text-align:left;padding:10px 14px;border-bottom:1.5px solid var(--line);vertical-align:top}
+th{font-size:12px;letter-spacing:.08em;color:var(--ink);font-weight:900;background:var(--c-soft)}
+tr:last-child td{border-bottom:0}
+td.big{font-family:var(--f-it);font-weight:700;font-size:20px;white-space:nowrap}
+td.itc{font-family:var(--f-it);font-size:18px}
+.grp td{background:var(--paper);font-size:12px;letter-spacing:.1em;color:var(--c);font-weight:900;padding:7px 14px}
+.t-yellow .grp td,.t-pink .grp td{color:var(--ink)}
+.conj td:first-child{color:var(--muted);font-size:14px;white-space:nowrap}
+.conj td{font-family:var(--f-it);font-size:18px}
+.conj .end,.cj-f .end{color:var(--red);font-weight:800}
+
+/* dialoghi */
+.dialog{background:var(--c-soft);border-radius:var(--r);padding:20px 18px 18px;display:flex;flex-direction:column;gap:14px}
+.dl-head{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.dl-head h3{margin:0;font-size:22px}
+.dl-head h3 i{font-family:var(--f-it);font-size:18px;margin-left:8px;font-weight:500;color:var(--muted)}
+.dl-ctrl{display:flex;gap:8px;flex-wrap:wrap}
+.dl-ctrl .btn{display:inline-flex;align-items:center;gap:6px}
+.dl-ctrl svg,.lsp svg,.qtag svg{width:14px;height:14px}
+.dl-ctrl .dl-role[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.dl-lines{display:flex;flex-direction:column;gap:10px}
+.dl{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:10px;align-items:start}
+.dl .who{display:inline-grid;place-items:center;width:36px;height:36px;border-radius:50%;font-family:var(--f-disp);font-weight:800;font-size:16px;background:var(--sheet);color:var(--ink);margin-top:4px}
+.dl.whoB .who{background:var(--ink);color:var(--paper)}
+.dl-body{min-width:0;background:var(--sheet);border-radius:6px 20px 20px 20px;padding:9px 16px 11px;transition:box-shadow .2s}
+.dl.whoB .dl-body{background:var(--c);color:var(--on);border-radius:20px 6px 20px 20px}
+.dl.whoB .tr{color:inherit;opacity:.8}
+.dl.whoB .w{color:inherit;text-decoration-color:currentColor}
+.dl.whoB .w:hover{background:rgba(255,255,255,.2)}
+.dl.whoB .who{order:3}.dl.whoB .say{order:1;background:var(--sheet);color:var(--ink)}.dl.whoB .dl-body{order:2}
+.dl.now .dl-body{box-shadow:0 0 0 3px var(--ink)}
+.dl-turn{display:none;font-size:17px;flex-direction:column;align-items:flex-start;gap:8px}
+.dl-turn .btn.pri{background:var(--ink);color:var(--paper)}
+.dialog.role .dl.whoB:not(.open) .dl-text,.dialog.role .dl.whoB:not(.open) .say{display:none}
+.dialog.role .dl.whoB:not(.open) .dl-turn{display:flex}
+.dl .say{margin-top:2px}
+
+/* esercizi */
+.drill{background:var(--sheet);border:2.5px solid var(--ink);border-radius:var(--r);padding:34px 20px 22px;position:relative;display:flex;flex-direction:column;gap:22px;box-shadow:7px 7px 0 var(--c)}
+.drill::before{content:"Esercizi · 練習";position:absolute;top:-16px;left:18px;background:var(--ink);color:var(--paper);font-size:14px;font-weight:900;padding:4px 16px;letter-spacing:.08em;border-radius:999px}
+.dhead{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;font-size:13px;color:var(--muted);padding-bottom:14px;border-bottom:1.5px dashed var(--line2)}
+.score{font-family:var(--f-disp);font-variant-numeric:tabular-nums;font-weight:800;color:var(--ink);font-size:17px}
+.q{display:flex;flex-direction:column;gap:10px;padding-top:18px;border-top:1.5px dashed var(--line2)}
+.dhead+.q{border-top:0;padding-top:0}
+.qt{display:flex;gap:10px}
+.qn{display:inline-grid;place-items:center;flex:none;width:30px;height:30px;border-radius:50%;background:var(--c);color:var(--on);font-family:var(--f-disp);font-weight:800;font-size:14px;margin-top:2px}
+.qtag{display:inline-flex;align-items:center;gap:4px;font-size:11px;letter-spacing:.04em;font-weight:900;color:var(--muted);background:var(--paper);border-radius:999px;padding:1px 9px;margin-right:8px;vertical-align:2px;line-height:1.7}
+.qtag.say-t{color:var(--red);background:var(--red-soft)}
+.qtag.ear-t{color:var(--blue);background:var(--blue-soft)}
+.opts{display:flex;flex-wrap:wrap;gap:8px;padding-left:40px}
+.opt{border:2px solid var(--line2);background:var(--sheet);padding:8px 18px;border-radius:999px;cursor:pointer;font-size:17px;text-align:left;transition:border-color .15s,transform .1s,background .15s}
+.opt[lang="it"]{font-size:18px}
+.opt:hover:not(:disabled){border-color:var(--ink)}
+.opt:active:not(:disabled){transform:scale(.96)}
+.opt:disabled{cursor:default}
+.opt.right{background:var(--ok-bg);border-color:var(--ok);color:var(--ok);font-weight:800}
+.opt.right::before{content:"✓ "}
+.opt.wrong{background:var(--bad-bg);border-color:var(--bad);color:var(--bad);text-decoration:line-through}
+.expl{padding-left:40px;font-size:16px;color:var(--muted)}
+.expl b.ok{color:var(--ok)} .expl b.no{color:var(--bad)}
+.zp{display:inline-flex;align-items:center;gap:8px;flex-wrap:wrap;color:var(--ink);font-size:18px;vertical-align:middle}
+.zp .it-l{font-size:19px}
+.sayans{display:flex;flex-direction:column;gap:4px;align-items:flex-start}
+.sayn{font-size:15px}
+.sgq{font-size:14px;color:var(--muted);align-self:center}
+.lsh{font-size:13px;color:var(--muted);align-self:center}
+.lsp{display:inline-flex;align-items:center;gap:6px}
+.ordline,.ordpool{display:flex;flex-wrap:wrap;gap:8px;margin-left:40px;min-height:54px;padding:8px;border-radius:var(--r-sm)}
+.ordline{border:2px dashed var(--line2);background:var(--paper)}
+.tok{font-family:var(--f-it);font-size:18px;font-weight:600;padding:6px 16px;border:0;background:var(--c-soft);border-radius:12px;cursor:pointer;box-shadow:0 3px 0 var(--line2);transition:transform .1s}
+.tok:hover{transform:translateY(-2px)}
+.acts{display:flex;gap:8px;flex-wrap:wrap;margin-left:40px}
+.btn{font-family:var(--f-body);font-size:14px;font-weight:700;padding:9px 18px;border-radius:999px;border:2px solid var(--line2);background:var(--sheet);cursor:pointer;min-height:42px;transition:background .15s,border-color .15s,transform .1s}
+.btn:hover{border-color:var(--ink)}
+.btn:active{transform:scale(.97)}
+.btn.pri{background:var(--c);color:var(--on);border-color:var(--c)}
+.btn.pri:hover{filter:brightness(1.06);border-color:var(--c)}
+.btn:disabled{opacity:.45;cursor:default}
+
+/* flashcard */
+.seg{display:inline-flex;gap:4px;padding:5px;background:var(--sheet);border-radius:999px;align-self:flex-start;box-shadow:var(--shadow);flex-wrap:wrap}
+.seg .btn{border:0;background:transparent;min-width:64px}
+.seg .btn[aria-pressed="true"]{background:var(--c);color:var(--on)}
+.fc{display:grid;gap:18px}
+.fc-card{position:relative;overflow:hidden;background:var(--c);color:var(--on);border-radius:34px;padding:40px 24px 30px;display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;min-height:310px;justify-content:center}
+.fc-card::before,.fc-card::after{content:"";position:absolute;border-radius:50%;background:var(--on);opacity:.1}
+.fc-card::before{width:180px;height:180px;left:-60px;top:-60px}
+.fc-card::after{width:120px;height:120px;right:-30px;bottom:-40px}
+.fc-card>*{position:relative;z-index:1}
+.fc-word{font-family:var(--f-disp);font-size:clamp(44px,11vw,68px);font-weight:800;line-height:1.05;letter-spacing:-.03em}
+.fc-word .m,.fc-word .f{color:inherit}
+.fc-word .art{font-weight:500;opacity:.7}
+.fc-zh{font-size:28px;font-weight:900}
+.fc-g{font-size:13px;opacity:.85}
+.fc-ear{display:grid;place-items:center;width:116px;height:116px;border-radius:50%;border:0;background:var(--on);color:var(--c);cursor:pointer;box-shadow:0 0 0 10px rgba(255,255,255,.18);transition:transform .15s}
+.fc-ear svg{width:42px;height:42px;margin-left:6px}
+.fc-ear:hover{transform:scale(1.05)}
+.fc-hint{font-size:14px;opacity:.85}
+.fc-box{font-size:12px;letter-spacing:.1em;opacity:.8}
+.fc-card .btn{background:var(--on);color:var(--c);border-color:var(--on)}
+.fc-card .btn.pri{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.fc-card .say{background:var(--on);color:var(--c)}
+.boxes{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;font-size:12px;color:var(--muted);text-align:center}
+.boxes div{display:flex;flex-direction:column;gap:4px}
+.boxes .bar{height:56px;background:var(--sheet);border-radius:12px;display:flex;align-items:flex-end;overflow:hidden;box-shadow:var(--shadow)}
+.boxes .bar i{display:block;width:100%;background:var(--c);border-radius:10px 10px 0 0}
+.boxes b{font-family:var(--f-disp);font-variant-numeric:tabular-nums;color:var(--ink);font-size:16px;font-weight:800}
+.confirm{display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:14px}
+
+/* verbi: passaggi e coniugatore */
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+@media (max-width:680px){.steps{grid-template-columns:1fr}}
+.step{background:var(--sheet);border-radius:var(--r-sm);padding:18px;display:flex;flex-direction:column;gap:8px;box-shadow:var(--shadow)}
+.step>b{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--c);color:var(--on);font-family:var(--f-disp);font-size:18px}
+.step p{font-size:15px}
+.step .demo{font-family:var(--f-it);font-size:22px;font-weight:700;line-height:1.35}
+.demo em{font-style:normal;color:var(--red)}
+.demo s{text-decoration:line-through;text-decoration-thickness:3px;opacity:.45}
+.conjugator{background:var(--sheet);border-radius:var(--r);padding:20px;display:flex;flex-direction:column;gap:16px;box-shadow:var(--shadow);border-top:10px solid var(--c)}
+.conjugator .seg{box-shadow:none;background:var(--paper)}
+.conjugator .seg .btn{min-width:0}
+.cj-controls{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.cj-controls label{font-weight:900;font-size:14px}
+.cj-select{appearance:none;-webkit-appearance:none;font-family:var(--f-it);font-weight:700;font-size:18px;background:var(--c-soft) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23888' stroke-width='2' fill='none'/%3E%3C/svg%3E") no-repeat right 16px center/12px;border:0;border-radius:999px;padding:10px 44px 10px 18px;min-height:46px;color:var(--ink);cursor:pointer;max-width:100%}
+.cj-info{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:baseline;font-size:15px;color:var(--muted)}
+.cj-info .cj-inf{font-family:var(--f-disp);font-size:30px;font-weight:800;color:var(--ink);letter-spacing:-.02em}
+.badge{display:inline-block;font-size:12px;font-weight:900;padding:1px 10px;border-radius:999px;background:var(--green-soft);color:var(--green)}
+.badge.irr{background:var(--red-soft);color:var(--red)}
+.cj-tip{font-size:14px;color:var(--muted);background:var(--paper);border-radius:12px;padding:10px 14px}
+.cj-table td{vertical-align:middle}
+.cj-table tr{transition:background .2s}
+.cj-table tr.now{background:var(--c-soft)}
+.cj-p{color:var(--muted);font-family:var(--f-it);font-size:15px;white-space:nowrap;width:1%}
+.cj-f{font-family:var(--f-it);font-size:21px;font-weight:600}
+.cj-f .cj-aux,.cj-f .cj-rf{color:var(--muted);font-weight:500}
+.cj-zh{color:var(--muted);font-size:15px}
+.cj-play{width:1%;text-align:right}
+
+/* barra in alto e tooltip */
+.topbar{position:fixed;z-index:50;top:calc(env(safe-area-inset-top,0px) + 12px);right:calc(env(safe-area-inset-right,0px) + 12px);display:flex;gap:2px;justify-content:flex-end;max-width:calc(100vw - 24px);
+  padding:4px;border-radius:999px;background:color-mix(in srgb,var(--sheet) 86%,transparent);box-shadow:var(--shadow),0 0 0 1px var(--line);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
+.tb{display:inline-flex;align-items:center;gap:6px;padding:7px 12px;min-height:38px;min-width:38px;justify-content:center;border-radius:999px;border:0;background:transparent;color:var(--ink);font-family:var(--f-body);font-size:13px;font-weight:700;cursor:pointer;transition:background .15s;white-space:nowrap}
+.tb:hover{background:var(--paper)}
+#tbtr[aria-pressed="false"]{color:var(--muted)}
+#tbslow[aria-pressed="true"],#tbtheme[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.tb-top{background:var(--red);color:var(--on-red)}
+.tb-top:hover{background:var(--red);filter:brightness(1.08)}
+.tb svg{width:16px;height:16px;flex:none}
+@media (max-width:480px){.tb .tbl{display:none}.tb{padding:7px 10px}}
+.tip{position:fixed;z-index:60;max-width:min(280px,calc(100vw - 16px));display:flex;flex-direction:column;align-items:center;gap:2px;padding:10px 18px;background:var(--ink);color:var(--paper);border-radius:16px;box-shadow:0 10px 26px rgba(0,0,0,.28);pointer-events:none;text-align:center}
+.tip-w{font-family:var(--f-disp);font-size:24px;font-weight:800;line-height:1.2;color:var(--yellow)}
+.tip-m{font-size:15px}
+#reading{gap:6px}
+#reading.hide-it .it-l,#reading.hide-it .ex .say{visibility:hidden}
+.plan td:first-child{font-family:var(--f-disp);font-weight:800;font-size:18px;color:var(--c);white-space:nowrap}
+footer{font-size:13px;color:var(--muted);padding-top:22px;border-top:2px solid var(--line2);display:flex;flex-direction:column;gap:6px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+[hidden]{display:none!important}img{max-width:100%}
+
+/* ---------- blocchi didattici del percorso ---------- */
+.partttl .lvl{font-size:12px;letter-spacing:.08em;background:var(--ink);color:var(--paper);padding:2px 10px;border-radius:999px;margin-left:4px}
+.map-lead{color:var(--muted);font-size:15px;margin-top:-8px}
+.tile.review{background:var(--sheet);color:var(--ink);box-shadow:inset 0 0 0 3px var(--c)}
+.tile.review svg{color:var(--c)}
+
+/* scopri la regola */
+details.scopri{background:var(--c-soft);border-radius:var(--r-sm);padding:4px 18px}
+details.scopri summary{cursor:pointer;list-style:none;display:flex;gap:12px;align-items:flex-start;padding:12px 0;font-weight:700}
+details.scopri summary::-webkit-details-marker{display:none}
+details.scopri summary::before{content:"Rifletti";flex:none;font-size:12px;letter-spacing:.1em;font-weight:900;background:var(--c);color:var(--on);border-radius:999px;padding:2px 10px;margin-top:3px}
+details.scopri summary::after{content:"Soluzione";flex:none;margin-left:auto;font-size:12px;font-weight:900;color:var(--muted);border:1.5px solid var(--line2);border-radius:999px;padding:2px 10px;margin-top:3px;background:var(--sheet)}
+details.scopri[open] summary::after{content:"Chiudi"}
+details.scopri summary .sq{flex:1;min-width:0}
+details.scopri>div{padding:0 0 14px;display:flex;flex-direction:column;gap:8px}
+
+/* suono della lezione */
+.suono{position:relative;background:var(--sheet);border-radius:var(--r);padding:34px 22px 20px;display:flex;flex-direction:column;gap:10px;box-shadow:var(--shadow);border:2.5px dashed var(--c)}
+.suono::before{content:"Scrittura e suoni · 文字";position:absolute;top:-14px;left:20px;background:var(--sheet);color:var(--ink);font-size:13px;font-weight:900;padding:3px 12px;letter-spacing:.08em;border-radius:999px;border:2.5px solid var(--c)}
+.suono h3{margin:0;font-size:19px}
+.suono h3::before{display:none}
+.suono .ex{background:var(--paper)}
+
+/* parole della lezione */
+.words{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:8px}
+.wd{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:2px 10px;background:var(--sheet);border-radius:14px;padding:9px 10px 9px 14px;box-shadow:var(--shadow)}
+.wd .wi{font-family:var(--f-it);font-size:18px;font-weight:700;line-height:1.3}
+.wd .wi .art{font-weight:500;opacity:.75}
+.wd .wz{grid-column:1;font-size:14px;color:var(--muted);line-height:1.4}
+.wd .say{grid-row:1 / span 2;grid-column:2}
+.words-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}
+.words-head span{font-size:13px;color:var(--muted)}
+
+/* sono capace di */
+.cando{list-style:none;margin:0;padding:18px 20px;background:var(--sheet);border-radius:var(--r);display:flex;flex-direction:column;gap:8px;box-shadow:var(--shadow);position:relative}
+.cando::before{content:"So fare · できること";display:block;font-size:13px;font-weight:900;letter-spacing:.08em;color:var(--c);margin-bottom:4px}
+.t-yellow .cando::before,.t-pink .cando::before{color:var(--ink)}
+.cando label{display:flex;gap:12px;align-items:flex-start;cursor:pointer;line-height:1.6}
+.cando input{appearance:none;-webkit-appearance:none;flex:none;width:24px;height:24px;border-radius:8px;border:2.5px solid var(--line2);margin:2px 0 0;cursor:pointer;display:grid;place-items:center;transition:background .15s,border-color .15s}
+.cando input:checked{background:var(--c);border-color:var(--c)}
+.cando input:checked::after{content:"";width:6px;height:11px;border:solid var(--on);border-width:0 3px 3px 0;transform:rotate(45deg) translate(-1px,-1px)}
+.cando .cnt{font-size:13px;color:var(--muted);margin-top:4px}
+
+/* esercizi scritti: dettato e completamento */
+.tin-row{display:flex;gap:8px;flex-wrap:wrap;margin-left:40px;align-items:center}
+.tin{font-family:var(--f-it);font-size:19px;font-weight:600;padding:9px 16px;border-radius:14px;border:2px solid var(--line2);background:var(--paper);color:var(--ink);min-width:0;flex:1 1 220px;min-height:46px}
+.tin:focus{outline:none;border-color:var(--c);box-shadow:0 0 0 3px var(--c-soft)}
+.tin.ok{border-color:var(--ok);background:var(--ok-bg)}
+.tin.no{border-color:var(--bad);background:var(--bad-bg)}
+.acc{display:flex;gap:4px;flex-wrap:wrap;margin-left:40px}
+.acc button{font-family:var(--f-it);font-size:16px;font-weight:700;width:36px;height:36px;border-radius:10px;border:0;background:var(--c-soft);color:var(--ink);cursor:pointer}
+.qtag.wr-t{color:var(--green);background:var(--green-soft)}
+
+/* testo di lettura, compito, test */
+.task{position:relative;background:var(--c-soft);border-radius:var(--r);padding:30px 22px 20px;display:flex;flex-direction:column;gap:10px}
+.task::before{content:"Compito · タスク";position:absolute;top:-13px;left:20px;background:var(--ink);color:var(--paper);font-size:13px;font-weight:900;padding:4px 14px;letter-spacing:.1em;border-radius:999px}
+.task h3{margin:0;font-size:20px}
+.task h3::before{display:none}
+.model{background:var(--sheet);border-radius:var(--r-sm);padding:4px 16px}
+.model summary{cursor:pointer;font-weight:700;padding:10px 0}
+.summary-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px}
+.summary-grid div{background:var(--sheet);border-radius:var(--r-sm);padding:14px 16px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:4px}
+.summary-grid b{font-size:15px}
+.summary-grid span{font-size:14px;color:var(--muted)}
+.summary-grid i{font-family:var(--f-it);font-style:normal;font-weight:600;color:var(--ink)}
+.fc-range{display:flex;gap:10px;align-items:center;flex-wrap:wrap;font-size:14px;font-weight:700}
+.fc-range select{max-width:100%;min-width:0;font-family:var(--f-body);font-weight:700;font-size:15px;background:var(--sheet);border:2px solid var(--line2);border-radius:999px;padding:8px 14px;color:var(--ink);min-height:44px}
+.reading-it{background:var(--sheet);border-radius:var(--r);padding:20px 22px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:6px}
+@media (max-width:480px){.words{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}.wd{grid-template-columns:minmax(0,1fr);padding:9px 10px 9px 12px;position:relative}.wd .wi{font-size:16px;padding-right:30px}.wd .wz{font-size:13px}.wd .say{position:absolute;top:8px;right:8px;grid-row:auto;grid-column:auto;width:28px;height:28px}}
+
+/* ---------- percorso a livelli ---------- */
+.path{display:flex;flex-direction:column;gap:18px}
+.path h2{font-family:var(--f-disp);font-weight:800;font-size:clamp(26px,4vw,34px);letter-spacing:-.01em}
+.path h2 small{font-family:var(--f-it);font-weight:500;font-size:.55em;color:var(--muted);margin-left:10px}
+#pathroot{display:flex;flex-direction:column;gap:26px}
+
+/* oggi: serie, obiettivo, ripasso */
+.pday{display:flex;align-items:center;gap:14px;flex-wrap:wrap;background:var(--sheet);border-radius:var(--r);padding:14px 18px;box-shadow:var(--shadow)}
+.pd-st{display:flex;align-items:center;gap:8px;color:var(--muted)}
+.pd-st svg{width:30px;height:30px;color:var(--line2)}
+.pd-st.on svg{color:var(--red)}
+.pd-st b{font-family:var(--f-disp);font-weight:800;font-size:28px;color:var(--ink);line-height:1}
+.pd-st span,.pd-goal span{display:flex;flex-direction:column;font-size:13px;line-height:1.35}
+.pd-st i{font-family:var(--f-it);font-style:normal;font-size:11px}
+.pd-goal{display:flex;align-items:center;gap:8px;color:var(--muted)}
+.pd-goal b{color:var(--ink);font-size:15px}
+.pd-goal svg{width:44px;height:44px;transform:rotate(-90deg)}
+.rg-b{fill:none;stroke:var(--line);stroke-width:6}
+.rg-f{fill:none;stroke:var(--green);stroke-width:6;stroke-linecap:round;transition:stroke-dasharray .4s}
+.pd-rev{margin-left:auto;display:inline-flex;align-items:center;gap:8px;--c:var(--pink);--on:var(--on-pink)}
+.pd-rev svg{width:20px;height:20px}
+
+/* mondi */
+.world{border-radius:calc(var(--r) + 6px);background:var(--c-soft);padding:0 0 26px;overflow:hidden}
+.wh{background:var(--c);color:var(--on);padding:18px 20px 16px;display:grid;grid-template-columns:1fr auto;gap:8px 12px;align-items:center}
+.wh-t{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;grid-column:1 / -1}
+.wh .lvl{font-family:var(--f-disp);font-weight:800;font-size:13px;letter-spacing:.06em;background:var(--on);color:var(--c);padding:2px 10px;border-radius:999px}
+.wh h3{margin:0;font-size:21px;font-weight:900;line-height:1.3}
+.wh i{font-family:var(--f-it);font-style:normal;font-size:14px;opacity:.85}
+.wbar{height:10px;border-radius:999px;background:rgba(255,255,255,.3);overflow:hidden}
+.t-yellow .wbar,.t-pink .wbar{background:rgba(0,0,0,.12)}
+.wbar i{display:block;height:100%;background:var(--on);border-radius:999px;transition:width .5s}
+.wcnt{font-size:13px;font-weight:800;font-variant-numeric:tabular-nums}
+.wskip{grid-column:1 / -1;justify-self:start;background:var(--on);color:var(--c);border-color:var(--on)}
+.wlock .wh{filter:saturate(.55)}
+
+/* nodi a zig-zag */
+.nodes{list-style:none;margin:0;padding:26px 0 0;display:flex;flex-direction:column;align-items:center;gap:14px}
+.node{display:flex;flex-direction:column;align-items:center;gap:2px;transform:translateX(calc(var(--off) * min(64px, 15vw)));position:relative}
+.nb{position:relative;width:76px;height:76px;border-radius:50%;border:0;background:var(--c);color:var(--on);cursor:pointer;display:grid;place-items:center;
+  box-shadow:0 6px 0 color-mix(in srgb,var(--c) 62%,var(--ink));transition:transform .12s,box-shadow .12s}
+.nb:active{transform:translateY(4px);box-shadow:0 2px 0 color-mix(in srgb,var(--c) 62%,var(--ink))}
+.nb:focus-visible{outline:3px solid var(--ink);outline-offset:4px}
+.nb .ni{width:40px;height:40px}
+.node .ni{color:var(--on)}
+.node.rv .nb{width:88px;height:88px;border-radius:28px}
+.node.lock .nb{background:var(--line2);color:var(--muted);box-shadow:0 6px 0 var(--line)}
+.node.lock .ni{color:var(--muted);opacity:.55;--c:var(--line2)}
+.lk{position:absolute;right:-4px;bottom:-4px;width:30px;height:30px;border-radius:50%;background:var(--sheet);display:grid;place-items:center;color:var(--muted);box-shadow:var(--shadow)}
+.lk svg{width:16px;height:16px}
+.node.done .nb::after{content:"";position:absolute;inset:-7px;border-radius:inherit;border:3px solid var(--c);opacity:.45}
+.node.cur .nb{animation:pulse 2.2s ease-in-out infinite}
+@keyframes pulse{0%,100%{box-shadow:0 6px 0 color-mix(in srgb,var(--c) 62%,var(--ink)),0 0 0 0 color-mix(in srgb,var(--c) 45%,transparent)}50%{box-shadow:0 6px 0 color-mix(in srgb,var(--c) 62%,var(--ink)),0 0 0 14px transparent}}
+.bub{position:absolute;bottom:calc(100% + 10px);left:50%;transform:translateX(-50%);background:var(--sheet);color:var(--ink);font-size:13px;font-weight:900;padding:4px 12px;border-radius:999px;white-space:nowrap;box-shadow:var(--shadow);border:2px solid var(--c)}
+.bub::after{content:"";position:absolute;top:100%;left:50%;margin-left:-6px;border:6px solid transparent;border-top-color:var(--c)}
+.nl{font-family:var(--f-it);font-size:14px;font-weight:600;color:var(--ink);margin-top:8px;text-align:center;max-width:150px;line-height:1.3}
+.nl b{font-family:var(--f-disp);font-weight:800;color:var(--c)}
+.t-yellow .nl b,.t-pink .nl b{color:var(--ink)}
+.node.lock .nl{color:var(--muted)}
+.stars{display:inline-flex;gap:1px;font-size:15px;line-height:1;letter-spacing:0}
+.stars i{font-style:normal;color:var(--line2)}
+.stars i.on{color:#f2a900}
+
+/* scheda dell'unità (bottom sheet) */
+.sheet-back{position:fixed;inset:0;z-index:80;background:rgba(20,17,26,.5);display:flex;align-items:flex-end;justify-content:center}
+.sheet-back[hidden]{display:none}
+.sheet{width:100%;max-width:560px;max-height:min(88vh,88dvh);overflow:auto;background:var(--paper);border-radius:28px 28px 0 0;padding:10px 20px calc(18px + env(safe-area-inset-bottom,0px));display:flex;flex-direction:column;gap:12px;animation:up .22s ease-out}
+@keyframes up{from{transform:translateY(40px);opacity:.6}to{transform:none;opacity:1}}
+@media (min-width:700px){.sheet-back{align-items:center}.sheet{border-radius:28px;max-height:84vh}}
+.sh-grab{width:44px;height:5px;border-radius:9px;background:var(--line2);margin:0 auto 4px}
+.sh-head{display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center}
+.sh-ic{width:58px;height:58px;padding:9px;border-radius:18px;background:var(--c);color:var(--on)}
+.sh-head h3{margin:0;font-size:19px;line-height:1.35}
+.sh-head i{font-family:var(--f-it);font-style:normal;color:var(--muted);font-size:14px}
+.sh-k{font-size:12px;font-weight:800;letter-spacing:.06em;color:var(--muted)}
+.sh-lead{margin:0;font-size:15px;color:var(--muted);line-height:1.7}
+.sh-steps{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.srow{width:100%;display:grid;grid-template-columns:44px 1fr 28px;gap:12px;align-items:center;text-align:left;background:var(--sheet);border:2px solid transparent;border-radius:18px;padding:8px 12px;cursor:pointer;font-family:var(--f-body);color:var(--ink);min-height:60px;box-shadow:var(--shadow)}
+.srow{--ic:var(--c)}
+.srow>svg{width:44px;height:44px;padding:8px;border-radius:14px;background:var(--c-soft);color:var(--ic);--c:var(--c-soft)}
+.t-yellow .srow>svg,.t-pink .srow>svg{color:var(--ink);--c:var(--c-soft)}
+.srow span{display:flex;flex-direction:column;line-height:1.3}
+.srow b{font-size:16px}
+.srow i{font-family:var(--f-it);font-style:normal;font-size:13px;color:var(--muted)}
+.srow.nx{border-color:var(--c)}
+.srow.ok>svg{background:var(--ic);color:var(--on);--c:var(--ic)}
+.sst svg{width:24px;height:24px;color:var(--ok)}
+.sh-lock{display:flex;gap:14px;align-items:flex-start;background:var(--sheet);border-radius:18px;padding:14px 16px}
+.sh-lock svg{flex:none;width:30px;height:30px;color:var(--muted)}
+.sh-lock p{margin:0;font-size:15px}
+.sh-acts{display:flex;gap:8px;flex-wrap:wrap;padding-top:4px}
+.sh-acts .btn{text-decoration:none;display:inline-flex;align-items:center;color:var(--ink)}
+.sh-acts .btn.pri{flex:1 1 100%;justify-content:center;min-height:52px;font-size:16px;color:var(--on)}
+
+/* tappa a schermo intero */
+html.modal-open,html.modal-open body{overflow:hidden}
+.stage{position:fixed;inset:0;z-index:90;background:var(--paper);display:flex;flex-direction:column}
+.stage[hidden]{display:none}
+.st-top{display:flex;align-items:center;gap:12px;padding:calc(10px + env(safe-area-inset-top,0px)) 16px 10px;max-width:760px;width:100%;margin:0 auto;box-sizing:border-box}
+.st-x{flex:none;width:44px;height:44px;border-radius:50%;border:0;background:transparent;color:var(--muted);display:grid;place-items:center;cursor:pointer}
+.st-x svg{width:24px;height:24px}
+.st-prog{flex:1;height:12px;border-radius:999px;background:var(--line);overflow:hidden}
+.st-prog i{display:block;height:100%;width:0;background:var(--c);border-radius:999px;transition:width .35s}
+.st-t{flex:none;font-size:13px;font-weight:800;color:var(--muted);max-width:40%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.st-body{flex:1;overflow:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
+.st-in{max-width:760px;margin:0 auto;padding:8px 16px 40px;box-sizing:border-box}
+.st-page{display:flex;flex-direction:column;gap:18px}
+.st-clone{display:flex;flex-direction:column;gap:18px}
+.st-hint{margin:0;font-size:15px;color:var(--muted)}
+.st-foot{padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px));border-top:1.5px solid var(--line);background:var(--paper)}
+.st-go{display:block;width:100%;max-width:728px;margin:0 auto;min-height:54px;font-size:17px}
+.st-go.ready{box-shadow:0 5px 0 color-mix(in srgb,var(--c) 62%,var(--ink))}
+.stage .drill{box-shadow:none;border-width:2px;padding-top:28px}
+.stage .drill::before{content:"Quiz · クイズ"}
+.drill.one .q{border-top:0;padding-top:4px}
+.drill.one .q[hidden]{display:none}
+.drill.one .qn{display:none}
+.drill.one .opts,.drill.one .expl,.drill.one .acts,.drill.one .tin-row,.drill.one .acc{padding-left:0;margin-left:0}
+.drill.one .opts{flex-direction:column}
+.drill.one .opt{width:100%;min-height:52px;border-radius:16px}
+.drill.one .q.q-ok,.drill.one .q.q-no{opacity:1}
+.qnext{margin-top:6px}
+.qnext .btn{width:100%;min-height:50px}
+
+/* risultato della sfida */
+.res{display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px;padding:20px 8px}
+.res-st .stars{font-size:54px;gap:6px}
+.res h3{margin:6px 0 0;font-size:26px}
+.res-sc{font-family:var(--f-disp);font-weight:800;font-size:22px;margin:0;color:var(--muted)}
+.res.fail h3{color:var(--bad)}
+.res-can{text-align:left;background:var(--sheet);border-radius:var(--r-sm);padding:14px 18px;margin-top:8px;align-self:stretch;box-shadow:var(--shadow)}
+.res-can ul{margin:6px 0 0;padding-left:20px}
+
+/* schede culturali */
+.cc{background:var(--sheet);border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow)}
+.cc-art{display:block;width:100%;height:auto;background:var(--c-soft)}
+.cc-body{padding:18px 20px 20px;display:flex;flex-direction:column;gap:10px}
+.cc-body h3{margin:0;font-size:22px;line-height:1.35}
+.cc-it{margin:-4px 0 0;display:flex;align-items:center;gap:10px;font-family:var(--f-it);font-size:18px;font-weight:600}
+.cc-body>p{margin:0;line-height:1.85}
+.cc-cmp{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.cc-cmp>div{border-radius:16px;padding:10px 14px}
+.cc-cmp .cc-i{background:var(--green-soft)}
+.cc-cmp .cc-c{background:var(--red-soft)}
+.cc-cmp b{font-size:13px;letter-spacing:.04em}
+.cc-cmp i{font-family:var(--f-it);font-style:normal}
+.cc-cmp p{margin:4px 0 0;font-size:15px;line-height:1.7}
+@media (max-width:480px){.cc-cmp{grid-template-columns:1fr}}
+.cc-w{display:flex;flex-wrap:wrap;gap:6px}
+.chip{display:inline-flex;align-items:baseline;gap:6px;border:2px solid var(--line2);background:var(--paper);border-radius:999px;padding:6px 14px;cursor:pointer;font-family:var(--f-body);color:var(--ink);min-height:40px}
+.chip span{font-family:var(--f-it);font-weight:700;font-size:16px;color:var(--it)}
+.chip small{font-size:13px;color:var(--muted)}
+.cc-q{margin-top:6px}
+.stage .cc-q::before{content:"Domanda · しつもん"}
+
+.toast{position:fixed;left:50%;top:calc(64px + env(safe-area-inset-top,0px));transform:translate(-50%,-20px);opacity:0;z-index:120;background:var(--ink);color:var(--paper);padding:10px 18px;border-radius:999px;font-size:14px;pointer-events:none;transition:opacity .25s,transform .25s;max-width:calc(100vw - 32px);text-align:center}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+@media (prefers-reduced-motion: reduce){.node.cur .nb{animation:none}.sheet{animation:none}.toast,.st-prog i,.wbar i,.rg-f{transition:none}}
+
+.sh-head h3::before,.res h3::before,.cc-body h3::before,.wh h3::before{display:none}
+
+/* ---------- giapponese: furigana, rōmaji, kana ---------- */
+[lang="ja"]{font-family:var(--f-body)}
+.jl{display:inline;line-height:2.05;word-break:keep-all;overflow-wrap:anywhere}
+.jl>.w,.jl>.tk,.jx>.w,.jx>.tk{margin-right:.14em}
+.jl>.pu,.jx>.pu{margin-right:.1em}
+ruby{ruby-position:over;ruby-align:center}
+rt{font-size:.5em;font-weight:500;color:var(--muted);letter-spacing:0;line-height:1}
+body.no-furi rt{visibility:hidden}
+.w{text-underline-offset:5px}
+.it-l{font-size:22px;font-weight:500}
+.ro,.ro-i{display:none;font-family:var(--f-disp);font-weight:500;color:var(--muted);letter-spacing:.01em}
+.ro{font-size:14px;line-height:1.4;margin-top:-2px}
+.ro-i{font-size:.86em}
+body.ro-on .ro,body.ro-auto .early .ro,.stage.early .ro{display:block}
+body.ro-on .ro-i,body.ro-auto .early .ro-i,.stage.early .ro-i{display:inline}
+.jl+.ro{display:none}
+body.ro-on .jl+.ro,body.ro-auto .early .jl+.ro,.stage.early .jl+.ro{display:block}
+.wd .ro{font-size:13px}
+.fc-word .jl{line-height:1.6}
+.fc-ro{font-size:18px!important;text-align:center}
+.tip-r{font-size:14px;opacity:.85}
+.tip-w{font-family:var(--f-body)}
+.tok{font-family:var(--f-body)}
+.tok rt{color:inherit;opacity:.65}
+.opt[lang="ja"]{font-size:19px;line-height:1.9}
+.dl-text .it-l{font-size:20px}
+.rom{font-family:var(--f-disp);color:var(--muted);font-size:14px}
+.jx{white-space:normal}
+/* tabelle dei kana */
+table.kana{border-collapse:separate;border-spacing:5px;width:100%;table-layout:fixed}
+table.kana td{padding:0}
+table.kana td.nk{background:transparent}
+.kc{width:100%;min-height:58px;border:0;border-radius:14px;background:var(--sheet);box-shadow:var(--shadow);cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0;padding:6px 2px;color:var(--ink)}
+.kc span{font-size:26px;line-height:1.2;font-weight:500}
+.kc small{font-family:var(--f-disp);font-size:12px;color:var(--muted);font-weight:700}
+.kc:active{transform:scale(.95)}
+.kc:focus-visible{outline:3px solid var(--c);outline-offset:2px}
+@media (max-width:480px){.kc span{font-size:22px}.kc{min-height:52px;border-radius:12px}table.kana{border-spacing:3px}}
+.kanji-row{display:flex;flex-wrap:wrap;gap:8px}
+.kj{display:grid;grid-template-columns:auto 1fr;gap:0 12px;align-items:center;background:var(--sheet);border-radius:var(--r-sm);padding:10px 14px;box-shadow:var(--shadow);flex:1 1 200px}
+.kj b{font-size:40px;line-height:1.1;font-weight:500;grid-row:span 2}
+.kj span{font-size:14px;color:var(--muted)}
+.kj i{font-style:normal;font-size:15px}
+/* pannello impostazioni */
+.setp{position:absolute;top:calc(100% + 8px);right:0;width:min(320px,calc(100vw - 24px));background:var(--sheet);border-radius:20px;box-shadow:var(--shadow),0 0 0 1.5px var(--line);padding:8px;display:flex;flex-direction:column;gap:4px}
+.setp[hidden]{display:none}
+.sw{display:flex;justify-content:space-between;align-items:center;gap:12px;width:100%;text-align:left;border:0;background:transparent;border-radius:14px;padding:10px 12px;min-height:52px;cursor:pointer;color:var(--ink);font-family:var(--f-body)}
+.sw:hover{background:var(--paper)}
+.sw span{display:flex;flex-direction:column;line-height:1.3}
+.sw b{font-size:15px}
+.sw small{font-size:12px;color:var(--muted)}
+.swv{flex:none;font-size:13px;font-weight:800;padding:4px 12px;border-radius:999px;background:var(--line);color:var(--ink);min-width:62px;text-align:center}
+.sw[aria-pressed="true"] .swv{background:var(--green);color:var(--on-green)}
+.topbar{position:fixed}
+.jl .w,.jl .tk,.jx .w,.jx .tk{display:inline-block;text-indent:0}
+.hero .ciao[lang="ja"]{font-family:var(--f-body);font-weight:900;font-size:clamp(46px,12.5vw,104px);letter-spacing:-.02em;line-height:1.05}
+.dl.whoB .ro{color:inherit;opacity:.75}
+.dl.whoB rt{color:inherit;opacity:.8}
+.nw{display:inline-block;white-space:nowrap}
+.jl .nw>.w,.jl .nw>.tk,.jx .nw>.w,.jx .nw>.tk{margin-right:.04em}
+.jl .nw,.jx .nw{margin-right:.14em}
+
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="i-abc" viewBox="0 0 64 64" fill="currentColor"><rect x="6" y="8" width="52" height="40" rx="13"/><path d="M16 46 L12 58 L28 47Z"/><text x="32" y="37" text-anchor="middle" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="23" fill="var(--c)">Aa</text></symbol><symbol id="i-wave" viewBox="0 0 64 64" fill="currentColor"><path d="M4 38 C12 20 20 20 28 38 S44 56 52 38" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"/><circle cx="46" cy="20" r="8"/><rect x="50" y="2" width="5" height="19" rx="2.5"/></symbol><symbol id="i-tag" viewBox="0 0 64 64" fill="currentColor"><rect x="6" y="14" width="52" height="40" rx="11"/><rect x="25" y="6" width="14" height="12" rx="4" fill-opacity=".55"/><circle cx="22" cy="33" r="7" fill="var(--c)"/><rect x="34" y="27" width="17" height="5" rx="2.5" fill="var(--c)"/><rect x="34" y="36" width="11" height="5" rx="2.5" fill="var(--c)"/></symbol><symbol id="i-book" viewBox="0 0 64 64" fill="currentColor"><path d="M5 14 Q19 7 31 14 V55 Q19 48 5 55Z"/><path d="M59 14 Q45 7 33 14 V55 Q45 48 59 55Z" fill-opacity=".55"/></symbol><symbol id="i-sun" viewBox="0 0 64 64" fill="currentColor"><g><rect x="29.5" y="2" width="5" height="11" rx="2.5" transform="rotate(0 32 32)"/><rect x="29.5" y="2" width="5" height="11" rx="2.5" transform="rotate(45 32 32)"/><rect x="29.5" y="2" width="5" height="11" rx="2.5" transform="rotate(90 32 32)"/><rect x="29.5" y="2" width="5" height="11" rx="2.5" transform="rotate(135 32 32)"/><rect x="29.5" y="2" width="5" height="11" rx="2.5" transform="rotate(180 32 32)"/><rect x="29.5" y="2" width="5" height="11" rx="2.5" transform="rotate(225 32 32)"/><rect x="29.5" y="2" width="5" height="11" rx="2.5" transform="rotate(270 32 32)"/><rect x="29.5" y="2" width="5" height="11" rx="2.5" transform="rotate(315 32 32)"/></g><circle cx="32" cy="32" r="14"/><circle cx="27" cy="29" r="2" fill="var(--c)"/><circle cx="37" cy="29" r="2" fill="var(--c)"/><path d="M26 35 Q32 41 38 35" stroke="var(--c)" stroke-width="3" fill="none" stroke-linecap="round"/></symbol><symbol id="i-chat" viewBox="0 0 64 64" fill="currentColor"><rect x="3" y="6" width="38" height="28" rx="11"/><path d="M11 33 L9 44 L22 34Z"/><rect x="23" y="26" width="38" height="26" rx="11" fill-opacity=".55"/><path d="M51 51 L55 60 L42 51Z" fill-opacity=".55"/></symbol><symbol id="i-q" viewBox="0 0 64 64" fill="currentColor"><circle cx="32" cy="32" r="28"/><text x="32" y="45" text-anchor="middle" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="38" fill="var(--c)">?</text></symbol><symbol id="i-cup" viewBox="0 0 64 64" fill="currentColor"><path d="M8 26 H46 V37 C46 49 38 55 27 55 C16 55 8 49 8 37Z"/><circle cx="48" cy="36" r="7" fill="none" stroke="currentColor" stroke-width="4.5"/><rect x="3" y="57" width="50" height="5" rx="2.5" fill-opacity=".55"/><path d="M21 8 c-5 4 5 8 0 13 M33 6 c-5 4 5 8 0 13" stroke="currentColor" stroke-width="3.5" fill="none" stroke-linecap="round"/></symbol><symbol id="i-phone" viewBox="0 0 64 64" fill="currentColor"><rect x="15" y="3" width="34" height="58" rx="9"/><rect x="20" y="11" width="24" height="36" rx="4" fill="var(--c)"/><circle cx="32" cy="53" r="3" fill="var(--c)"/></symbol><symbol id="i-ticket" viewBox="0 0 64 64" fill="currentColor"><path d="M5 17 H59 V27 A5 5 0 0 0 59 37 V47 H5 V37 A5 5 0 0 0 5 27Z"/><polygon points="32,21 35,28.5 43,29 37,34 39,42 32,37.5 25,42 27,34 21,29 29,28.5" fill="var(--c)"/></symbol><symbol id="i-clock" viewBox="0 0 64 64" fill="currentColor"><circle cx="32" cy="32" r="28"/><rect x="29.5" y="13" width="5" height="22" rx="2.5" fill="var(--c)"/><rect x="29.5" y="29.5" width="17" height="5" rx="2.5" fill="var(--c)"/><circle cx="32" cy="32" r="4" fill="currentColor"/></symbol><symbol id="i-umbrella" viewBox="0 0 64 64" fill="currentColor"><path d="M4 32 A28 24 0 0 1 60 32Z"/><path d="M18 32 A14 24 0 0 1 46 32Z" fill-opacity=".5"/><rect x="29.5" y="28" width="5" height="30" rx="2.5"/><ellipse cx="32" cy="59" rx="22" ry="4" fill-opacity=".5"/></symbol><symbol id="i-heart" viewBox="0 0 64 64" fill="currentColor"><path d="M32 57 C10 43 4 31 8 20 C12 10 26 8 32 21 C38 8 52 10 56 20 C60 31 54 43 32 57Z"/></symbol><symbol id="i-bag" viewBox="0 0 64 64" fill="currentColor"><path d="M9 22 H55 L51 59 H13Z"/><path d="M22 26 V18 A10 10 0 0 1 42 18 V26" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><circle cx="22" cy="30" r="3" fill="var(--c)"/><circle cx="42" cy="30" r="3" fill="var(--c)"/></symbol><symbol id="i-suitcase" viewBox="0 0 64 64" fill="currentColor"><rect x="5" y="18" width="54" height="40" rx="9"/><rect x="23" y="7" width="18" height="14" rx="5" fill="none" stroke="currentColor" stroke-width="4.5"/><rect x="17" y="18" width="5" height="40" fill="var(--c)"/><rect x="42" y="18" width="5" height="40" fill="var(--c)"/></symbol><symbol id="i-arch" viewBox="0 0 64 64" fill="currentColor"><path d="M3 58 V23 Q32 5 61 23 V58Z"/><path d="M8 37 v-6 a4.5 4.5 0 0 1 9 0 v6z" fill="var(--c)"/><path d="M8 54 v-8 a4.5 4.5 0 0 1 9 0 v8z" fill="var(--c)"/><path d="M20.5 37 v-6 a4.5 4.5 0 0 1 9 0 v6z" fill="var(--c)"/><path d="M20.5 54 v-8 a4.5 4.5 0 0 1 9 0 v8z" fill="var(--c)"/><path d="M33 37 v-6 a4.5 4.5 0 0 1 9 0 v6z" fill="var(--c)"/><path d="M33 54 v-8 a4.5 4.5 0 0 1 9 0 v8z" fill="var(--c)"/><path d="M45.5 37 v-6 a4.5 4.5 0 0 1 9 0 v6z" fill="var(--c)"/><path d="M45.5 54 v-8 a4.5 4.5 0 0 1 9 0 v8z" fill="var(--c)"/></symbol><symbol id="i-lemon" viewBox="0 0 64 64" fill="currentColor"><ellipse cx="29" cy="37" rx="23" ry="18" transform="rotate(-22 29 37)"/><path d="M44 15 Q56 3 61 14 Q51 23 44 15Z" fill-opacity=".55"/><circle cx="20" cy="41" r="2.5" fill="var(--c)"/><circle cx="30" cy="36" r="2.5" fill="var(--c)"/></symbol><symbol id="i-cards" viewBox="0 0 64 64" fill="currentColor"><rect x="6" y="14" width="30" height="42" rx="7" fill-opacity=".55" transform="rotate(-11 21 35)"/><rect x="25" y="8" width="30" height="42" rx="7" transform="rotate(8 40 29)"/><text x="40" y="36" text-anchor="middle" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="18" fill="var(--c)" transform="rotate(8 40 29)">ciao</text></symbol><symbol id="i-verb" viewBox="0 0 64 64" fill="currentColor"><rect x="5" y="9" width="22" height="11" rx="5.5"/><rect x="5" y="26" width="34" height="11" rx="5.5"/><rect x="5" y="43" width="46" height="11" rx="5.5"/><path d="M45 8 L60 20 L45 32Z" fill-opacity=".55"/></symbol><symbol id="i-bulb" viewBox="0 0 64 64" fill="currentColor"><circle cx="32" cy="25" r="19"/><rect x="23" y="44" width="18" height="14" rx="4" fill-opacity=".55"/><path d="M25 26 l7 7 l7 -7" stroke="var(--c)" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol><symbol id="i-family" viewBox="0 0 64 64" fill="currentColor"><circle cx="20" cy="17" r="9"/><circle cx="44" cy="17" r="9"/><path d="M5 52 C5 36 13 29 20 29 C27 29 35 36 35 52Z"/><path d="M29 52 C29 36 37 29 44 29 C51 29 59 36 59 52Z" fill-opacity=".55"/><circle cx="32" cy="38" r="6" fill="var(--c)"/><circle cx="32" cy="38" r="4.5"/><path d="M24 60 C24 51 28 47 32 47 C36 47 40 51 40 60Z"/></symbol><symbol id="i-pin" viewBox="0 0 64 64" fill="currentColor"><path d="M32 60 C32 60 10 38 10 24 A22 22 0 0 1 54 24 C54 38 32 60 32 60Z"/><circle cx="32" cy="24" r="8" fill="var(--c)"/></symbol><symbol id="i-fork" viewBox="0 0 64 64" fill="currentColor"><circle cx="34" cy="34" r="22" fill-opacity=".55"/><circle cx="34" cy="34" r="14"/><rect x="3" y="6" width="4" height="18" rx="2"/><rect x="9" y="6" width="4" height="18" rx="2"/><rect x="15" y="6" width="4" height="18" rx="2"/><rect x="5" y="20" width="12" height="6" rx="3"/><rect x="8.5" y="22" width="5" height="36" rx="2.5"/></symbol><symbol id="i-ball" viewBox="0 0 64 64" fill="currentColor"><circle cx="32" cy="32" r="27"/><path d="M8 24 Q32 34 56 24 M8 40 Q32 30 56 40" stroke="var(--c)" stroke-width="3.5" fill="none"/><path d="M32 5 Q22 32 32 59" stroke="var(--c)" stroke-width="3.5" fill="none"/></symbol><symbol id="i-kite" viewBox="0 0 64 64" fill="currentColor"><polygon points="32,3 54,26 32,49 10,26"/><path d="M32 3 V49 M10 26 H54" stroke="var(--c)" stroke-width="3"/><path d="M32 49 q-6 4 0 7 q6 3 0 6" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"/></symbol><symbol id="i-scroll" viewBox="0 0 64 64" fill="currentColor"><rect x="10" y="8" width="40" height="48" rx="6"/><rect x="40" y="4" width="16" height="12" rx="6" fill-opacity=".55"/><rect x="17" y="20" width="26" height="4" rx="2" fill="var(--c)"/><rect x="17" y="29" width="26" height="4" rx="2" fill="var(--c)"/><rect x="17" y="38" width="18" height="4" rx="2" fill="var(--c)"/></symbol><symbol id="i-cross" viewBox="0 0 64 64" fill="currentColor"><rect x="4" y="4" width="56" height="56" rx="16"/><path d="M26 15 H38 V26 H49 V38 H38 V49 H26 V38 H15 V26 H26Z" fill="var(--c)"/></symbol><symbol id="i-loop" viewBox="0 0 64 64" fill="currentColor"><path d="M32 8 A24 24 0 1 1 9 38" stroke="currentColor" stroke-width="8" fill="none" stroke-linecap="round"/><polygon points="32,0 44,9 32,18"/><circle cx="32" cy="32" r="8" fill-opacity=".55"/></symbol><symbol id="i-lock" viewBox="0 0 64 64" fill="currentColor"><rect x="12" y="28" width="40" height="30" rx="8"/><path d="M21 29 V20 A11 11 0 0 1 43 20 V29" fill="none" stroke="currentColor" stroke-width="6"/></symbol><symbol id="i-flame" viewBox="0 0 64 64" fill="currentColor"><path d="M32 60 C17 60 9 50 10 38 C11 27 20 22 21 10 C29 15 33 23 31 31 C35 28 37 23 37 18 C48 26 55 36 54 44 C53 54 45 60 32 60Z"/><path d="M32 56 C25 56 21 51 22 45 C23 40 28 37 29 31 C33 35 35 40 34 44 C37 42 38 40 39 37 C43 41 44 45 43 49 C41 54 37 56 32 56Z" fill-opacity=".45"/></symbol><symbol id="i-check" viewBox="0 0 64 64" fill="currentColor"><path d="M12 33 L26 47 L53 18" fill="none" stroke="currentColor" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/></symbol><symbol id="i-ear" viewBox="0 0 64 64" fill="currentColor"><path d="M20 26 A14 14 0 0 1 48 26 C48 36 40 38 38 46 C36 54 30 58 24 56" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round"/><path d="M28 27 A6 6 0 0 1 40 27 C40 31 36 33 35 36" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/></symbol><symbol id="i-trophy" viewBox="0 0 64 64" fill="currentColor"><path d="M16 6 H48 V24 A16 16 0 0 1 16 24Z"/><path d="M16 12 H6 V18 A10 10 0 0 0 16 28 M48 12 H58 V18 A10 10 0 0 1 48 28" fill="none" stroke="currentColor" stroke-width="4.5"/><rect x="28" y="38" width="8" height="12" fill-opacity=".55"/><rect x="18" y="50" width="28" height="9" rx="3"/></symbol><symbol id="i-moka" viewBox="0 0 64 64" fill="currentColor"><path d="M18 30 H46 L52 60 H12Z"/><path d="M20 28 L24 10 H40 L44 28Z" fill-opacity=".55"/><rect x="28" y="3" width="8" height="8" rx="3"/><path d="M46 36 C56 36 58 48 50 52" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><path d="M18 28 L8 22" stroke="currentColor" stroke-width="5" stroke-linecap="round"/></symbol><symbol id="i-kana" viewBox="0 0 64 64" fill="currentColor"><rect x="4" y="4" width="56" height="56" rx="16"/><text x="32" y="45" text-anchor="middle" font-family="Noto Sans JP,sans-serif" font-weight="700" font-size="34" fill="var(--c)">あ</text></symbol><symbol id="i-torii" viewBox="0 0 64 64" fill="currentColor"><rect x="4" y="10" width="56" height="8" rx="4"/><rect x="10" y="22" width="44" height="6" rx="3"/><rect x="15" y="16" width="7" height="44" rx="2"/><rect x="42" y="16" width="7" height="44" rx="2"/><rect x="29" y="18" width="6" height="10" fill-opacity=".55"/></symbol><symbol id="i-star" viewBox="0 0 64 64" fill="currentColor"><polygon points="32,3 40,22 61,23 45,37 50,58 32,47 14,58 19,37 3,23 24,22"/></symbol></defs></svg>
+<div class="topbar" role="toolbar" aria-label="Impostazioni">
+  <button class="tb" id="tbset" type="button" aria-expanded="false" aria-controls="setp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2.2"/><circle cx="10" cy="17" r="2.2"/></svg><span class="tbl">Lettura</span></button>
+  <button class="tb" id="tbtheme" type="button" aria-pressed="false"></button>
+  <button class="tb tb-top" id="totop" type="button" aria-label="Torna su"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg><span class="tbl">su</span></button>
+  <div class="setp" id="setp" hidden>
+    <button class="sw" id="tbfuri" type="button" aria-pressed="true"><span><b lang="ja">ふりがな</b><small>lettura sopra i kanji</small></span><span class="swv" id="tbfuril">sì</span></button>
+    <button class="sw" id="tbro" type="button" aria-pressed="true"><span><b>rōmaji</b><small>auto = solo nelle lezioni 1–4</small></span><span class="swv" id="tbrol">auto</span></button>
+    <button class="sw" id="tbtr" type="button" aria-pressed="true"><span><b>Traduzione</b><small>nascondila per allenare l'orecchio</small></span><span class="swv" id="tbtrl">sì</span></button>
+    <button class="sw" id="tbslow" type="button" aria-pressed="false"><span><b>Voce</b><small>velocità di lettura</small></span><span class="swv" id="tbslowl">normale</span></button>
+  </div>
+</div>
+<div class="book">
+<nav class="toc" aria-label="Indice">
+  <details id="tocd">
+    <summary>Indice · <span lang="ja">目次</span></summary>
+    <ol>
+      <li><a href="#mappa">Il percorso</a></li>
+      <li><a class="t-green" href="#metodo"><span><i class="dot"></i>Il metodo</span></a></li>
+      <li class="part">Parte prima · Primi passi · A1.1</li>
+      <li><a class="t-red" href="#l1"><span><i class="dot"></i>1 · Suoni, primi kana e saluti</span><span class="sc" data-sc="l1"></span></a></li>
+      <li><a class="t-blue" href="#l2"><span><i class="dot"></i>2 · Mi chiamo Marco</span><span class="sc" data-sc="l2"></span></a></li>
+      <li><a class="t-yellow" href="#l3"><span><i class="dot"></i>3 · Tutti gli hiragana, doppie e vocali lunghe</span><span class="sc" data-sc="l3"></span></a></li>
+      <li><a class="t-green" href="#l4"><span><i class="dot"></i>4 · Che cos&#x27;è? これ・それ・あれ</span><span class="sc" data-sc="l4"></span></a></li>
+      <li><a class="t-pink" href="#l5"><span><i class="dot"></i>5 · La mia famiglia e i numeri</span><span class="sc" data-sc="l5"></span></a></li>
+      <li><a class="t-red" href="#l6"><span><i class="dot"></i>6 · Come stai? Gli aggettivi</span><span class="sc" data-sc="l6"></span></a></li>
+      <li><a class="t-blue" href="#l7"><span><i class="dot"></i>7 · Che cosa fai? I verbi in -masu</span><span class="sc" data-sc="l7"></span></a></li>
+      <li><a class="t-yellow" href="#l8"><span><i class="dot"></i>8 · Al konbini e al caffè</span><span class="sc" data-sc="l8"></span></a></li>
+      <li><a class="t-green" href="#r1"><span><i class="dot"></i>↺ Ripasso 1</span><span class="sc" data-sc="r1"></span></a></li>
+      <li class="part">Parte seconda · La vita di tutti i giorni · A1.2</li>
+      <li><a class="t-pink" href="#l9"><span><i class="dot"></i>9 · Fare domande</span><span class="sc" data-sc="l9"></span></a></li>
+      <li><a class="t-red" href="#l10"><span><i class="dot"></i>10 · La mia giornata: ore e passato</span><span class="sc" data-sc="l10"></span></a></li>
+      <li><a class="t-blue" href="#l11"><span><i class="dot"></i>11 · Il tempo libero: piacere e inviti</span><span class="sc" data-sc="l11"></span></a></li>
+      <li><a class="t-yellow" href="#l12"><span><i class="dot"></i>12 · In città: dove si trova?</span><span class="sc" data-sc="l12"></span></a></li>
+      <li><a class="t-green" href="#l13"><span><i class="dot"></i>13 · La forma -te: per favore, posso…?</span><span class="sc" data-sc="l13"></span></a></li>
+      <li><a class="t-pink" href="#l14"><span><i class="dot"></i>14 · Al ristorante: contare e ordinare</span><span class="sc" data-sc="l14"></span></a></li>
+      <li><a class="t-red" href="#r2"><span><i class="dot"></i>↺ Ripasso 2</span><span class="sc" data-sc="r2"></span></a></li>
+      <li class="part">Parte terza · Raccontare · A2</li>
+      <li><a class="t-blue" href="#l15"><span><i class="dot"></i>15 · Il fine settimana: passato degli aggettivi</span><span class="sc" data-sc="l15"></span></a></li>
+      <li><a class="t-yellow" href="#l16"><span><i class="dot"></i>16 · In viaggio: voglio andare…</span><span class="sc" data-sc="l16"></span></a></li>
+      <li><a class="t-green" href="#l17"><span><i class="dot"></i>17 · Quando ero piccolo: la forma informale</span><span class="sc" data-sc="l17"></span></a></li>
+      <li><a class="t-pink" href="#l18"><span><i class="dot"></i>18 · Raccontare: -te iru, -te kara</span><span class="sc" data-sc="l18"></span></a></li>
+      <li><a class="t-red" href="#l19"><span><i class="dot"></i>19 · Gusti, confronti e opinioni</span><span class="sc" data-sc="l19"></span></a></li>
+      <li><a class="t-blue" href="#l20"><span><i class="dot"></i>20 · Fare spese e fare regali</span><span class="sc" data-sc="l20"></span></a></li>
+      <li><a class="t-yellow" href="#l21"><span><i class="dot"></i>21 · Progetti e condizioni</span><span class="sc" data-sc="l21"></span></a></li>
+      <li><a class="t-green" href="#l22"><span><i class="dot"></i>22 · Salute e servizi: devo, posso</span><span class="sc" data-sc="l22"></span></a></li>
+      <li><a class="t-pink" href="#l23"><span><i class="dot"></i>23 · Marco a Tokyo: racconta la tua storia</span><span class="sc" data-sc="l23"></span></a></li>
+      <li><a class="t-red" href="#r3"><span><i class="dot"></i>↺ Ripasso 3 e test A2</span><span class="sc" data-sc="r3"></span></a></li>
+      <li class="part">Appendici</li>
+      <li><a class="t-red" href="#kana"><span><i class="dot"></i>A · Tabelle dei kana</span></a></li>
+      <li><a class="t-yellow" href="#frasi"><span><i class="dot"></i>B · Frasi utili</span></a></li>
+      <li><a class="t-pink" href="#flash"><span><i class="dot"></i>C · Flashcard: ripetizione distanziata</span></a></li>
+      <li><a class="t-green" href="#vocab"><span><i class="dot"></i>D · Vocabolario</span></a></li>
+      <li><a class="t-blue" href="#verbi"><span><i class="dot"></i>E · Coniugare i verbi</span><span class="sc" data-sc="verbi"></span></a></li>
+    </ol>
+  </details>
+</nav>
+
+<main>
+<header class="hero">
+  <div class="hero-card">
+    <div class="hero-text">
+      <p class="eyebrow">CORSO DI GIAPPONESE PER ITALIANI · <span lang="ja">日本語コース</span></p>
+      <p class="ciao" lang="ja">こんにちは</p>
+      <h1>Giapponese per italiani</h1>
+      <p class="sub">Ventitré lezioni, dai primi kana fino al livello A2: presentarsi, vivere la giornata, raccontare il passato e i progetti. Dialoghi da ascoltare e recitare, furigana sopra i kanji, esercizi corretti in automatico e la cultura giapponese a confronto con quella italiana.</p>
+      <a class="cta" href="#mappa">Comincia →</a>
+    </div>
+    <svg class="hero-art" viewBox="0 0 420 360" aria-hidden="true">
+      <circle cx="300" cy="96" r="70" fill="var(--red)"/>
+      <circle cx="70" cy="62" r="6" fill="var(--pink)"/><circle cx="118" cy="34" r="5" fill="var(--yellow)"/><circle cx="394" cy="206" r="6" fill="var(--pink)"/>
+      <polygon points="40,300 190,120 340,300" fill="var(--pink)"/>
+      <polygon points="150,168 190,120 230,168 214,160 200,176 188,160 172,174" fill="#fff"/>
+      <rect x="0" y="292" width="420" height="68" fill="var(--yellow)"/>
+      <rect x="52" y="214" width="120" height="13" rx="5" fill="#1a1720"/>
+      <rect x="60" y="232" width="104" height="9" rx="4" fill="var(--red)"/>
+      <rect x="70" y="222" width="12" height="80" fill="var(--red)"/>
+      <rect x="142" y="222" width="12" height="80" fill="var(--red)"/>
+      <ellipse cx="292" cy="312" rx="50" ry="9" fill="#fff"/>
+      <path d="M256 268 H328 V282 C328 304 312 314 292 314 C272 314 256 304 256 282 Z" fill="#fff"/>
+      <circle cx="333" cy="286" r="11" stroke="#fff" stroke-width="7" fill="none"/>
+      <ellipse cx="292" cy="269" rx="35" ry="5" fill="#6b3a22"/>
+      <path d="M282 256 c-10 -14 10 -22 0 -38 M302 256 c-10 -14 10 -22 0 -38" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <path d="M352 300 H404 C404 320 392 330 378 330 C364 330 352 320 352 300 Z" fill="#2e7d4f"/>
+      <ellipse cx="378" cy="300" rx="26" ry="5" fill="#8cc63f"/>
+    </svg>
+  </div>
+  <div class="stats">
+    <div class="t-red"><b>23</b><span>lezioni + 3 ripassi · <i lang="ja">課</i></span></div>
+    <div class="t-blue"><b>1</b><span>dialoghi · <i lang="ja">会話</i></span></div>
+    <div class="t-green"><b>27</b><span>esercizi · <i lang="ja">練習</i></span></div>
+    <div class="t-yellow"><b>22</b><span>parole · <i lang="ja">単語</i></span></div>
+  </div>
+  <div class="legend"><span>Come si legge:</span><b lang="ja"><ruby>日本<rt>にほん</rt></ruby></b><span>= furigana, la lettura sopra i kanji</span><span>· <b>rōmaji</b>: le lettere latine sotto il giapponese, solo nelle prime lezioni (si cambia in alto)</span><span>· le parole <b style="color:var(--it);text-decoration:underline dotted;text-underline-offset:4px">in verde</b> si toccano: senti la pronuncia e vedi il significato</span></div>
+  <p class="note" id="ttsnote">Premi ▶ per ascoltare una frase intera. La voce è una voce femminile giapponese sintetica (AI). In alto puoi nascondere furigana, rōmaji e traduzioni, e rallentare la voce. I progressi restano salvati in questo browser.</p>
+</header>
+
+<section class="path" id="mappa" aria-label="Il percorso">
+  <h2>Il percorso<small lang="ja">学習ルート</small></h2>
+  <p class="map-lead">Un passo alla volta: ogni lezione è divisa in tappe di circa cinque minuti e la sfida finale apre la lezione successiva. Sai già un po' di giapponese? Fai il test di livello.</p>
+  <div id="pathroot"></div>
+</section>
+
+<section class="lesson t-green" id="metodo" data-kind="intro">
+  <header class="lhead"><div class="lh-text"><div class="kicker"><span>Prima di cominciare</span><span class="itk" lang="ja">学び方</span></div>
+  <h2>Il metodo: prima l'orecchio, poi la bocca, poi la mano</h2></div><svg class="lic" aria-hidden="true"><use href="#i-bulb"/></svg></header>
+  <p class="lead">Per un italiano il giapponese ha tre belle sorprese: le cinque vocali sono quasi uguali alle nostre, le consonanti doppie esistono come in italiano (きって <i>kitte</i>, come «fatto»), e non ci sono né articoli, né generi, né verbi che cambiano con la persona. Le difficoltà sono altre: la scrittura, il verbo sempre alla fine della frase, le particelle e i livelli di cortesia. Questo corso segue l'ordine con cui queste cose si imparano in modo naturale, come indicano il JF Standard della Japan Foundation e i grandi manuali per stranieri: prima suoni e kana, poi frasi con です e ます, poi le forme -te e informali, infine il racconto.</p>
+  <div class="rule" data-seal="Principi">
+    <h3>Sei principi</h3>
+    <ul class="plain">
+      <li><b>Prima l'orecchio.</b> Ascolta ogni dialogo senza traduzione, prova a capire il senso, poi leggi.</li>
+      <li><b>Ad alta voce dal primo giorno.</b> Ogni «Parla» va detto davvero, non solo pensato.</li>
+      <li><b>I kana subito, il rōmaji solo come stampella.</b> In tre lezioni impari tutti gli hiragana; il rōmaji compare in automatico solo nelle prime quattro lezioni, poi lo puoi attivare dall'alto se ti serve.</li>
+      <li><b>I kanji a piccole dosi, sempre con la lettura.</b> Da metà della prima parte arrivano pochi kanji per lezione, sempre con i furigana sopra. Impara parole intere, non caratteri isolati.</li>
+      <li><b>Scopri la regola da solo.</b> Prima di ogni regola c'è una domanda «Rifletti»: pensaci, poi guarda la soluzione. Quello che scopri da solo si ricorda meglio.</li>
+      <li><b>Ripetizione a spirale.</b> Le parole finiscono nelle flashcard, ogni parte finisce con un ripasso e le strutture tornano nelle lezioni successive.</li>
+    </ul>
+  </div>
+  <div class="rule" data-seal="Lezione">
+    <h3>Com'è fatta una lezione</h3>
+    <ul class="plain">
+      <li><b>Dialogo</b>: ascolta, ripeti, poi recita la parte B con «Faccio io B».</li>
+      <li><b>Rifletti</b>: scopri la regola nel dialogo.</li>
+      <li><b>Regole ed esempi</b>: ogni esempio si ascolta, ogni parola verde si tocca.</li>
+      <li><b>Scrittura e suoni</b>: i kana o i kanji nuovi, e un suono alla volta.</li>
+      <li><b>Parole</b>: 20–30 parole nuove, che entrano nelle flashcard.</li>
+      <li><b>Esercizi</b>: ascolto, scelta, completamento, dettato, frasi da comporre, parlato.</li>
+      <li><b>So fare</b>: che cosa sai fare in giapponese alla fine.</li>
+    </ul>
+  </div>
+  <h3>Venti minuti al giorno</h3>
+  <div class="tw"><table class="plan">
+    <tr><th>Minuti</th><th>Che cosa</th></tr>
+    <tr><td>4</td><td>Flashcard in modalità «Ascolta» (appendice C).</td></tr>
+    <tr><td>6</td><td>Il dialogo della lezione: ascolta, ripeti, recita.</td></tr>
+    <tr><td>6</td><td>Una regola con i suoi esercizi, oppure la scrittura della lezione.</td></tr>
+    <tr><td>4</td><td>Scrivi a mano i kana o i kanji nuovi, dicendoli ad alta voce.</td></tr>
+  </table></div>
+
+</section>
+
+<div class="partttl">Parte prima · Primi passi<span class="lvl">A1.1</span></div>
+<section class="lesson t-red early" id="l1" data-kind="lesson">
+  <header class="lhead"><div class="lh-text"><div class="kicker"><span>Lezione 1</span><span class="itk" lang="ja">第1課</span></div>
+  <h2>Suoni, primi kana e saluti<small lang="ja">あいさつ</small></h2></div><svg class="lic" aria-hidden="true"><use href="#i-kana"/></svg></header>
+  <p class="lead">Le prime parole e i primi suoni. Buona notizia: le vocali giapponesi sono quasi le stesse dell'italiano, e ogni kana si legge sempre allo stesso modo. In questa lezione impari i saluti e le prime tre righe di hiragana: あ, か, さ.</p>
+  <h3>I saluti di ogni giorno</h3>
+  <p>Non serve la grammatica: imparali come blocchi interi.</p>
+  <div class="exs">
+    <div data-jp="おはよう ございます 。" data-it="Buongiorno (al mattino)."></div>
+    <div data-jp="こんにちは 。" data-it="Buongiorno, ciao (di giorno)."></div>
+    <div data-jp="こんばんは 。" data-it="Buonasera."></div>
+    <div data-jp="ありがとう ございます 。" data-it="Grazie."></div>
+    <div data-jp="すみません 。" data-it="Mi scusi. / Scusi (per chiamare qualcuno)."></div>
+    <div data-jp="さようなら 。" data-it="Arrivederci."></div>
+  </div>
+  <div class="dialog" data-dlg="l1"></div>
+
+  <details class="scopri"><summary><span class="sq">Yuki dice おはよう ございます, ma tra amici si sente anche solo おはよう. Che cosa aggiunge ございます?</span></summary>
+    <div><p>ございます rende la frase <b>cortese</b>. Con amici e familiari si dice おはよう; con insegnanti, colleghi, vicini e sconosciuti おはよう ございます. Lo stesso vale per ありがとう → ありがとう ございます.</p></div></details>
+
+  <div class="rule" data-seal="Regola">
+    <h3>Le cinque vocali: あ い う え お</h3>
+    <p>Si leggono come in italiano: <b>a, i, u, e, o</b>. Solo う si dice con le labbra rilassate, senza arrotondarle. Le vocali sono sempre corte e pulite.</p>
+    <div class="tw"><table class="kana" data-k="hira" data-g="base" data-rows="0"></table></div>
+    <div class="exs">
+      <div data-jp="あい" data-it="amore"></div>
+      <div data-jp="いえ" data-it="casa"></div>
+      <div data-jp="うえ" data-it="sopra"></div>
+      <div data-jp="あお" data-it="blu"></div>
+    </div>
+  </div>
+  <div class="rule" data-seal="Regola">
+    <h3>Sillabe, non lettere: か e さ</h3>
+    <p>Ogni kana è una <b>sillaba</b>: か si legge <i>ka</i>, さ si legge <i>sa</i>. Basta conoscere le cinque vocali e la consonante della riga. Attenzione a <b>し</b>: si legge <i>shi</i>, non «si».</p>
+    <div class="tw"><table class="kana" data-k="hira" data-g="base" data-rows="1,2"></table></div>
+    <div class="exs">
+      <div data-jp="かお" data-it="viso"></div>
+      <div data-jp="あさ" data-it="mattina"></div>
+      <div data-jp="すし" data-it="sushi"></div>
+      <div data-jp="えき" data-it="stazione"></div>
+      <div data-jp="かさ" data-it="ombrello"></div>
+    </div>
+  </div>
+  <div class="warn"><strong>Attenzione</strong>Nella pronuncia veloce la <b>u</b> di す e la <b>i</b> di し spesso quasi spariscono: です si dice quasi «des», すき quasi «ski». Ascolta e imita la voce.</div>
+
+  <div class="speech" data-seal="Nella vita"><h3>Nella vita reale</h3><ul class="plain">
+    <li>すみません è una parola jolly: «mi scusi», «permesso» e anche «grazie» quando qualcuno fa qualcosa per te.</li>
+    <li>In famiglia non si dice こんにちは: si usa con chi non è di casa.</li>
+    <li>Salutando ci si inchina leggermente: un piccolo cenno con la testa basta.</li>
+  </ul></div>
+
+  <div class="suono">
+    <h3>Leggere e scrivere あ・か・さ</h3>
+    <p>Scrivi ogni kana a mano tre volte dicendolo ad alta voce; poi leggi queste parole senza guardare il rōmaji.</p>
+    <div class="exs">
+      <div data-jp="あき" data-it="autunno"></div>
+      <div data-jp="いす" data-it="sedia"></div>
+      <div data-jp="せき" data-it="posto a sedere"></div>
+      <div data-jp="そこ" data-it="lì"></div>
+    </div>
+  </div>
+
+  <div class="words-head"><h3>Le parole della lezione</h3><span>saluti e prime parole</span></div>
+  <div class="words" data-voc="l1"></div>
+  <div class="drill" data-set="l1"></div>
+  <ul class="cando" data-cando="l1">
+    <li>So salutare nel momento giusto: おはよう ございます, こんにちは, こんばんは.</li>
+    <li>So ringraziare e chiedere scusa: ありがとう ございます, すみません.</li>
+    <li>So leggere e scrivere あいうえお, かきくけこ, さしすせそ.</li>
+  </ul>
+
+</section>
+<section class="lesson t-blue early" id="l2" data-kind="lesson">
+  <header class="lhead"><div class="lh-text"><div class="kicker"><span>Lezione 2</span><span class="itk" lang="ja">第2課</span></div>
+  <h2>Mi chiamo Marco<small lang="ja">じこしょうかい</small></h2></div><svg class="lic" aria-hidden="true"><use href="#i-tag"/></svg></header>
+  <p class="lead">In preparazione.</p>
+
+</section>
+<section class="lesson t-yellow early" id="l3" data-kind="lesson">
+  <header class="lhead"><div class="lh-text"><div class="kicker"><span>Lezione 3</span><span class="itk" lang="ja">第3課</span></div>
+  <h2>Tutti gli hiragana, doppie e vocali lunghe<small lang="ja">ひらがな</small></h2></div><svg class="lic" aria-hidden="true"><use href="#i-wave"/></svg></header>
+  <p class="lead">In preparazione.</p>
+
+</section>
+<section class="lesson t-green early" id="l4" data-kind="lesson">
+  <header class="lhead"><div class="lh-text"><div class="kicker"><span>Lezione 4</span><span class="itk" lang="ja">第4課</span></div>
+  <h2>Che cos&#x27;è? これ・それ・あれ<small lang="ja">これは何ですか</small></h2></div><svg class="lic" aria-hidden="true"><use href="#i-book"/></svg></header>
+  <p class="lead">In preparazione.</p>
+
+</section>
+<section class="lesson t-pink" id="l5" data-kind="lesson">
+  <header class="lhead"><div class="lh-text"><div class="kicker"><span>Lezione 5</span><span class="itk" lang="ja">第5課</span></div>
+  <h2>La mia famiglia e i numeri<small lang="ja">かぞく</small></h2></div><svg class="lic" aria-hidden="true"><use href="#i-family"/></svg></header>
+  <p class="lead">In preparazione.</p>
+
+</section>
+<section class="lesson t-red" id="l6" data-kind="lesson">
+  <header class="lhead"><div class="lh-text"><div class="kicker"><span>Lezione 6</span><span class="itk" lang="ja">第6課</span></div>
+  <h2>Come stai? Gli aggettivi<small lang="ja">げんきですか</small></h2></div><svg class="lic" aria-hidden="true"><use href="#i-sun"/></svg></header>
+  <p class="lead">In preparazione.</p>
+
+</section>
+<section class="lesson t-blue" id="l7" data-kind="lesson">
+  <header class="lhead"><div class="lh-text"><div class="kicker"><span>Lezione 7</span><span class="itk" lang="ja">第7課</span></div>
+  <h2>Che cosa fai? I verbi in -masu<small lang="ja">まいにち</small></h2></div><svg class="lic" aria-hidden="true"><use href="#i-chat"/></svg></header>
+  <p class="lead">In preparazione.</p>
+
+</section>
+<section class="lesson t-yellow" id="l8" data-kind="lesson">
+  <header class="lhead"><div class="lh-text"><div class="kicker"><span>Lezione 8</span><span class="itk" lang="ja">第8課</span></div>
+  <h2>Al konbini e al caffè<small lang="ja">コンビニで</small></h2></div><svg class="lic" aria-hidden="true"><use href="#i-cup"/></svg></header>
+  <p class="lead">In preparazione.</p>
+
+</section>
+<section class="lesson t-green" id="r1" data-kind="review">
+  <header class="lhead"><div class="lh-text"><div class="kicker"><span>Ripasso 1</span><span class="itk" lang="ja">復習</span></div>
+  <h2>Ripasso 1<small lang="ja">ふくしゅう</small></h2></div><svg class="lic" aria-hidden="true"><use href="#i-loop"/></svg></header>
+  <p class="lead">In preparazione.</p>
+
+</section>
+<div class="partttl">Parte seconda · La vita di tutti i giorni<span class="lvl">A1.2</span></div>
+<section class="lesson t-pink" id="l9" data-kind="lesson">
+  <header class="lhead"><div class="lh-text"><div class="kicker"><span>Lezione 9</span><span class="itk" lang="ja">第9課</span></div>
+  <h2>Fare domande<small lang="ja">しつもん</small></h2></div><svg class="lic" aria-hidden="true"><use href="#i-q"/></svg></header>
+  <p class="lead">In preparazione.</p>
+
+</section>
+<section class="lesson t-red" id="l10" data-kind="lesson">
+  <header class="lhead"><div class="lh-text"><div class="kicker"><span>Lezione 10</span><span class="itk" lang="ja">第10課</span></div>
+  <h2>La mia giornata: ore e passato<small lang="ja">わたしの一日</small></h2></div><svg class="lic" aria-hidden="true"><use href="#i-clock"/></svg></header>
+  <p class="lead">In preparazione.</p>
+
+</section>
+<section class="lesson t-blue" id="l11" data-kind="lesson">
+  <header class="lhead"><div class="lh-text"><div class="kicker"><span>Lezione 11</span><span class="itk" lang="ja">第11課</span></div>
+  <h2>Il tempo libero: piacere e inviti<small lang="ja">しゅみ</small></h2></div><svg class="lic" aria-hidden="true"><use href="#i-ball"/></svg></header>
+  <p class="lead">In preparazione.</p>
+
+</section>
+<section class="lesson t-yellow" id="l12" data-kind="lesson">
+  <header class="lhead"><div class="lh-text"><div class="kicker"><span>Lezione 12</span><span class="itk" lang="ja">第12課</span></div>
+  <h2>In città: dove si trova?<small lang="ja">まちで</small></h2></div><svg class="lic" aria-hidden="true"><use href="#i-pin"/></svg></header>
+  <p class="lead">In preparazione.</p>
+
+</section>
+<section class="lesson t-green" id="l13" data-kind="lesson">
+  <header class="lhead"><div class="lh-text"><div class="kicker"><span>Lezione 13</span><span class="itk" lang="ja">第13課</span></div>
+  <h2>La forma -te: per favore, posso…?<small lang="ja">て形</small></h2></div><svg class="lic" aria-hidden="true"><use href="#i-phone"/></svg></header>
+  <p class="lead">In preparazione.</p>
+
+</section>
+<section class="lesson t-pink" id="l14" data-kind="lesson">
+  <header class="lhead"><div class="lh-text"><div class="kicker"><span>Lezione 14</span><span class="itk" lang="ja">第14課</span></div>
+  <h2>Al ristorante: contare e ordinare<small lang="ja">レストランで</small></h2></div><svg class="lic" aria-hidden="true"><use href="#i-fork"/></svg></header>
+  <p class="lead">In preparazione.</p>
+
+</section>
+<section class="lesson t-red" id="r2" data-kind="review">
+  <header class="lhead"><div class="lh-text"><div class="kicker"><span>Ripasso 2</span><span class="itk" lang="ja">復習</span></div>
+  <h2>Ripasso 2<small lang="ja">ふくしゅう</small></h2></div><svg class="lic" aria-hidden="true"><use href="#i-loop"/></svg></header>
+  <p class="lead">In preparazione.</p>
+
+</section>
+<div class="partttl">Parte terza · Raccontare<span class="lvl">A2</span></div>
+<section class="lesson t-blue" id="l15" data-kind="lesson">
+  <header class="lhead"><div class="lh-text"><div class="kicker"><span>Lezione 15</span><span class="itk" lang="ja">第15課</span></div>
+  <h2>Il fine settimana: passato degli aggettivi<small lang="ja">週末</small></h2></div><svg class="lic" aria-hidden="true"><use href="#i-ticket"/></svg></header>
+  <p class="lead">In preparazione.</p>
+
+</section>
+<section class="lesson t-yellow" id="l16" data-kind="lesson">
+  <header class="lhead"><div class="lh-text"><div class="kicker"><span>Lezione 16</span><span class="itk" lang="ja">第16課</span></div>
+  <h2>In viaggio: voglio andare…<small lang="ja">りょこう</small></h2></div><svg class="lic" aria-hidden="true"><use href="#i-umbrella"/></svg></header>
+  <p class="lead">In preparazione.</p>
+
+</section>
+<section class="lesson t-green" id="l17" data-kind="lesson">
+  <header class="lhead"><div class="lh-text"><div class="kicker"><span>Lezione 17</span><span class="itk" lang="ja">第17課</span></div>
+  <h2>Quando ero piccolo: la forma informale<small lang="ja">子どものころ</small></h2></div><svg class="lic" aria-hidden="true"><use href="#i-kite"/></svg></header>
+  <p class="lead">In preparazione.</p>
+
+</section>
+<section class="lesson t-pink" id="l18" data-kind="lesson">
+  <header class="lhead"><div class="lh-text"><div class="kicker"><span>Lezione 18</span><span class="itk" lang="ja">第18課</span></div>
+  <h2>Raccontare: -te iru, -te kara<small lang="ja">ものがたり</small></h2></div><svg class="lic" aria-hidden="true"><use href="#i-scroll"/></svg></header>
+  <p class="lead">In preparazione.</p>
+
+</section>
+<section class="lesson t-red" id="l19" data-kind="lesson">
+  <header class="lhead"><div class="lh-text"><div class="kicker"><span>Lezione 19</span><span class="itk" lang="ja">第19課</span></div>
+  <h2>Gusti, confronti e opinioni<small lang="ja">くらべる</small></h2></div><svg class="lic" aria-hidden="true"><use href="#i-heart"/></svg></header>
+  <p class="lead">In preparazione.</p>
+
+</section>
+<section class="lesson t-blue" id="l20" data-kind="lesson">
+  <header class="lhead"><div class="lh-text"><div class="kicker"><span>Lezione 20</span><span class="itk" lang="ja">第20課</span></div>
+  <h2>Fare spese e fare regali<small lang="ja">かいもの</small></h2></div><svg class="lic" aria-hidden="true"><use href="#i-bag"/></svg></header>
+  <p class="lead">In preparazione.</p>
+
+</section>
+<section class="lesson t-yellow" id="l21" data-kind="lesson">
+  <header class="lhead"><div class="lh-text"><div class="kicker"><span>Lezione 21</span><span class="itk" lang="ja">第21課</span></div>
+  <h2>Progetti e condizioni<small lang="ja">これから</small></h2></div><svg class="lic" aria-hidden="true"><use href="#i-suitcase"/></svg></header>
+  <p class="lead">In preparazione.</p>
+
+</section>
+<section class="lesson t-green" id="l22" data-kind="lesson">
+  <header class="lhead"><div class="lh-text"><div class="kicker"><span>Lezione 22</span><span class="itk" lang="ja">第22課</span></div>
+  <h2>Salute e servizi: devo, posso<small lang="ja">びょういん</small></h2></div><svg class="lic" aria-hidden="true"><use href="#i-cross"/></svg></header>
+  <p class="lead">In preparazione.</p>
+
+</section>
+<section class="lesson t-pink" id="l23" data-kind="lesson">
+  <header class="lhead"><div class="lh-text"><div class="kicker"><span>Lezione 23</span><span class="itk" lang="ja">第23課</span></div>
+  <h2>Marco a Tokyo: racconta la tua storia<small lang="ja">東京のマルコ</small></h2></div><svg class="lic" aria-hidden="true"><use href="#i-torii"/></svg></header>
+  <p class="lead">In preparazione.</p>
+
+</section>
+<section class="lesson t-red" id="r3" data-kind="review">
+  <header class="lhead"><div class="lh-text"><div class="kicker"><span>Ripasso 3</span><span class="itk" lang="ja">復習</span></div>
+  <h2>Ripasso 3 e test A2<small lang="ja">ふくしゅう・テスト</small></h2></div><svg class="lic" aria-hidden="true"><use href="#i-star"/></svg></header>
+  <p class="lead">In preparazione.</p>
+
+</section>
+<div class="partttl">Appendici</div>
+<section class="lesson t-red" id="kana" data-kind="app">
+  <header class="lhead"><div class="lh-text"><div class="kicker"><span>Appendice A</span><span class="itk" lang="ja">かな表</span></div>
+  <h2>Tabelle dei kana<small lang="ja">かな表</small></h2></div><svg class="lic" aria-hidden="true"><use href="#i-kana"/></svg></header>
+  <p class="lead">Il giapponese si scrive con tre sistemi insieme: gli <b>hiragana</b> (per le parole giapponesi e le terminazioni), i <b>katakana</b> (per le parole straniere, come コーヒー «caffè») e i <b>kanji</b> (i caratteri di origine cinese). Tocca un kana per sentirlo.</p>
+  <h3>Hiragana · ひらがな</h3>
+  <div class="tw"><table class="kana" data-k="hira" data-g="base"></table></div>
+  <h3>Con dakuten e handakuten · が ぱ</h3>
+  <p>Due trattini <b>゛</b> rendono sonora la consonante (k → g, s → z, t → d, h → b); il cerchietto <b>゜</b> trasforma h in p.</p>
+  <div class="tw"><table class="kana" data-k="hira" data-g="dak"></table></div>
+  <h3>Combinazioni · きゃ しゅ ちょ</h3>
+  <p>Un kana della colonna i più un piccolo ゃ ゅ ょ formano una sola sillaba: き + ゃ = きゃ (kya).</p>
+  <div class="tw"><table class="kana" data-k="hira" data-g="yoon"></table></div>
+  <h3>Katakana · カタカナ</h3>
+  <div class="tw"><table class="kana" data-k="kata" data-g="base"></table></div>
+  <div class="tw"><table class="kana" data-k="kata" data-g="dak"></table></div>
+  <div class="tw"><table class="kana" data-k="kata" data-g="yoon"></table></div>
+  <div class="rule" data-seal="Regole">
+    <h3>Tre segni da ricordare</h3>
+    <ul class="plain">
+      <li><b>っ piccolo</b> = consonante doppia, come in italiano: きって <i>kitte</i> (francobollo), come «fatto».</li>
+      <li><b>ー</b> nei katakana allunga la vocale: コーヒー <i>kōhī</i> (caffè), ケーキ <i>kēki</i> (torta).</li>
+      <li>Katakana speciali per i suoni stranieri: ファ (fa), ティ (ti), ウィ (wi), ヴ (vu): ファミリー, パーティー.</li>
+    </ul>
+  </div>
+
+</section>
+<section class="lesson t-yellow" id="frasi" data-kind="app">
+  <header class="lhead"><div class="lh-text"><div class="kicker"><span>Appendice B</span><span class="itk" lang="ja">べんりな表現</span></div>
+  <h2>Frasi utili<small lang="ja">べんりな表現</small></h2></div><svg class="lic" aria-hidden="true"><use href="#i-lemon"/></svg></header>
+  <p>Frasi che servono dal primo giorno, anche prima di conoscere la grammatica. Imparale come blocchi unici: ascolta, ripeti ad alta voce, poi copri il giapponese e prova a dirle partendo dall'italiano.</p>
+  <div id="frasario"></div>
+
+</section>
+<section class="lesson t-pink" id="flash" data-kind="app">
+  <header class="lhead"><div class="lh-text"><div class="kicker"><span>Appendice C</span><span class="itk" lang="ja">フラッシュカード</span></div>
+  <h2>Flashcard: ripetizione distanziata<small lang="ja">フラッシュカード</small></h2></div><svg class="lic" aria-hidden="true"><use href="#i-cards"/></svg></header>
+  <p>Le flashcard contengono solo le parole delle lezioni che hai già fatto (puoi cambiare l'intervallo qui sotto). Le parole stanno in cinque scatole: se la sai, la parola sale di una scatola e tornerà più di rado; se sbagli, torna nella scatola 1. Obiettivo: tutte le parole nella scatola 5.</p>
+  <p><b>Ascolta</b>: non vedi niente, senti la parola e dici il significato. <b>Parla</b>: vedi l'italiano e dici la parola giapponese ad alta voce. <b>Leggi</b>: vedi il giapponese e dici il significato.</p>
+  <div class="seg" role="group" aria-label="Modalità">
+    <button class="btn" data-fcm="ear" aria-pressed="true">Ascolta</button>
+    <button class="btn" data-fcm="say" aria-pressed="false">Parla</button>
+    <button class="btn" data-fcm="read" aria-pressed="false">Leggi</button>
+  </div>
+  <div class="fc-range"><label for="fcrange">Parole</label><select id="fcrange"></select></div>
+  <div class="fc">
+    <div class="fc-card" id="fccard"></div>
+    <div class="boxes" id="fcboxes"></div>
+    <div class="confirm" id="fcreset"></div>
+  </div>
+
+</section>
+<section class="lesson t-green" id="vocab" data-kind="app">
+  <header class="lhead"><div class="lh-text"><div class="kicker"><span>Appendice D</span><span class="itk" lang="ja">単語リスト</span></div>
+  <h2>Vocabolario<small lang="ja">単語リスト</small></h2></div><svg class="lic" aria-hidden="true"><use href="#i-book"/></svg></header>
+  <p>Tutte le parole del corso, lezione per lezione. Tocca ▶ per sentirle; tocca la parola per vedere lettura e significato.</p>
+  <div class="tw"><table class="vocab" id="vocabtbl"></table></div>
+
+</section>
+<section class="lesson t-blue" id="verbi" data-kind="app">
+  <header class="lhead"><div class="lh-text"><div class="kicker"><span>Appendice E</span><span class="itk" lang="ja">動詞の活用</span></div>
+  <h2>Coniugare i verbi<small lang="ja">動詞の活用</small></h2></div><svg class="lic" aria-hidden="true"><use href="#i-verb"/></svg></header>
+  <p class="lead">I verbi giapponesi non cambiano con la persona: <i>食[た]べます</i> vuol dire «mangio, mangi, mangia, mangiamo…». Cambiano invece con il tempo (presente/futuro o passato), con il «sì/no» e con il livello di cortesia. È molto più semplice dell'italiano!</p>
+  <h3>Tre gruppi</h3>
+  <div class="tw"><table>
+    <tr><th>Gruppo</th><th>Come si riconosce</th><th>Esempi</th></tr>
+    <tr><td><b>1 · godan</b></td><td>tutti i verbi che non sono del gruppo 2 o irregolari; finiscono in -u</td><td>飲[の]む, 書[か]く, 話[はな]す, 帰[かえ]る</td></tr>
+    <tr><td><b>2 · ichidan</b></td><td>finiscono in -iru o -eru (con qualche eccezione del gruppo 1)</td><td>食[た]べる, 見[み]る, 起[お]きる</td></tr>
+    <tr><td><b>Irregolari</b></td><td>solo due: する «fare» e 来[く]る «venire» (e i verbi con する)</td><td>する, 来[く]る, 勉強[べんきょう]する</td></tr>
+  </table></div>
+  <div class="rule" data-seal="Regola">
+    <h3>Come si forma il -masu</h3>
+    <ul class="plain">
+      <li><b>Gruppo 1</b>: l'ultima -u diventa -i, poi ます: 飲[の]む → 飲[の]みます, 書[か]く → 書[か]きます.</li>
+      <li><b>Gruppo 2</b>: si toglie る, poi ます: 食[た]べる → 食[た]べます.</li>
+      <li><b>Irregolari</b>: する → します, 来[く]る → 来[き]ます.</li>
+    </ul>
+  </div>
+  <div class="conjugator" id="conjugator">
+    <div class="cj-controls">
+      <label for="cjverb">Verbo</label>
+      <select id="cjverb" class="cj-select"></select>
+      <button class="btn pri" id="cjplay" type="button">▶ Ascolta tutto</button>
+    </div>
+    <div class="seg" role="group" aria-label="Forme" id="cjtense">
+      <button class="btn" type="button" aria-pressed="true">Cortesi</button>
+      <button class="btn" type="button" aria-pressed="false">Informali</button>
+      <button class="btn" type="button" aria-pressed="false">-te e altre</button>
+    </div>
+    <div class="cj-info" id="cjinfo"></div>
+    <div class="tw"><table class="cj-table" id="cjtable"></table></div>
+  </div>
+  <div class="drill" data-set="verbi"></div>
+
+</section>
+<footer>Giapponese per italiani · <span lang="ja">イタリア人のための日本語</span> · Le prime due parti corrispondono al livello A1 (circa JLPT N5), la terza al livello A2 (circa JLPT N4), secondo il JF Standard della Japan Foundation e il Quadro comune europeo. Per continuare: un corso di conversazione, podcast in giapponese facile, scambi linguistici.<br>Voce: sintesi con il modello open source Kokoro-82M (Apache-2.0).</footer>
+
+</main>
+</div>
+
+<script>
+(function(){
+"use strict";
+/* ---------- dizionario giapponese → italiano per i tooltip (parole grammaticali e di uso frequente) ----------
+   Le parole di ogni lezione (VOC) e le forme dei verbi del coniugatore si aggiungono da sole. */
+var DICT={
+"は":"particella del tema («quanto a…»; si legge wa)","が":"particella del soggetto; «ma»","を":"particella dell'oggetto (si legge o)","に":"particella: a, in (luogo, tempo, destinatario)","で":"particella: in (dove si fa qualcosa); con (mezzo)",
+"へ":"particella: verso (si legge e)","と":"e (tra nomi); con (qualcuno)","も":"anche","の":"particella: di (possesso)","か":"particella della domanda","ね":"vero? (cerca accordo)","よ":"sai, guarda che… (dà un'informazione)",
+"から":"da; perché","まで":"fino a","や":"e (elenco non completo)","より":"più di, rispetto a","だけ":"solo","ぐらい":"circa","ごろ":"verso (con le ore)",
+"です":"essere (cortese)","でした":"era (cortese)","じゃ":"forma parlata di では","ありません":"non c'è; (dopo じゃ) non è","では":"particella で + は","だ":"essere (informale)","だった":"era (informale)",
+"ます":"terminazione cortese dei verbi","ません":"terminazione cortese negativa","ました":"terminazione cortese passata","ましょう":"facciamo…!","ませんか":"non vuoi…? (invito)",
+"わたし":"io","わたしたち":"noi","あなた":"tu, lei (si usa poco)","かれ":"lui","かのじょ":"lei","さん":"signor/signora (dopo il nome)","くん":"(dopo nomi di ragazzi)","ちゃん":"(affettuoso, per bambini e amiche)",
+"これ":"questo (vicino a me)","それ":"codesto (vicino a te)","あれ":"quello (lontano da tutti e due)","どれ":"quale?","この":"questo + nome","その":"codesto + nome","あの":"quello + nome","どの":"quale + nome",
+"ここ":"qui","そこ":"lì (vicino a te)","あそこ":"là","どこ":"dove?","なに":"che cosa?","何":"che cosa?","なん":"che cosa? (davanti a d, t, n)","だれ":"chi?","いつ":"quando?","いくら":"quanto costa?","どう":"come?","どうして":"perché?","いくつ":"quanti? quanti anni?",
+"はい":"sì","いいえ":"no","ええ":"sì (parlato)","うん":"sì (informale)","ううん":"no (informale)","そう":"così","そうです":"è così","そうですか":"ah, davvero?","あ":"ah!","えっ":"eh?!","じゃあ":"allora","でも":"però","それから":"e poi","そして":"e, poi",
+"とても":"molto","すこし":"un po'","ちょっと":"un po'; un momento","よく":"spesso; bene","あまり":"(con negativo) non molto","ぜんぜん":"(con negativo) per niente","いつも":"sempre","ときどき":"a volte","もう":"già; ancora (un altro)","まだ":"ancora (non)","いっしょに":"insieme",
+"ください":"per favore, mi dia","おねがいします":"per favore","どうぞ":"prego (offrendo)","どうも":"grazie; salve","すみません":"mi scusi; grazie","ありがとう":"grazie","ありがとうございます":"grazie (cortese)","ごめんなさい":"scusa",
+"こんにちは":"buongiorno, ciao","おはようございます":"buongiorno (al mattino)","おはよう":"buongiorno (informale)","こんばんは":"buonasera","さようなら":"arrivederci","じゃあね":"ciao (quando ci si saluta)","またね":"a presto","おやすみなさい":"buonanotte",
+"はじめまして":"piacere (prima volta)","よろしく":"piacere, conto su di te","よろしくおねがいします":"piacere di conoscerla","いただきます":"(prima di mangiare) buon appetito","ごちそうさまでした":"(dopo mangiato) grazie del pasto",
+"〜さん":"signor/signora","〜じん":"di nazionalità…","〜ご":"lingua…","〜さい":"anni (età)","〜じ":"… in punto (ore)","〜ふん":"minuti","〜えん":"yen"
+};
+
+var DLG={},EX={},VOC={},CULT={};
+var LESSONS=[{"id": "l1", "n": 1, "t": "Suoni, primi kana e saluti", "j": "あいさつ", "kind": "lesson", "icon": "i-kana", "color": "red", "w": 1}, {"id": "l2", "n": 2, "t": "Mi chiamo Marco", "j": "じこしょうかい", "kind": "lesson", "icon": "i-tag", "color": "blue", "w": 1}, {"id": "l3", "n": 3, "t": "Tutti gli hiragana, doppie e vocali lunghe", "j": "ひらがな", "kind": "lesson", "icon": "i-wave", "color": "yellow", "w": 1}, {"id": "l4", "n": 4, "t": "Che cos'è? これ・それ・あれ", "j": "これは何ですか", "kind": "lesson", "icon": "i-book", "color": "green", "w": 1}, {"id": "l5", "n": 5, "t": "La mia famiglia e i numeri", "j": "かぞく", "kind": "lesson", "icon": "i-family", "color": "pink", "w": 1}, {"id": "l6", "n": 6, "t": "Come stai? Gli aggettivi", "j": "げんきですか", "kind": "lesson", "icon": "i-sun", "color": "red", "w": 1}, {"id": "l7", "n": 7, "t": "Che cosa fai? I verbi in -masu", "j": "まいにち", "kind": "lesson", "icon": "i-chat", "color": "blue", "w": 1}, {"id": "l8", "n": 8, "t": "Al konbini e al caffè", "j": "コンビニで", "kind": "lesson", "icon": "i-cup", "color": "yellow", "w": 1}, {"id": "r1", "n": null, "t": "Ripasso 1", "j": "ふくしゅう", "kind": "review", "icon": "i-loop", "color": "green", "w": 1}, {"id": "l9", "n": 9, "t": "Fare domande", "j": "しつもん", "kind": "lesson", "icon": "i-q", "color": "pink", "w": 2}, {"id": "l10", "n": 10, "t": "La mia giornata: ore e passato", "j": "わたしの一日", "kind": "lesson", "icon": "i-clock", "color": "red", "w": 2}, {"id": "l11", "n": 11, "t": "Il tempo libero: piacere e inviti", "j": "しゅみ", "kind": "lesson", "icon": "i-ball", "color": "blue", "w": 2}, {"id": "l12", "n": 12, "t": "In città: dove si trova?", "j": "まちで", "kind": "lesson", "icon": "i-pin", "color": "yellow", "w": 2}, {"id": "l13", "n": 13, "t": "La forma -te: per favore, posso…?", "j": "て形", "kind": "lesson", "icon": "i-phone", "color": "green", "w": 2}, {"id": "l14", "n": 14, "t": "Al ristorante: contare e ordinare", "j": "レストランで", "kind": "lesson", "icon": "i-fork", "color": "pink", "w": 2}, {"id": "r2", "n": null, "t": "Ripasso 2", "j": "ふくしゅう", "kind": "review", "icon": "i-loop", "color": "red", "w": 2}, {"id": "l15", "n": 15, "t": "Il fine settimana: passato degli aggettivi", "j": "週末", "kind": "lesson", "icon": "i-ticket", "color": "blue", "w": 3}, {"id": "l16", "n": 16, "t": "In viaggio: voglio andare…", "j": "りょこう", "kind": "lesson", "icon": "i-umbrella", "color": "yellow", "w": 3}, {"id": "l17", "n": 17, "t": "Quando ero piccolo: la forma informale", "j": "子どものころ", "kind": "lesson", "icon": "i-kite", "color": "green", "w": 3}, {"id": "l18", "n": 18, "t": "Raccontare: -te iru, -te kara", "j": "ものがたり", "kind": "lesson", "icon": "i-scroll", "color": "pink", "w": 3}, {"id": "l19", "n": 19, "t": "Gusti, confronti e opinioni", "j": "くらべる", "kind": "lesson", "icon": "i-heart", "color": "red", "w": 3}, {"id": "l20", "n": 20, "t": "Fare spese e fare regali", "j": "かいもの", "kind": "lesson", "icon": "i-bag", "color": "blue", "w": 3}, {"id": "l21", "n": 21, "t": "Progetti e condizioni", "j": "これから", "kind": "lesson", "icon": "i-suitcase", "color": "yellow", "w": 3}, {"id": "l22", "n": 22, "t": "Salute e servizi: devo, posso", "j": "びょういん", "kind": "lesson", "icon": "i-cross", "color": "green", "w": 3}, {"id": "l23", "n": 23, "t": "Marco a Tokyo: racconta la tua storia", "j": "東京のマルコ", "kind": "lesson", "icon": "i-torii", "color": "pink", "w": 3}, {"id": "r3", "n": null, "t": "Ripasso 3 e test A2", "j": "ふくしゅう・テスト", "kind": "review", "icon": "i-star", "color": "red", "w": 3}];
+var WORLDS=[{"title": "Parte prima · Primi passi", "level": "A1.1", "j": "はじめの一歩"}, {"title": "Parte seconda · La vita di tutti i giorni", "level": "A1.2", "j": "まいにちの生活"}, {"title": "Parte terza · Raccontare", "level": "A2", "j": "話す・伝える"}];
+/* ---- l1 ---- */
+DLG.l1=[["A","おはよう ございます 。","Buongiorno."],["B","あ 、 おはよう ございます 。","Ah, buongiorno."],["A","これ 、 どうぞ 。","Questo è per lei, prego."],["B","えっ 、 ありがとう ございます ！","Oh, grazie!"],["A","いいえ 。","Di niente."],["B","じゃあ 、 また 。","Allora, a presto."],["A","さようなら 。","Arrivederci."]];
+EX.l1=[
+ {q:"Ascolta: che cosa significa?",au:"ありがとう ございます 。",o:["Grazie.","Buongiorno.","Arrivederci."],e:"ありがとう ございます = grazie (cortese)."},
+ {q:"Ascolta: quando si dice?",au:"おはよう ございます 。",o:["Al mattino","La sera","Prima di dormire"],e:"おはよう ございます = buongiorno, solo al mattino."},
+ {q:"La sera, entrando in un ristorante, dici:",o:["こんばんは","おはよう ございます","さようなら"],e:"こんばんは = buonasera."},
+ {q:"Come si legge か?",o:["ka","ki","sa"],e:"か = ka."},
+ {q:"Come si legge し?",o:["shi","si","chi"],e:"し si legge shi."},
+ {q:"Quale kana si legge «e»?",o:["え","う","お"],e:"え = e."},
+ {q:"Ascolta e scegli la parola:",au:"いえ",o:["いえ","うえ","いい"],e:"いえ = casa."},
+ {q:"Ascolta e scegli la parola:",au:"すし",o:["すし","さし","すき"],e:"すし = sushi."},
+ {q:"Uno sconosciuto ti tiene aperta la porta. Dici:",o:["すみません","さようなら","こんばんは"],e:"すみません vale anche come «grazie» quando qualcuno fa qualcosa per te."},
+ {q:"Con un'amica, al mattino, basta dire:",o:["おはよう","おはよう ございます","こんばんは"],e:"Senza ございます è informale: va bene con amici e famiglia."},
+ {t:"type",q:"Scrivi come si legge (in rōmaji): あさ",a:["あさ"],full:"あさ",e:"あさ = mattina."},
+ {t:"type",q:"Scrivi come si legge (in rōmaji): かお",a:["かお"],full:"かお",e:"かお = viso."},
+ {t:"dict",au:"かさ"},
+ {t:"say",it:"Saluta un vicino di casa al mattino.",jp:"おはよう ございます 。"},
+ {t:"say",it:"Ringrazia in modo cortese.",jp:"ありがとう ございます 。"}
+];
+VOC.l1=[
+ ["おはよう ございます","buongiorno (al mattino)","x"],["こんにちは","buongiorno, ciao","x"],["こんばんは","buonasera","x"],["さようなら","arrivederci","x"],["ありがとう ございます","grazie","x"],["すみません","mi scusi; grazie","x"],
+ ["はい","sì","x"],["いいえ","no; di niente","x"],["どうぞ","prego, tenga","x"],["じゃあ また","allora, a presto","x"],
+ ["あい","amore","n"],["いえ","casa","n"],["うえ","sopra","n"],["あお","blu (colore)","n"],["かお","viso","n"],["あさ","mattina","n"],["すし","sushi","n"],["いす","sedia","n"],["えき","stazione","n"],["かさ","ombrello","n"],["あき","autunno","n"],["せき","posto a sedere","n"]
+];
+
+/* ---- frasi ---- */
+var FRASI=[
+["Per sopravvivere",[["すみません 。","Mi scusi! / Scusi (per chiamare qualcuno)."],["分[わ]かりません 。","Non capisco."],["もう 一度[いちど] お願[ねが]いします 。","Può ripetere, per favore?"],["ゆっくり お願[ねが]いします 。","Più piano, per favore."],["これ は 日本語[にほんご] で 何[なん] です か 。","Come si dice questo in giapponese?"],["英語[えいご] が 話[はな]せます か 。","Parla inglese?"],["トイレ は どこ です か 。","Dov'è il bagno?"],["少[すこ]し 日本語[にほんご] が 話[はな]せます 。","Parlo un po' di giapponese."],["助[たす]けて ください ！","Aiuto!"]]],
+["Cortesia",[["おはよう ございます 。","Buongiorno (al mattino)."],["こんにちは 。","Buongiorno / Ciao."],["こんばんは 。","Buonasera."],["ありがとう ございます 。","Grazie."],["どういたしまして 。","Prego (rispondendo a grazie)."],["はじめまして 。","Piacere (la prima volta)."],["よろしく お願[ねが]いします 。","Piacere di conoscerla / Conto su di lei."],["お先[さき] に 失礼[しつれい] します 。","Vado, scusate (uscendo prima degli altri)."],["さようなら 。","Arrivederci."],["おやすみなさい 。","Buonanotte."]]],
+["A tavola e nei negozi",[["いただきます 。","Buon appetito (prima di mangiare)."],["ごちそうさま でした 。","Grazie del pasto (dopo mangiato)."],["これ を ください 。","Mi dia questo, per favore."],["いくら です か 。","Quanto costa?"],["お会計[かいけい] お願[ねが]いします 。","Il conto, per favore."],["カード で いい です か 。","Posso pagare con la carta?"],["見[み]て いる だけ です 。","Sto solo guardando."],["袋[ふくろ] は いりません 。","Non mi serve la busta."]]],
+["Reazioni",[["そう です か 。","Ah, davvero? / Capisco."],["いい です ね ！","Bello! / Buona idea!"],["すごい ！","Fantastico!"],["大丈夫[だいじょうぶ] です 。","Va bene / Non c'è problema."],["ちょっと 待[ま]って ください 。","Aspetti un momento."],["本当[ほんとう] です か 。","Davvero?"],["残念[ざんねん] です ね 。","Peccato."],["がんばって ！","Forza! Coraggio!"]]]
+];
+
+/* ---- verbi ---- */
+/* verbi del coniugatore: d = forma base con letture, z = significato, g = gruppo (u = godan, ru = ichidan, irr = irregolare) */
+var VERBS=[
+ {d:"行[い]く",z:"andare",g:"u",iku:1},{d:"飲[の]む",z:"bere",g:"u"},{d:"読[よ]む",z:"leggere",g:"u"},{d:"書[か]く",z:"scrivere",g:"u"},{d:"聞[き]く",z:"ascoltare; chiedere",g:"u"},
+ {d:"話[はな]す",z:"parlare",g:"u"},{d:"買[か]う",z:"comprare",g:"u"},{d:"会[あ]う",z:"incontrare",g:"u"},{d:"待[ま]つ",z:"aspettare",g:"u"},{d:"持[も]つ",z:"tenere, avere con sé",g:"u"},
+ {d:"帰[かえ]る",z:"tornare (a casa)",g:"u"},{d:"入[はい]る",z:"entrare",g:"u"},{d:"分[わ]かる",z:"capire",g:"u"},{d:"作[つく]る",z:"fare, preparare",g:"u"},{d:"乗[の]る",z:"salire (su un mezzo)",g:"u"},
+ {d:"ある",z:"esserci (cose)",g:"u",aru:1},{d:"遊[あそ]ぶ",z:"giocare, divertirsi",g:"u"},{d:"休[やす]む",z:"riposare",g:"u"},{d:"住[す]む",z:"abitare",g:"u"},{d:"歩[ある]く",z:"camminare",g:"u"},
+ {d:"泳[およ]ぐ",z:"nuotare",g:"u"},{d:"使[つか]う",z:"usare",g:"u"},{d:"言[い]う",z:"dire",g:"u"},{d:"思[おも]う",z:"pensare",g:"u"},{d:"撮[と]る",z:"fotografare",g:"u"},
+ {d:"食[た]べる",z:"mangiare",g:"ru"},{d:"見[み]る",z:"vedere, guardare",g:"ru"},{d:"起[お]きる",z:"alzarsi, svegliarsi",g:"ru"},{d:"寝[ね]る",z:"dormire, andare a letto",g:"ru"},{d:"いる",z:"esserci (persone, animali)",g:"ru"},
+ {d:"着[き]る",z:"indossare (sopra la vita)",g:"ru"},{d:"教[おし]える",z:"insegnare",g:"ru"},{d:"出[で]かける",z:"uscire (di casa)",g:"ru"},{d:"始[はじ]める",z:"cominciare",g:"ru"},{d:"借[か]りる",z:"prendere in prestito",g:"ru"},
+ {d:"する",z:"fare",g:"irr"},{d:"来[く]る",z:"venire",g:"irr"},{d:"勉強[べんきょう]する",z:"studiare",g:"irr"},{d:"料理[りょうり]する",z:"cucinare",g:"irr"},{d:"電話[でんわ]する",z:"telefonare",g:"irr"}
+];
+EX.verbi=[
+ {q:"Forma -masu di 飲[の]む (bere):",o:["飲[の]みます","飲[の]めます","飲[の]います"],e:"Gruppo 1: la -u diventa -i + ます."},
+ {q:"Forma -masu di 食[た]べる (mangiare):",o:["食[た]べます","食[た]べります","食[た]びます"],e:"Gruppo 2: si toglie る e si aggiunge ます."},
+ {q:"Forma -te di 書[か]く (scrivere):",o:["書[か]いて","書[か]って","書[か]きて"],e:"-く → -いて."},
+ {q:"Forma -te di 行[い]く (andare):",o:["行[い]って","行[い]いて","行[い]きて"],e:"Eccezione: 行く → 行って."},
+ {q:"Forma -te di 飲[の]む:",o:["飲[の]んで","飲[の]って","飲[の]みて"],e:"-む, -ぶ, -ぬ → -んで."},
+ {q:"Forma -nai di 買[か]う (comprare):",o:["買[か]わない","買[か]あない","買[か]いない"],e:"-う → -わない (non -あない)."},
+ {q:"Forma -nai di ある (esserci):",o:["ない","あらない","あない"],e:"ある è irregolare: il negativo è semplicemente ない."},
+ {q:"帰[かえ]る (tornare) è del gruppo…",o:["1 (godan): 帰[かえ]ります","2 (ichidan): 帰[かえ]ます","irregolare"],e:"Alcuni verbi in -eru/-iru sono del gruppo 1: 帰る, 入る, 走る."},
+ {q:"Passato informale di 来[く]る (venire):",o:["来[き]た","来[く]た","来[こ]た"],e:"来る è irregolare: 来[こ]ない, 来[き]ます, 来[き]た."},
+ {t:"type",q:"Forma -masu di する:",a:["します"],full:"します"},
+ {t:"type",q:"Forma -te di 待[ま]つ (aspettare):",a:["待[ま]って"],full:"待[ま]って"},
+ {t:"type",q:"Forma -ta di 話[はな]す (parlare):",a:["話[はな]した"],full:"話[はな]した"}
+];
+
+var CULT=CULT||{};
+
+/* ---------- testo giapponese ----------
+   Formato dei dati: parole separate da spazi; lettura dei kanji tra parentesi quadre.
+   Esempio: "わたし は 日本[にほん] に 行[い]きます 。"
+   - la superficie (senza spazi e senza letture) è quello che si legge e si ascolta;
+   - la lettura in kana serve per furigana, rōmaji e per controllare le risposte. */
+var JRUN=/[぀-ヿ一-鿿々〆ー]/;
+var FURI=/([一-鿿々〆ヶヵ]+)\[([^\]]+)\]/g;
+function jtoks(s){return String(s).trim().split(/\s+/).filter(Boolean)}
+function jsurf(t){return String(t).replace(FURI,"$1")}
+function jread(t){return String(t).replace(FURI,"$2")}
+function jplain(s){return jtoks(s).map(jsurf).join("")}
+function jkana(s){return jtoks(s).map(jread).join("")}
+function jruby(t){return esc(t).replace(FURI,'<ruby>$1<rt>$2</rt></ruby>')}
+function kata2hira(s){return String(s).replace(/[ァ-ヶ]/g,function(c){return String.fromCharCode(c.charCodeAt(0)-0x60)})}
+var JP_PUNCT=/^[。、！？「」『』（）・…〜～!?.,()\-]+$/;
+
+/* rōmaji Hepburn (le vocali lunghe scritte in kana restano come sono: とうきょう → toukyou; ー → vocale con macron) */
+var RO1={"あ":"a","い":"i","う":"u","え":"e","お":"o","か":"ka","き":"ki","く":"ku","け":"ke","こ":"ko","さ":"sa","し":"shi","す":"su","せ":"se","そ":"so",
+ "た":"ta","ち":"chi","つ":"tsu","て":"te","と":"to","な":"na","に":"ni","ぬ":"nu","ね":"ne","の":"no","は":"ha","ひ":"hi","ふ":"fu","へ":"he","ほ":"ho",
+ "ま":"ma","み":"mi","む":"mu","め":"me","も":"mo","や":"ya","ゆ":"yu","よ":"yo","ら":"ra","り":"ri","る":"ru","れ":"re","ろ":"ro","わ":"wa","を":"o","ん":"n",
+ "が":"ga","ぎ":"gi","ぐ":"gu","げ":"ge","ご":"go","ざ":"za","じ":"ji","ず":"zu","ぜ":"ze","ぞ":"zo","だ":"da","ぢ":"ji","づ":"zu","で":"de","ど":"do",
+ "ば":"ba","び":"bi","ぶ":"bu","べ":"be","ぼ":"bo","ぱ":"pa","ぴ":"pi","ぷ":"pu","ぺ":"pe","ぽ":"po","ゔ":"vu",
+ "ぁ":"a","ぃ":"i","ぅ":"u","ぇ":"e","ぉ":"o","ゃ":"ya","ゅ":"yu","ょ":"yo","ゎ":"wa"};
+var RO2={"きゃ":"kya","きゅ":"kyu","きょ":"kyo","しゃ":"sha","しゅ":"shu","しょ":"sho","ちゃ":"cha","ちゅ":"chu","ちょ":"cho","にゃ":"nya","にゅ":"nyu","にょ":"nyo",
+ "ひゃ":"hya","ひゅ":"hyu","ひょ":"hyo","みゃ":"mya","みゅ":"myu","みょ":"myo","りゃ":"rya","りゅ":"ryu","りょ":"ryo","ぎゃ":"gya","ぎゅ":"gyu","ぎょ":"gyo",
+ "じゃ":"ja","じゅ":"ju","じょ":"jo","びゃ":"bya","びゅ":"byu","びょ":"byo","ぴゃ":"pya","ぴゅ":"pyu","ぴょ":"pyo",
+ "しぇ":"she","ちぇ":"che","じぇ":"je","てぃ":"ti","でぃ":"di","とぅ":"tu","どぅ":"du","ふぁ":"fa","ふぃ":"fi","ふぇ":"fe","ふぉ":"fo","うぃ":"wi","うぇ":"we","うぉ":"wo",
+ "ゔぁ":"va","ゔぃ":"vi","ゔぇ":"ve","ゔぉ":"vo","つぁ":"tsa","てゅ":"tyu"};
+var MAC={a:"ā",i:"ī",u:"ū",e:"ē",o:"ō"};
+function toRomaji(kana){var s=kata2hira(kana),out="",i=0,gem=false;
+  while(i<s.length){var c=s[i],two=s.substr(i,2),r;
+    if(c==="っ"){gem=true;i++;continue}
+    if(c==="ー"){var m=out.match(/[aeiou]$/);if(m)out=out.slice(0,-1)+MAC[m[0]];i++;continue}
+    if(RO2[two]){r=RO2[two];i+=2}else if(RO1[c]!==undefined){r=RO1[c];i++}else{r=c;i++}
+    if(gem){out+=(r.indexOf("ch")===0?"t":r.charAt(0));gem=false}
+    if(c==="ん"&&/^[aeiouy]/.test((function(){var n2=s.substr(i,2),n1=s[i];return RO2[n2]||RO1[n1]||""})()))r="n'";
+    out+=r}
+  return out}
+var RO_PART={"は":"wa","へ":"e","を":"o","では":"dewa","には":"niwa","とは":"towa","からは":"karawa","までは":"madewa","こんにちは":"konnichiwa","こんばんは":"konbanwa"};
+function jtokRomaji(t){var r=kata2hira(jread(t));
+  if(JP_PUNCT.test(r))return r.replace(/。/g,".").replace(/、/g,",").replace(/！/g,"!").replace(/？/g,"?").replace(/[「『]/g,"\u201c").replace(/[」』]/g,"\u201d").replace(/[（]/g,"(").replace(/[）]/g,")").replace(/・/g," ").replace(/[〜～]/g,"~");
+  var lead=r.match(/^[「『（]+/),tail=r.match(/[。、！？」』）]+$/),core=r.replace(/^[「『（]+/,"").replace(/[。、！？」』）]+$/,"");
+  var ro=RO_PART[core]!==undefined?RO_PART[core]:/[぀-ヿ]/.test(core)?toRomaji(core):core;
+  return (lead?jtokRomaji(lead[0]):"")+ro+(tail?jtokRomaji(tail[0]):"")}
+function jromaji(s){return jtoks(s).map(jtokRomaji).join(" ").replace(/ ([.,!?)\u201d~])/g,"$1").replace(/\u201c /g,"\u201c").replace(/ \u201d/g,"\u201d")}
+
+/* controllo delle risposte: si accettano kanji, kana o rōmaji, con tolleranza sulle vocali lunghe e sulle varianti di trascrizione */
+function canonRo(r){r=String(r).toLowerCase().normalize("NFD").replace(/([aeiou])̄/g,"$1$1").replace(/[̀-ͯ]/g,"").replace(/[^a-z]/g,"");
+  r=r.replace(/sy/g,"sh").replace(/ty/g,"ch").replace(/zy|jy/g,"j").replace(/si/g,"shi").replace(/ti/g,"chi").replace(/tu/g,"tsu").replace(/(^|[^sc])hu/g,"$1fu").replace(/zi/g,"ji");
+  r=r.replace(/wo/g,"o").replace(/ha/g,"wa").replace(/he/g,"e");
+  r=r.replace(/ou/g,"o").replace(/oo/g,"o").replace(/uu/g,"u").replace(/aa/g,"a").replace(/ii/g,"i").replace(/ee/g,"e").replace(/ei/g,"e").replace(/nn/g,"n").replace(/m(?=[bmp])/g,"n");
+  return r}
+function stripJ(s){return String(s).replace(/[\s。、！？「」『』（）・…!?.,()〜～'"-]/g,"")}
+function jAnswerOk(user,ans){var u=stripJ(user);if(!u)return false;
+  if(u===stripJ(jplain(ans))||kata2hira(u)===kata2hira(stripJ(jkana(ans))))return true;
+  if(/[一-鿿]/.test(u))return false;
+  var ur=/[぀-ヿ]/.test(u)?toRomaji(u):u;return canonRo(ur)===canonRo(jromaji(ans))}
+
+var $=function(s,r){return (r||document).querySelector(s)},$$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+var KEY="giapponese-per-italiani-v1";
+var state={best:{},box:{},can:{}};
+try{var raw=localStorage.getItem(KEY);if(raw){var p=JSON.parse(raw);state.best=p.best||{};state.box=p.box||{};state.can=p.can||{}}}catch(e){}
+function save(){try{localStorage.setItem(KEY,JSON.stringify({best:state.best,box:state.box,can:state.can}))}catch(e){}}
+var prefs={tr:true,slow:false,fcm:"ear",furi:true,ro:"auto"};
+try{var pr=JSON.parse(localStorage.getItem(KEY+"-prefs")||"{}");["tr","slow","fcm","furi","ro","fcr"].forEach(function(k){if(pr[k]!==undefined)prefs[k]=pr[k]})}catch(e){}
+function savePrefs(){try{localStorage.setItem(KEY+"-prefs",JSON.stringify(prefs))}catch(e){}}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function shuffle(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t}return a}
+function rmotion(){try{return matchMedia("(prefers-reduced-motion: reduce)").matches}catch(e){return false}}
+
+/* ---------- voce ----------
+   File audio pre-registrati (audio/<hash>.mp3); se manca un file si usa la voce giapponese del dispositivo. */
+var voice=null,hasTTS=("speechSynthesis" in window),speakSeq=0,players=[];
+var AUD=null;try{AUD=new Audio();AUD.preload="auto"}catch(e){}
+function cyrb53(str){var h1=0xdeadbeef,h2=0x41c6ce57;for(var i=0,ch;i<str.length;i++){ch=str.charCodeAt(i);h1=Math.imul(h1^ch,2654435761);h2=Math.imul(h2^ch,1597334677)}
+  h1=Math.imul(h1^(h1>>>16),2246822507);h1^=Math.imul(h2^(h2>>>13),3266489909);h2=Math.imul(h2^(h2>>>16),2246822507);h2^=Math.imul(h1^(h1>>>13),3266489909);return 4294967296*(2097151&h2)+(h1>>>0)}
+function akey(t){return String(t).trim().replace(/\s+/g," ")}
+function audioSrc(t){return "audio/"+cyrb53(akey(t)).toString(36)+".mp3"}
+function pickVoice(){if(!hasTTS)return;try{var vs=speechSynthesis.getVoices();voice=vs.filter(function(v){return /^ja[-_]JP/i.test(v.lang)})[0]||vs.filter(function(v){return /^ja/i.test(v.lang)})[0]||null}catch(e){}}
+if(hasTTS){pickVoice();try{speechSynthesis.onvoiceschanged=pickVoice}catch(e){}}
+function stopAll(){try{if(AUD)AUD.pause()}catch(e){}try{if(hasTTS)speechSynthesis.cancel()}catch(e){}}
+function stopPlayers(except){players.forEach(function(p){if(p!==except)p.stop(true)})}
+function ttsSpeak(t,fin,wait){var txt=jplain(t);
+  if(!hasTTS){if(wait)setTimeout(fin,Math.max(800,txt.length*160));return}
+  try{speechSynthesis.cancel();var u=new SpeechSynthesisUtterance(txt);u.lang="ja-JP";if(voice)u.voice=voice;u.rate=prefs.slow?.65:.95;
+    u.onend=fin;u.onerror=function(){setTimeout(fin,200)};speechSynthesis.speak(u);
+    if(wait)setTimeout(fin,Math.max(2500,txt.length*(prefs.slow?260:180)));
+  }catch(e){if(wait)setTimeout(fin,800)}}
+function speak(t,cb,opt){
+  opt=opt||{};if(!opt.chain)stopPlayers();
+  var my=++speakSeq,done=false,fell=false;
+  function fin(){if(done)return;done=true;if(cb&&my===speakSeq)cb()}
+  function fallback(){if(fell||done||my!==speakSeq)return;fell=true;ttsSpeak(t,fin,!!cb)}
+  stopAll();if(!AUD){ttsSpeak(t,fin,!!cb);return}
+  try{AUD.onended=function(){if(my===speakSeq)fin()};AUD.onerror=fallback;AUD.src=audioSrc(t);
+    var r=prefs.slow?.75:1;AUD.defaultPlaybackRate=r;AUD.playbackRate=r;try{AUD.preservesPitch=true}catch(e){}
+    var pp=AUD.play();if(pp&&pp.catch)pp.catch(function(err){if(err&&err.name==="AbortError")return;fallback()});
+  }catch(e){fallback()}}
+var SPK='<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>';
+var MIC='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>';
+
+/* ---------- parole giapponesi cliccabili ---------- */
+function jpHTML(s,plain){var out=[];jtoks(s).forEach(function(t){var su=jsurf(t);
+  if(JP_PUNCT.test(su)||!JRUN.test(su)&&!/[A-Za-z0-9]/.test(su)){var pu='<span class="pu">'+esc(su)+'</span>';
+    if(out.length&&/^[。、！？」』）…]/.test(su))out[out.length-1]='<span class="nw">'+out[out.length-1]+pu+'</span>';else out.push(pu);return}
+  out.push(plain?'<span class="tk">'+jruby(t)+'</span>':'<span class="w" tabindex="0" role="button" data-say="'+esc(t)+'">'+jruby(t)+'</span>')});
+  return out.join("")}
+function jLine(s){return '<span class="jl" lang="ja">'+jpHTML(s)+'</span><span class="ro">'+esc(jromaji(s))+'</span>'}
+var MIXRE=/([぀-ヿ一-鿿々〆ー〜～「](?:[぀-ヿ一-鿿々〆ー〜～・。、！？「」]|\[[぀-ヿ]+\]| (?=[぀-ヿ一-鿿「〜]))*)/;
+function mixHTML(text){return String(text).split(MIXRE).map(function(part,i){if(i%2===0)return esc(part);
+  return '<span class="jx" lang="ja">'+jpHTML(part)+'</span><span class="ro-i"> ('+esc(jromaji(part))+')</span>'}).join("")}
+function hasJ(s){return JRUN.test(String(s))}
+function meaning(t){var s=jsurf(t);return DICT[t]||DICT[s]||(typeof CONJ_IDX!=="undefined"&&(CONJ_IDX[s]||CONJ_IDX[t]))||""}
+
+/* ---------- verbi ---------- */
+var GI={"う":"い","く":"き","ぐ":"ぎ","す":"し","つ":"ち","ぬ":"に","ぶ":"び","む":"み","る":"り"},GA={"う":"わ","く":"か","ぐ":"が","す":"さ","つ":"た","ぬ":"な","ぶ":"ば","む":"ま","る":"ら"},
+    GE={"う":"え","く":"け","ぐ":"げ","す":"せ","つ":"て","ぬ":"ね","ぶ":"べ","む":"め","る":"れ"},GO={"う":"お","く":"こ","ぐ":"ご","す":"そ","つ":"と","ぬ":"の","ぶ":"ぼ","む":"も","る":"ろ"},
+    GTE={"う":"って","つ":"って","る":"って","ぬ":"んで","ぶ":"んで","む":"んで","く":"いて","ぐ":"いで","す":"して"};
+var VFORMS=[["dict","forma base (dizionario)","%"],["masu","-masu: presente / futuro cortese","%"],["masen","-masen: negativo cortese","non %"],["mashita","-mashita: passato cortese","%·p"],["masendeshita","-masen deshita: passato negativo cortese","non %·p"],
+  ["nai","-nai: negativo informale","non %"],["ta","-ta: passato informale","%·p"],["nakatta","-nakatta: passato negativo informale","non %·p"],["te","forma -te","%·te"],["pot","potenziale: «posso / so»","poter %"],["vol","volitiva: «facciamo! / vorrei fare»","%·v"]];
+var VGROUPS=[["Forme cortesi (-masu)",["masu","masen","mashita","masendeshita"]],["Forme informali",["dict","nai","ta","nakatta"]],["Forma -te, potenziale, volitiva",["te","pot","vol"]]];
+function vconj(v,f){var d=v.d;
+  if(v.g==="irr"){var kuru=/(来\[く\]る|くる)$/.test(d),pre=kuru?d.replace(/(来\[く\]る|くる)$/,""):d.replace(/する$/,"");
+    var K=kuru?{dict:"来[く]る",masu:"来[き]ます",masen:"来[き]ません",mashita:"来[き]ました",masendeshita:"来[き]ません でした",nai:"来[こ]ない",ta:"来[き]た",nakatta:"来[こ]なかった",te:"来[き]て",pot:"来[こ]られる",vol:"来[こ]よう"}
+      :{dict:"する",masu:"します",masen:"しません",mashita:"しました",masendeshita:"しません でした",nai:"しない",ta:"した",nakatta:"しなかった",te:"して",pot:"できる",vol:"しよう"};
+    return pre+K[f]}
+  var last=d.slice(-1),stem=d.slice(0,-1),ru=v.g==="ru";
+  if(ru){return stem+{dict:"る",masu:"ます",masen:"ません",mashita:"ました",masendeshita:"ません でした",nai:"ない",ta:"た",nakatta:"なかった",te:"て",pot:"られる",vol:"よう"}[f]}
+  var te=v.iku?"って":GTE[last],ta=te.replace(/て$/,"た").replace(/で$/,"だ"),na=v.aru?"":stem+GA[last];
+  switch(f){case "dict":return d;case "masu":return stem+GI[last]+"ます";case "masen":return stem+GI[last]+"ません";case "mashita":return stem+GI[last]+"ました";
+    case "masendeshita":return stem+GI[last]+"ません でした";case "nai":return v.aru?"ない":na+"ない";case "ta":return stem+ta;case "nakatta":return v.aru?"なかった":na+"なかった";
+    case "te":return stem+te;case "pot":return stem+GE[last]+"る";case "vol":return stem+GO[last]+"う"}}
+function vMeaning(v,f){var z=v.zz||v.z,L=VFORMS.filter(function(x){return x[0]===f})[0];return L?L[1].split(":")[0]:z}
+var CONJ_IDX={};
+VERBS.forEach(function(v){VFORMS.forEach(function(F){var s=jplain(vconj(v,F[0]));if(!CONJ_IDX[s])CONJ_IDX[s]=v.z+" ("+jplain(v.d)+") · "+F[1].split(":")[0]})});
+
+/* ---------- audio al clic ---------- */
+document.addEventListener("click",function(e){var b=e.target.closest("[data-say]");if(b)speak(b.getAttribute("data-say"))});
+document.addEventListener("keydown",function(e){var t=e.target;if((e.key==="Enter"||e.key===" ")&&t.classList&&t.classList.contains("w")){e.preventDefault();speak(t.getAttribute("data-say"))}});
+
+/* ---------- tooltip: scrittura, lettura, rōmaji, significato ---------- */
+var tip=document.createElement("div");tip.className="tip";tip.setAttribute("role","tooltip");tip.hidden=true;document.body.appendChild(tip);
+var tipTimer=null,tipFor=null;
+function showTip(w){var h=w.getAttribute("data-say"),s=jsurf(h),r=jread(h),m=meaning(h);
+  tip.innerHTML='<span class="tip-w" lang="ja">'+esc(s)+'</span><span class="tip-r">'+(r!==s?'<span lang="ja">'+esc(r)+'</span> · ':'')+esc(jromaji(h))+'</span>'+(m?'<span class="tip-m">'+esc(m)+'</span>':'');
+  tip.hidden=false;tipFor=w;
+  var rc=w.getBoundingClientRect(),tw=tip.offsetWidth,th=tip.offsetHeight,vw=document.documentElement.clientWidth;
+  var x=Math.max(8,Math.min(vw-tw-8,rc.left+rc.width/2-tw/2)),y=rc.top-th-8;if(y<8)y=rc.bottom+8;
+  tip.style.left=x+"px";tip.style.top=y+"px"}
+function hideTip(){tip.hidden=true;tipFor=null;clearTimeout(tipTimer)}
+document.addEventListener("mouseover",function(e){var w=e.target.closest&&e.target.closest(".w");if(w&&w!==tipFor)showTip(w);else if(!w&&tipFor)hideTip()});
+document.addEventListener("focusin",function(e){var w=e.target.closest&&e.target.closest(".w");if(w)showTip(w)});
+document.addEventListener("focusout",function(e){if(e.target===tipFor)hideTip()});
+document.addEventListener("click",function(e){var w=e.target.closest&&e.target.closest(".w");if(w){showTip(w);clearTimeout(tipTimer);tipTimer=setTimeout(hideTip,3500)}});
+window.addEventListener("scroll",function(){if(tipFor)hideTip()},{passive:true});
+
+/* ---------- esempi ---------- */
+function renderExamples(root){$$("div[data-jp]",root).forEach(function(d){if(d.classList.contains("ex"))return;var j=d.getAttribute("data-jp");d.className="ex";
+  d.innerHTML='<div class="ex-body"><div class="it-l">'+jLine(j)+'</div><div class="tr">'+esc(d.getAttribute("data-it")||"")+'</div></div><button class="say" data-say="'+esc(j)+'" aria-label="Ascolta">'+SPK+'</button>'})}
+renderExamples(document);
+
+/* ---------- tabelle dei kana ---------- */
+var KROWS={base:[["","あいうえお"],["k","かきくけこ"],["s","さしすせそ"],["t","たちつてと"],["n","なにぬねの"],["h","はひふへほ"],["m","まみむめも"],["y","や・ゆ・よ"],["r","らりるれろ"],["w","わ・・・を"],["n","ん・・・・"]],
+  dak:[["g","がぎぐげご"],["z","ざじずぜぞ"],["d","だぢづでど"],["b","ばびぶべぼ"],["p","ぱぴぷぺぽ"]],
+  yoon:[["ky",["きゃ","きゅ","きょ"]],["sh",["しゃ","しゅ","しょ"]],["ch",["ちゃ","ちゅ","ちょ"]],["ny",["にゃ","にゅ","にょ"]],["hy",["ひゃ","ひゅ","ひょ"]],["my",["みゃ","みゅ","みょ"]],["ry",["りゃ","りゅ","りょ"]],["gy",["ぎゃ","ぎゅ","ぎょ"]],["j",["じゃ","じゅ","じょ"]],["by",["びゃ","びゅ","びょ"]],["py",["ぴゃ","ぴゅ","ぴょ"]]]};
+function hira2kata(s){return String(s).replace(/[ぁ-ゖ]/g,function(c){return String.fromCharCode(c.charCodeAt(0)+0x60)})}
+$$("table.kana").forEach(function(t){var g=t.getAttribute("data-g")||"base",kat=t.getAttribute("data-k")==="kata",rows=KROWS[g],only=(t.getAttribute("data-rows")||"").split(",").filter(Boolean);
+  var h="";rows.forEach(function(r,ri){if(only.length&&only.indexOf(String(ri))<0)return;var cells=Array.isArray(r[1])?r[1]:r[1].split("");
+    h+='<tr>'+cells.map(function(c){if(c==="・")return '<td class="nk"></td>';var k=kat?hira2kata(c):c;
+      return '<td><button class="kc" type="button" data-say="'+esc(k)+'" aria-label="'+esc(toRomaji(c))+'"><span lang="ja">'+esc(k)+'</span><small>'+esc(toRomaji(c))+'</small></button></td>'}).join("")+'</tr>'});
+  t.innerHTML=h});
+
+/* ---------- numeri ---------- */
+var NUMJ={base:[["1","一[いち]"],["2","二[に]"],["3","三[さん]"],["4","四[よん]"],["5","五[ご]"],["6","六[ろく]"],["7","七[なな]"],["8","八[はち]"],["9","九[きゅう]"],["10","十[じゅう]"],["11","十一[じゅういち]"],["12","十二[じゅうに]"],["20","二十[にじゅう]"],["30","三十[さんじゅう]"],["0","ゼロ"]],
+  big:[["100","百[ひゃく]"],["200","二百[にひゃく]"],["300","三百[さんびゃく]"],["600","六百[ろっぴゃく]"],["800","八百[はっぴゃく]"],["1000","千[せん]"],["3000","三千[さんぜん]"],["8000","八千[はっせん]"],["10000","一万[いちまん]"],["20000","二万[にまん]"],["500","五百[ごひゃく]"],["5000","五千[ごせん]"]]};
+$$("table.numtbl").forEach(function(nt){var L=NUMJ[nt.getAttribute("data-set")||"base"],r2='';
+  for(var j=0;j<L.length;j+=3){r2+='<tr>'+L.slice(j,j+3).map(function(n){return '<td class="big" style="font-variant-numeric:tabular-nums">'+n[0]+'</td><td class="jpc">'+jLine(n[1])+'</td><td><button class="say sm" data-say="'+esc(n[1])+'" aria-label="Ascolta">'+SPK+'</button></td>'}).join("")+'</tr>'}
+  nt.innerHTML=r2});
+
+/* ---------- lettore continuo ---------- */
+function Player(getLines,ui){
+  var p={tok:null,wait:null};
+  p.stop=function(quiet){p.tok=null;p.wait=null;if(!quiet){speakSeq++;stopAll()}getLines().forEach(function(l){l.el.classList.remove("now")});ui.idle()};
+  p.play=function(){stopPlayers(p);var tok={};p.tok=tok;ui.busy();step(0);
+    function step(i){if(p.tok!==tok)return;var L=getLines();L.forEach(function(l){l.el.classList.remove("now")});
+      if(i>=L.length){p.tok=null;ui.idle();return}
+      var l=L[i];l.el.classList.add("now");try{l.el.scrollIntoView({block:"nearest",behavior:"smooth"})}catch(e){}
+      if(l.mine&&!l.el.classList.contains("open")){p.wait={i:i,go:function(){step(i+1)},tok:tok};return}
+      speak(l.say,function(){setTimeout(function(){step(i+1)},500)},{chain:true})}};
+  p.answer=function(i,l){l.el.classList.add("open");var w=p.wait;p.wait=null;
+    speak(l.say,function(){if(w&&w.i===i&&p.tok===w.tok)setTimeout(w.go,500)},{chain:!!w})};
+  players.push(p);return p}
+
+/* ---------- dialoghi ---------- */
+function renderDialog(el){
+  var id=el.getAttribute("data-dlg"),L=DLG[id];if(!L)return;
+  el.innerHTML='<div class="dl-head"><h3>Dialogo<i lang="ja">会話</i></h3><div class="dl-ctrl"><button class="btn pri dl-play" type="button">'+SPK+' Ascolta tutto</button><button class="btn dl-role" type="button" aria-pressed="false">'+MIC+' Faccio io B</button></div></div>'+
+   '<div class="dl-lines">'+L.map(function(r,i){return '<div class="dl who'+r[0]+'" data-i="'+i+'"><span class="who">'+r[0]+'</span><div class="dl-body"><div class="dl-text"><div class="it-l">'+jLine(r[1])+'</div><div class="tr">'+esc(r[2])+'</div></div><div class="dl-turn">Tocca a te. Di\' ad alta voce: <b>«'+esc(r[2])+'»</b><button class="btn pri dl-next" type="button">Fatto, ascolta l\'originale</button></div></div><button class="say" data-say="'+esc(r[1])+'" aria-label="Ascolta">'+SPK+'</button></div>'}).join("")+'</div>';
+  var lines=$$(".dl",el),role=false,playBtn=$(".dl-play",el),roleBtn=$(".dl-role",el);
+  function get(){return lines.map(function(ln,i){return {el:ln,say:L[i][1],mine:role&&L[i][0]==="B"}})}
+  var pl=Player(get,{busy:function(){playBtn.innerHTML="■ Stop";playBtn.dataset.on="1"},idle:function(){playBtn.innerHTML=SPK+" Ascolta tutto";playBtn.dataset.on=""}});
+  playBtn.onclick=function(){if(playBtn.dataset.on)pl.stop();else pl.play()};
+  roleBtn.onclick=function(){role=!role;el.classList.toggle("role",role);roleBtn.setAttribute("aria-pressed",role?"true":"false");lines.forEach(function(l){l.classList.remove("open")});pl.stop()};
+  lines.forEach(function(ln,i){$(".dl-next",ln).onclick=function(){pl.answer(i,get()[i])}})}
+$$(".dialog[data-dlg]").forEach(renderDialog);
+
+/* ---------- esercizi ---------- */
+function updateToc(){$$("[data-sc]").forEach(function(s){var b=state.best[s.getAttribute("data-sc")];s.textContent=b?b[0]+"/"+b[1]:"";s.classList.toggle("done",!!b&&b[0]===b[1])})}
+function jLineSay(t){return '<span class="zp"><span class="it-l">'+jLine(t)+'</span><button class="say sm" data-say="'+esc(t)+'" aria-label="Ascolta">'+SPK+'</button></span>'}
+function optHTML(o){return hasJ(o)?jpHTML(o,true):esc(o)}
+function renderSet(el,opt){
+  opt=opt||{};var id=el.getAttribute("data-set"),items=opt.items||EX[id];if(!items)return;var res=new Array(items.length),one=!!opt.one,qs=[];
+  if(one){el.classList.add("one");el.innerHTML='<div class="dhead"><span>'+(opt.head||"")+'</span><span><span class="score">0 / '+items.length+'</span></span></div>'}
+  else el.innerHTML='<div class="dhead"><span>Conta la prima risposta. Il «Di\' ad alta voce» lo valuti tu; nei dettati e nei completamenti puoi scrivere in kana o in rōmaji.</span><span>Punti <span class="score">0 / '+items.length+'</span>'+(state.best[id]?' · record '+state.best[id][0]+'/'+state.best[id][1]:'')+'</span></div>';
+  var scoreEl=$(".score",el);
+  function mark(i,ok){if(res[i]!==undefined)return;res[i]=ok;var n=res.filter(Boolean).length,done=res.filter(function(x){return x!==undefined}).length;scoreEl.textContent=n+" / "+items.length;
+    if(opt.onMark)opt.onMark(i,ok,items[i]);
+    if(one){qs[i].classList.add(ok?"q-ok":"q-no");if(done<items.length){var nx=document.createElement("div");nx.className="acts qnext";nx.innerHTML='<button class="btn pri" type="button">Avanti →</button>';
+        nx.firstChild.onclick=function(){nx.remove();qs[i].hidden=true;var q2=qs[i+1];q2.hidden=false;try{q2.scrollIntoView({block:"start",behavior:rmotion()?"auto":"smooth"})}catch(e){}var f=q2.querySelector(".lsp");if(f&&!opt.noAuto)f.click()};qs[i].appendChild(nx)}
+      else if(opt.onDone)opt.onDone(n,items.length,res);return}
+    if(done===items.length){var b=state.best[id];if(!b||n>=b[0]){state.best[id]=[n,items.length];save();updateToc()}var r=document.createElement("div");r.className="acts";r.style.marginLeft="0";r.innerHTML='<button class="btn pri">Rifai da capo</button>';r.firstChild.onclick=function(){renderSet(el)};el.appendChild(r)}}
+  items.forEach(function(it,i){
+    var q=document.createElement("div");q.className="q";
+    var tag=it.t==="say"?'<span class="qtag say-t">'+MIC+'Parla</span>':it.t==="ord"?'<span class="qtag">Componi</span>':it.t==="dict"?'<span class="qtag wr-t">Dettato</span>':it.t==="type"?'<span class="qtag wr-t">Completa</span>':(it.au?'<span class="qtag ear-t">'+SPK+'Ascolta</span>':'<span class="qtag">Scegli</span>');
+    if(it.t==="dict"||it.t==="type"){
+      var isD=it.t==="dict";
+      q.innerHTML='<div class="qt"><span class="qn">'+(i+1)+'</span><span>'+tag+(isD?'Ascolta e scrivi quello che senti (in kana o in rōmaji).':mixHTML(it.q))+'</span></div>'+
+        (isD?'<div class="acts"><button class="btn pri lsp" type="button">'+SPK+' Ascolta</button><span class="lsh">Puoi ascoltare quante volte vuoi.</span></div>':'')+
+        '<div class="tin-row"><input class="tin" type="text" lang="ja" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" aria-label="Risposta" placeholder="kana / rōmaji"><button class="btn pri ck" type="button">Controlla</button></div><div class="expl"></div>';
+      var inp=$(".tin",q),exT=$(".expl",q),ck=$(".ck",q);
+      if(isD)$(".lsp",q).onclick=function(){speak(it.au)};
+      function check(){if(q.dataset.locked)return;var v=inp.value.trim();if(!v){exT.innerHTML="Scrivi prima la risposta.";return}
+        var ans=it.a||[it.au],ok=ans.some(function(a){return jAnswerOk(v,a)});
+        q.dataset.locked="1";inp.disabled=true;ck.disabled=true;inp.classList.add(ok?"ok":"no");
+        var full=isD?it.au:(it.full||ans[0]);
+        exT.innerHTML=(ok?'<b class="ok">Giusto!</b> ':'<b class="no">Non proprio.</b> ')+'Risposta: '+jLineSay(full)+(it.e?' '+mixHTML(it.e):'');
+        if(!isD)speak(full);mark(i,ok)}
+      ck.onclick=check;inp.onkeydown=function(e){if(e.key==="Enter"&&!e.isComposing){e.preventDefault();check()}};
+    }else if(it.t==="say"){
+      q.innerHTML='<div class="qt"><span class="qn">'+(i+1)+'</span><span>'+tag+'Di\' in giapponese, ad alta voce: <b>'+mixHTML(it.it)+'</b></span></div>'+
+        '<div class="acts"><button class="btn pri sv">Fatto, mostra la risposta</button></div>'+
+        '<div class="expl sayans" hidden>'+jLineSay(it.jp)+(it.e?'<span class="sayn">'+mixHTML(it.e)+'</span>':'')+'</div>'+
+        '<div class="acts sg" hidden><span class="sgq">Ascolta e confronta. Com\'è andata?</span><button class="btn sgno">Devo esercitarmi</button><button class="btn pri sgok">Giusto</button></div>';
+      var ans2=$(".sayans",q),sg=$(".sg",q);
+      $(".sv",q).onclick=function(){this.disabled=true;ans2.hidden=false;sg.hidden=false;speak(it.jp)};
+      $(".sgok",q).onclick=function(){fin(true)};$(".sgno",q).onclick=function(){fin(false)};
+      function fin(ok){$$(".sg button",q).forEach(function(b){b.disabled=true});$(".sgq",q).innerHTML=ok?'<b class="ok">Bravo!</b> Ripeti ancora due volte con ▶.':'<b class="no">Nessun problema.</b> Premi ▶, ripeti insieme alla voce e riprova.';mark(i,ok)}
+    }else if(it.t==="ord"){
+      q.innerHTML='<div class="qt"><span class="qn">'+(i+1)+'</span><span>'+tag+mixHTML(it.q)+'</span></div>';
+      var line=document.createElement("div");line.className="ordline";var pool=document.createElement("div");pool.className="ordpool";
+      var w=shuffle(it.w),g=0;while(w.join(" ")===it.a[0]&&g++<10)w=shuffle(it.w);
+      w.forEach(function(t){var b=document.createElement("button");b.className="tok";b.setAttribute("lang","ja");b.setAttribute("data-t",t);b.innerHTML=jpHTML(t,true);b.onclick=function(){if(q.dataset.locked)return;(b.parentNode===pool?line:pool).appendChild(b)};pool.appendChild(b)});
+      var acts=document.createElement("div");acts.className="acts";acts.innerHTML='<button class="btn pri">Controlla</button><button class="btn">Ricomincia</button>';
+      var ex=document.createElement("div");ex.className="expl";
+      acts.children[1].onclick=function(){if(q.dataset.locked)return;$$(".tok",line).forEach(function(t){pool.appendChild(t)})};
+      acts.children[0].onclick=function(){
+        if(pool.children.length){ex.innerHTML="Usa prima tutte le parole.";return}
+        var s=$$(".tok",line).map(function(t){return t.getAttribute("data-t")}).join(" ");var ok=it.a.some(function(a){return jplain(a)===jplain(s)});
+        q.dataset.locked="1";acts.children[0].disabled=true;acts.children[1].disabled=true;
+        ex.innerHTML=(ok?'<b class="ok">Giusto!</b> Ora dilla ad alta voce: ':'<b class="no">Non proprio.</b> Risposta: ')+jLineSay(it.a[0]);speak(it.a[0]);mark(i,ok)};
+      q.appendChild(line);q.appendChild(pool);q.appendChild(acts);q.appendChild(ex);
+    }else{
+      q.innerHTML='<div class="qt"><span class="qn">'+(i+1)+'</span><span>'+tag+mixHTML(it.q)+'</span></div>'+
+        (it.au?'<div class="acts"><button class="btn pri lsp">'+SPK+' Ascolta</button><span class="lsh">Puoi ascoltare quante volte vuoi. Il testo compare dopo la risposta.</span></div><div class="expl lsr" hidden></div>':'');
+      if(it.au)$(".lsp",q).onclick=function(){speak(it.au)};
+      var opts=document.createElement("div");opts.className="opts";var ex2=document.createElement("div");ex2.className="expl";
+      var order=shuffle(it.o.map(function(_,k){return k}));
+      order.forEach(function(k){var o=it.o[k];var b=document.createElement("button");b.className="opt";if(hasJ(o))b.setAttribute("lang","ja");b.innerHTML=optHTML(o);
+        b.onclick=function(){var ok=k===0;$$(".opt",opts).forEach(function(x){x.disabled=true});opts.children[order.indexOf(0)].classList.add("right");if(!ok)b.classList.add("wrong");
+          ex2.innerHTML=(ok?'<b class="ok">Giusto!</b> ':'<b class="no">No.</b> ')+mixHTML(it.e||"")+(hasJ(it.o[0])&&jtoks(it.o[0]).length>1&&!it.au?' '+jLineSay(it.o[0]):'');
+          if(it.au){var r=$(".lsr",q);r.hidden=false;r.innerHTML='Hai sentito: '+jLineSay(it.au)}
+          mark(i,ok)};opts.appendChild(b)});
+      q.appendChild(opts);q.appendChild(ex2);
+    }
+    if(one&&i>0)q.hidden=true;qs.push(q);el.appendChild(q);
+  })}
+$$(".drill[data-set]").forEach(function(d){renderSet(d)});
+updateToc();
+
+/* ---------- frasario ---------- */
+var fr=$("#frasario");if(fr){fr.innerHTML=FRASI.map(function(g){return '<h3>'+esc(g[0])+'</h3><div class="exs">'+g[1].map(function(r){return '<div data-jp="'+esc(r[0])+'" data-it="'+esc(r[1])+'"></div>'}).join("")+'</div>'}).join("");renderExamples(fr)}
+
+/* ---------- parole e vocabolario ---------- */
+var W=[];LESSONS.forEach(function(L,li){(VOC[L.id]||[]).forEach(function(r){W.push([r[0],r[1],r[2],li,L.id]);var s=jsurf(r[0]);if(!DICT[s])DICT[s]=r[1];if(!DICT[r[0]])DICT[r[0]]=r[1]})});
+var TYP={n:"nome",v:"verbo",a:"aggettivo",x:"espressione"};
+function wordHTML(r){return '<span class="jl" lang="ja">'+jpHTML(r[0],true)+'</span>'}
+function lessonLabel(L){return L.kind==="lesson"?"Lezione "+L.n+" · "+L.it:L.it}
+var vt=$("#vocabtbl");if(vt){var rowsV=['<tr><th>Giapponese</th><th>Rōmaji</th><th>Italiano</th><th></th></tr>'];
+  LESSONS.forEach(function(L){var ws=VOC[L.id];if(!ws||!ws.length)return;rowsV.push('<tr class="grp"><td colspan="4">'+esc(lessonLabel(L))+'</td></tr>');
+    ws.forEach(function(r){rowsV.push('<tr><td class="jpc">'+wordHTML(r)+'</td><td class="rom">'+esc(jromaji(r[0]))+'</td><td>'+esc(r[1])+'</td><td><button class="say sm" data-say="'+esc(r[0])+'" aria-label="Ascolta">'+SPK+'</button></td></tr>')})});
+  vt.innerHTML=rowsV.join("")}
+function renderWords(el){var ws=VOC[el.getAttribute("data-voc")]||[];
+  el.innerHTML=ws.map(function(r){return '<div class="wd"><span class="wi">'+wordHTML(r)+'<span class="ro">'+esc(jromaji(r[0]))+'</span></span><span class="wz">'+esc(r[1])+'</span><button class="say sm" data-say="'+esc(r[0])+'" aria-label="Ascolta">'+SPK+'</button></div>'}).join("")}
+$$(".words[data-voc]").forEach(renderWords);
+/* so fare */
+$$("ul.cando[data-cando]").forEach(function(ul){var id=ul.getAttribute("data-cando"),lis=$$("li",ul),st=state.can[id]||[];
+  lis.forEach(function(li,i){var lab=document.createElement("label"),cb=document.createElement("input");cb.type="checkbox";cb.checked=!!st[i];
+    lab.appendChild(cb);lab.addEventListener("click",function(e){if(e.target.closest&&e.target.closest(".w"))e.preventDefault()});var sp=document.createElement("span");sp.innerHTML=li.innerHTML;lab.appendChild(sp);li.innerHTML="";li.appendChild(lab);
+    cb.onchange=function(){var a=state.can[id]||[];a[i]=cb.checked;state.can[id]=a;save();cnt()}});
+  var c=document.createElement("li");c.className="cnt";ul.appendChild(c);
+  function cnt(){var a=state.can[id]||[],k=a.filter(Boolean).length;c.textContent=k===lis.length?"Tutto fatto! Puoi passare alla lezione successiva.":"Fatto "+k+" su "+lis.length}
+  cnt()});
+
+/* ---------- flashcard ---------- */
+function bx(w){return state.box[w[0]]||1}
+var fcCur=null,shown=false;
+function FW(){var lim=typeof prefs.fcr==="number"?prefs.fcr:-1;if(lim<0){var hi=0;LESSONS.forEach(function(L,li){if(state.best[L.id]||(typeof pathStarted==="function"&&pathStarted(L.id)))hi=li});lim=Math.max(hi+1,LESSONS.findIndex(function(L){return L.id==="l8"}))}return W.filter(function(w){return w[3]<=lim})}
+function pick(){var WW=FW(),tot=0,ws=WW.map(function(w){var x=Math.pow(2,5-bx(w));if(w===fcCur)x=0;tot+=x;return x});var r=Math.random()*tot;for(var i=0;i<WW.length;i++){r-=ws[i];if(r<=0)return WW[i]}return WW[0]}
+function drawBoxes(){var b=$("#fcboxes");if(!b)return;var c=[0,0,0,0,0];FW().forEach(function(w){c[bx(w)-1]++});var mx=Math.max.apply(null,c)||1;
+  b.innerHTML=c.map(function(n,i){return '<div><div class="bar"><i style="height:'+(n/mx*100)+'%"></i></div><b>'+n+'</b><span>scatola '+(i+1)+'</span></div>'}).join("")}
+function drawCard(auto){var card=$("#fccard");if(!card||!fcCur)return;var w=fcCur,m=prefs.fcm;
+  var word='<div class="fc-word">'+wordHTML(w)+'<span class="ro fc-ro">'+esc(jromaji(w[0]))+'</span></div>';
+  var front=m==="ear"?'<button class="fc-ear" id="fcplay" type="button" aria-label="Ascolta la parola">'+SPK+'</button><p class="fc-hint">Ascolta: che cosa significa? Dillo, poi guarda la risposta.</p>'
+    :m==="say"?'<p class="fc-zh">'+esc(w[1])+'</p><p class="fc-hint">Dillo ad alta voce in giapponese, poi guarda la risposta.</p>'
+    :'<div class="fc-word">'+wordHTML(w)+'</div><p class="fc-hint">Che cosa significa? Dillo, poi guarda la risposta.</p>';
+  card.innerHTML=shown?word+'<div class="fc-zh">'+esc(w[1])+'</div>'+(TYP[w[2]]?'<div class="fc-g">'+TYP[w[2]]+'</div>':'')+'<div class="acts" style="margin-left:0;justify-content:center"><button class="btn" id="fcno">Non la sapevo</button><button class="btn pri" id="fcyes">La sapevo</button><button class="say" data-say="'+esc(w[0])+'" aria-label="Ascolta">'+SPK+'</button></div>'
+    :front+'<div class="acts" style="margin-left:0;justify-content:center"><button class="btn pri" id="fcshow">Mostra la risposta</button></div><p class="fc-box">scatola '+bx(w)+'</p>';
+  if(shown){$("#fcno").onclick=function(){grade(false)};$("#fcyes").onclick=function(){grade(true)};speak(w[0])}
+  else{$("#fcshow").onclick=function(){shown=true;drawCard()};var pb=$("#fcplay");if(pb){pb.onclick=function(){speak(w[0])};if(auto)speak(w[0])}}}
+function grade(ok){state.box[fcCur[0]]=ok?Math.min(5,bx(fcCur)+1):1;save();drawBoxes();next(true)}
+function next(auto){fcCur=pick();shown=false;drawCard(auto)}
+function drawReset(conf){var r=$("#fcreset");if(!r)return;r.innerHTML=conf?'<span>Rimettere tutte le parole nella scatola 1?</span><button class="btn" id="rsy">Sì, azzera</button><button class="btn" id="rsn">Annulla</button>':'<button class="btn" id="rs">Azzera le flashcard</button>';
+  if(conf){$("#rsy").onclick=function(){state.box={};save();drawBoxes();next();drawReset(false)};$("#rsn").onclick=function(){drawReset(false)}}else{$("#rs").onclick=function(){drawReset(true)}}}
+(function(){var sel=$("#fcrange");if(!sel)return;var cur=FW().length?FW()[FW().length-1][3]:0;
+  sel.innerHTML=LESSONS.map(function(L,li){var n=W.filter(function(w){return w[3]<=li}).length;return (VOC[L.id]&&VOC[L.id].length)?'<option value="'+li+'"'+(li===cur?' selected':'')+'>Fino a: '+esc(lessonLabel(L))+' ('+n+' parole)</option>':''}).join("");
+  sel.onchange=function(){prefs.fcr=+sel.value;savePrefs();drawBoxes();next()}})();
+if($("#fccard")){drawBoxes();next();drawReset(false)}
+function fcMode(m){prefs.fcm=m;savePrefs();$$("[data-fcm]").forEach(function(b){b.setAttribute("aria-pressed",b.getAttribute("data-fcm")===m?"true":"false")});shown=false;drawCard()}
+$$("[data-fcm]").forEach(function(b){b.onclick=function(){fcMode(b.getAttribute("data-fcm"))};b.setAttribute("aria-pressed",b.getAttribute("data-fcm")===prefs.fcm?"true":"false")});
+
+/* ---------- barra in alto ---------- */
+var ROL={auto:"auto",on:"sì",off:"no"};
+$("#totop").onclick=function(){try{window.scrollTo({top:0,behavior:rmotion()?"auto":"smooth"})}catch(e){window.scrollTo(0,0)}};
+function applyPrefs(){var B=document.body;B.classList.toggle("no-tr",!prefs.tr);B.classList.toggle("no-furi",!prefs.furi);B.classList.toggle("ro-on",prefs.ro==="on");B.classList.toggle("ro-auto",prefs.ro==="auto");
+  $("#tbtr").setAttribute("aria-pressed",prefs.tr?"true":"false");$("#tbtrl").textContent=prefs.tr?"sì":"no";
+  $("#tbfuri").setAttribute("aria-pressed",prefs.furi?"true":"false");$("#tbfuril").textContent=prefs.furi?"sì":"no";
+  $("#tbro").setAttribute("aria-pressed",prefs.ro!=="off"?"true":"false");$("#tbrol").textContent=ROL[prefs.ro];
+  $("#tbslow").setAttribute("aria-pressed",prefs.slow?"true":"false");$("#tbslowl").textContent=prefs.slow?"lenta":"normale"}
+$("#tbtr").onclick=function(){prefs.tr=!prefs.tr;savePrefs();applyPrefs()};
+$("#tbfuri").onclick=function(){prefs.furi=!prefs.furi;savePrefs();applyPrefs()};
+$("#tbro").onclick=function(){prefs.ro=prefs.ro==="auto"?"on":prefs.ro==="on"?"off":"auto";savePrefs();applyPrefs()};
+$("#tbslow").onclick=function(){prefs.slow=!prefs.slow;savePrefs();applyPrefs();speak("こんにちは")};
+applyPrefs();
+(function(){var b=$("#tbset"),pn=$("#setp");if(!b||!pn)return;
+  function show(o){pn.hidden=!o;b.setAttribute("aria-expanded",o?"true":"false")}
+  b.onclick=function(e){e.stopPropagation();show(pn.hidden)};
+  document.addEventListener("click",function(e){if(!pn.hidden&&!e.target.closest("#setp")&&!e.target.closest("#tbset"))show(false)});
+  document.addEventListener("keydown",function(e){if(e.key==="Escape"&&!pn.hidden)show(false)})})();
+
+/* ---------- lettura finale ---------- */
+function setupReading(root){var btn=$("#rdplay",root);if(!btn)return;var rd=$("#reading",root),lines=$$(".ex",rd);
+  var pl=Player(function(){return lines.map(function(l){return {el:l,say:$(".say",l).getAttribute("data-say"),mine:false}})},{busy:function(){btn.textContent="■ Stop";btn.dataset.on="1"},idle:function(){btn.textContent="▶ Ascolta tutto";btn.dataset.on=""}});
+  btn.onclick=function(){if(btn.dataset.on)pl.stop();else pl.play()};
+  var t=$("#tgtxt",root);t.onclick=function(){var h=rd.classList.toggle("hide-it");t.textContent=h?"Mostra il testo giapponese":"Nascondi il testo giapponese";t.setAttribute("aria-pressed",h?"true":"false")}}
+setupReading(document);
+
+/* ---------- coniugatore ---------- */
+(function(){var sel=$("#cjverb");if(!sel)return;var grp=0,rows=[],G={u:"Gruppo 1 (godan, -u)",ru:"Gruppo 2 (ichidan, -ru)",irr:"Irregolari"};
+  sel.innerHTML=["u","ru","irr"].map(function(k){return '<optgroup label="'+G[k]+'">'+VERBS.map(function(v,i){return v.g===k?'<option value="'+i+'">'+esc(jplain(v.d))+' · '+esc(v.z)+'</option>':''}).join("")+'</optgroup>'}).join("");
+  var btn=$("#cjplay");
+  var pl=Player(function(){return rows},{busy:function(){btn.textContent="■ Stop";btn.dataset.on="1"},idle:function(){btn.textContent="▶ Ascolta tutto";btn.dataset.on=""}});
+  btn.onclick=function(){if(btn.dataset.on)pl.stop();else pl.play()};
+  function draw(){if(btn.dataset.on)pl.stop();var v=VERBS[+sel.value];
+    $("#cjinfo").innerHTML='<span class="cj-inf">'+jLine(v.d)+'</span><span>'+esc(v.z)+'</span><span>'+G[v.g]+'</span>';
+    $("#cjtable").innerHTML='<tr><th>Forma</th><th>Giapponese</th><th></th></tr>'+VGROUPS[grp][1].map(function(f){var F=VFORMS.filter(function(x){return x[0]===f})[0],j=vconj(v,f);
+      return '<tr><td class="cj-p">'+esc(F[1])+'</td><td class="cj-f">'+jLine(j)+'</td><td class="cj-play"><button class="say sm" type="button" data-say="'+esc(j)+'" aria-label="Ascolta">'+SPK+'</button></td></tr>'}).join("");
+    rows=$$("#cjtable tr").slice(1).map(function(tr){return {el:tr,say:$(".say",tr).getAttribute("data-say"),mine:false}})}
+  sel.onchange=draw;
+  $$("#cjtense .btn").forEach(function(b,bi){b.onclick=function(){grp=bi;$$("#cjtense .btn").forEach(function(x){x.setAttribute("aria-pressed",x===b?"true":"false")});draw()}});
+  draw()})();
+
+/* ---------- tema chiaro / scuro ---------- */
+(function(){var b=$("#tbtheme");if(!b)return;var TK=KEY+"-theme",root=document.documentElement,mq=null;try{mq=matchMedia("(prefers-color-scheme: dark)")}catch(e){}
+  var MOON='<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 14.6A8.6 8.6 0 0 1 9.4 3.5a8.6 8.6 0 1 0 11.1 11.1z"/></svg>';
+  function cur(){return root.getAttribute("data-theme")||(mq&&mq.matches?"dark":"light")}
+  function draw(){var d=cur()==="dark";b.setAttribute("aria-pressed",d?"true":"false");b.title=d?"Tema scuro: attivo":"Tema scuro: spento";b.setAttribute("aria-label","Tema scuro");b.innerHTML=MOON+'<span class="tbl">scuro</span>'}
+  b.onclick=function(){var n=cur()==="dark"?"light":"dark";root.setAttribute("data-theme",n);try{localStorage.setItem(TK,n)}catch(e){}draw()};
+  if(mq){try{mq.addEventListener("change",draw)}catch(e){}}
+  draw()})();
+
+/* ---------- tutto il giapponese nel testo diventa cliccabile ---------- */
+var SKIPJ=".hero-card,.stats,.legend,.lhead,.partttl,.toc,button,.w,.tk,.jl,.jx,.ro,.ro-i,script,style,.tok,.opts,.fc-card,#fcboxes,.toc,.stats,.kicker,.tip,input,select,.fc-range,.kana,rt";
+function jpZone(root){var out=[],tw=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,null),n;
+  while((n=tw.nextNode())){if(!JRUN.test(n.nodeValue))continue;var p=n.parentElement;if(!p||p.closest(SKIPJ))continue;out.push(n)}
+  out.forEach(function(n){var t=document.createElement("template");t.innerHTML=mixHTML(n.nodeValue);n.parentNode.replaceChild(t.content,n)})}
+jpZone($("main")||document.body);
+
+/* ---------- indice ---------- */
+var tocd=$("#tocd");try{if(tocd&&matchMedia("(min-width:1000px)").matches)tocd.open=true}catch(e){}
+$$(".toc a").forEach(function(a){a.addEventListener("click",function(){try{if(!matchMedia("(min-width:1000px)").matches)tocd.open=false}catch(e){}})});
+
+/* ---------- percorso a livelli ----------
+   Ogni lezione è un'unità divisa in tappe brevi: ascolto, parole, regola, suono, cultura, sfida.
+   Superare la sfida (≥ 70 %) apre l'unità successiva; il ripasso di fine mondo vale anche come
+   test per saltare al mondo successivo. Le lezioni intere restano sempre leggibili nel libro. */
+var PK=KEY+"-path";
+var P={done:{},stars:{},sc:{},skip:1,days:{},goal:3};
+try{var pj=JSON.parse(localStorage.getItem(PK)||"null");if(pj)for(var pk in P)if(pj[pk]!==undefined)P[pk]=pj[pk]}catch(e){}
+function pSave(){try{localStorage.setItem(PK,JSON.stringify(P))}catch(e){}}
+var UNITS=LESSONS.filter(function(L){return L.kind==="lesson"||L.kind==="review"});
+var WCOL=["red","blue","green"];
+function uIdx(id){for(var i=0;i<UNITS.length;i++)if(UNITS[i].id===id)return i;return -1}
+function passed(id){return (P.stars[id]||0)>=1}
+function pathStarted(id){var d=P&&P.done[id];return !!d&&Object.keys(d).length>0}
+function firstOfWorld(i){return i===0||UNITS[i-1].w!==UNITS[i].w}
+function unlocked(i){if(i<=0)return true;var U=UNITS[i];return passed(UNITS[i-1].id)||U.w<P.skip||(U.w===P.skip&&firstOfWorld(i))||pathStarted(U.id)}
+function reviewOf(w){for(var i=0;i<UNITS.length;i++)if(UNITS[i].w===w&&UNITS[i].kind==="review")return UNITS[i];return null}
+function dayKey(off){var d=new Date();d.setDate(d.getDate()-(off||0));return d.getFullYear()+"-"+("0"+(d.getMonth()+1)).slice(-2)+"-"+("0"+d.getDate()).slice(-2)}
+function streak(){var o=P.days[dayKey(0)]?0:1,n=0;while(P.days[dayKey(o+n)])n++;return n}
+function tick(){var t=dayKey(0);P.days[t]=(P.days[t]||0)+1;var ks=Object.keys(P.days).sort();while(ks.length>90)delete P.days[ks.shift()];pSave()}
+CULT=CULT||{};Object.keys(CULT).forEach(function(id){CULT[id].forEach(function(c){(c.w||[]).forEach(function(w){var k=jsurf(w[0]);if(!DICT[k])DICT[k]=w[1];if(!DICT[w[0]])DICT[w[0]]=w[1]})})});
+
+/* ---------- contenuto delle tappe, preso dalle lezioni del libro ---------- */
+var STEPN={dlg:["Ascolta","聞く","i-ear"],voc:["Parole","ことば","i-cards"],rule:["Regola","文法","i-bulb"],rev:["Ripasso","復習","i-loop"],snd:["Scrittura e suoni","文字","i-wave"],cult:["Cultura","文化","i-moka"],test:["Sfida","チャレンジ","i-star"]};
+function sec(id){return document.getElementById(id)}
+function readingNodes(id){var s=sec(id),rd=$("#reading",s);if(!rd||$(".dialog",s))return [];
+  return Array.prototype.filter.call(s.children,function(c){return c===rd||c.contains($("#rdplay",s))||(c.matches("ul.plain")&&c.nextElementSibling&&c.nextElementSibling.contains($("#rdplay",s)))})}
+function bodyNodes(id){var s=sec(id),rn=readingNodes(id);
+  return Array.prototype.filter.call(s.children,function(c){return !c.matches("header,.dialog,.suono,.words-head,.words,.drill,.cando,p.lead")&&rn.indexOf(c)<0})}
+function tlen(n){return n.textContent.replace(/\s+/g,"").length}
+function ruleChunks(id){var ns=bodyNodes(id),tot=0;ns.forEach(function(n){tot+=tlen(n)});
+  if(tot<1000||ns.length<3)return ns.length?[ns]:[];
+  var best=-1,bd=1e9,acc=0;
+  for(var i=0;i<ns.length;i++){if(i>0&&ns[i].matches("h3,details,.rule,.task,.summary-grid,.speech")&&!ns[i-1].matches("h3")){var d=Math.abs(acc-tot/2);if(d<bd){bd=d;best=i}}acc+=tlen(ns[i])}
+  return best>0?[ns.slice(0,best),ns.slice(best)]:[ns]}
+function stepsOf(id){var U=UNITS[uIdx(id)],s=sec(id),out=[],ch=ruleChunks(id);
+  if(U.kind==="review"){ch.forEach(function(c,i){out.push({k:"rev",i:i,of:ch.length,n:c})})}
+  else{if($(".dialog",s)||readingNodes(id).length)out.push({k:"dlg"});
+    if((VOC[id]||[]).length)out.push({k:"voc"});
+    ch.forEach(function(c,i){out.push({k:"rule",i:i,of:ch.length,n:c})});
+    if($(".suono",s))out.push({k:"snd"})}
+  if((CULT[id]||[]).length)out.push({k:"cult"});
+  out.push({k:"test"});
+  out.forEach(function(st){st.key=st.k+(st.of>1?st.i:"");var N=STEPN[st.k];st.zh=N[0]+(st.of>1?" "+(st.i+1)+"/"+st.of:"");st.it=N[1];st.icon=N[2]});
+  return out}
+function cloneNodes(ns){var f=document.createElement("div");f.className="st-clone";
+  ns.forEach(function(n){var c=n.cloneNode(true);$$("details",c).forEach(function(d){d.open=false});if(c.matches&&c.matches("details"))c.open=false;f.appendChild(c)});
+  setupReading(f);$$("[id]",f).forEach(function(e){e.removeAttribute("id")});return f}
+
+/* ---------- quiz generati ---------- */
+function pickN(a,n){return shuffle(a).slice(0,n)}
+function dlgLines(id){var s=sec(id),L=[];
+  $$(".dialog[data-dlg]",s).forEach(function(d){(DLG[d.getAttribute("data-dlg")]||[]).forEach(function(r){L.push([r[1],r[2]])})});
+  if(!L.length)$$("#reading [data-jp]",s).forEach(function(d){L.push([d.getAttribute("data-jp"),d.getAttribute("data-it")])});
+  return L.filter(function(l){return l[1]})}
+function dlgQuiz(id,n){var L=[],seen={};dlgLines(id).forEach(function(l){if(!seen[l[0]]&&!seen[l[1]]){seen[l[0]]=seen[l[1]]=1;L.push(l)}});if(L.length<3)return [];
+  return pickN(L,Math.min(n,L.length)).map(function(l){var others=L.filter(function(x){return x[1]!==l[1]}).map(function(x){return x[1]});
+    return {q:"Ascolta e scegli il significato:",au:l[0],o:[l[1]].concat(pickN(others,2)),e:""}})}
+function fullW(w){return w[0]}
+function vocQuiz(words,n,pool){pool=pool&&pool.length>=6?pool:W;var out=[];
+  pickN(words,Math.min(n,words.length)).forEach(function(w,k){
+    var oth=shuffle(pool.filter(function(x){return x[1]!==w[1]&&x[0]!==w[0]})),d=[],seen={};
+    oth.forEach(function(x){if(d.length<2&&!seen[x[1]]){seen[x[1]]=1;d.push(x)}});
+    if(k%2===0)out.push({q:"Ascolta e scegli il significato:",au:fullW(w),o:[w[1]].concat(d.map(function(x){return x[1]})),e:fullW(w)+" = "+w[1],w:w});
+    else out.push({q:"Come si dice «"+w[1]+"» in giapponese?",o:[fullW(w)].concat(d.map(fullW)),e:fullW(w)+" = "+w[1],w:w})});
+  return out}
+function lessonWords(id){return W.filter(function(w){return w[4]===id})}
+function exSplit(id){var it=EX[id]||[],U=UNITS[uIdx(id)];
+  if(U.kind==="review")return {p:[],t:it.slice()};
+  var p=[],t=[],a=0;it.forEach(function(x){var pr=!x.au&&x.t!=="dict"&&x.t!=="say";if(pr&&a++%2===0&&p.length<4)p.push(x);else t.push(x)});
+  if(t.length<8)t=t.concat(vocQuiz(lessonWords(id),8-t.length));
+  return {p:p,t:t}}
+function stars(n,m){var r=m?n/m:0;return r>=.999?3:r>=.85?2:r>=.7?1:0}
+function starHTML(k){var s="";for(var i=0;i<3;i++)s+='<i class="'+(i<k?"on":"")+'">★</i>';return '<span class="stars" aria-label="'+k+' stelle su 3">'+s+'</span>'}
+
+/* ---------- schede culturali ---------- */
+function cultHTML(c){
+  return '<article class="cc">'+(c.s?'<svg class="cc-art" viewBox="0 0 320 180" role="img" aria-label="'+esc(c.t)+'"><use href="#sc-'+c.s+'"/></svg>':'')+
+    '<div class="cc-body"><h3>'+esc(c.t)+'</h3><p class="cc-it"><span class="it-l">'+jLine(c.i)+'</span><button class="say sm" data-say="'+esc(c.i)+'" aria-label="Ascolta">'+SPK+'</button></p>'+
+    c.p.map(function(x){return '<p>'+mixHTML(x)+'</p>'}).join("")+
+    (c.it?'<div class="cc-cmp"><div class="cc-i"><b>Italia</b><p>'+mixHTML(c.it)+'</p></div><div class="cc-c"><b>Giappone · <i lang="ja">日本</i></b><p>'+mixHTML(c.jp)+'</p></div></div>':'')+
+    ((c.w||[]).length?'<div class="cc-w">'+c.w.map(function(w){return '<button class="chip" type="button" data-say="'+esc(w[0])+'"><span lang="ja">'+jpHTML(w[0],true)+'</span><small>'+esc(w[1])+'</small></button>'}).join("")+'</div>':'')+
+    '</div></article>'}
+
+/* ---------- finestre (scheda unità, tappa) con il tasto indietro del telefono ---------- */
+var mstack=[];
+function openModal(el,onClose){el.hidden=false;mstack.push({el:el,close:onClose});document.documentElement.classList.add("modal-open");try{history.pushState({pm:mstack.length},"")}catch(e){}}
+function dropModal(){var m=mstack.pop();if(!m)return;m.el.hidden=true;if(m.close)m.close();if(!mstack.length)document.documentElement.classList.remove("modal-open");if(m.after)setTimeout(m.after,0)}
+/* chiude la finestra in cima; "after" parte solo quando è davvero chiusa */
+function closeModal(after){if(!mstack.length){if(after)after();return}var m=mstack[mstack.length-1];if(after)m.after=after;
+  var ok=false;try{if(history.state&&history.state.pm){history.back();ok=true}}catch(e){}if(!ok)dropModal()}
+window.addEventListener("popstate",function(){if(mstack.length)dropModal()});
+document.addEventListener("keydown",function(e){if(e.key==="Escape"&&mstack.length)closeModal()});
+function quiet(){speakSeq++;stopAll();stopPlayers();hideTip()}
+var toastEl=document.createElement("div");toastEl.className="toast";toastEl.setAttribute("role","status");toastEl.setAttribute("aria-live","polite");document.body.appendChild(toastEl);
+var toastT=null;function toast(h){toastEl.innerHTML=h;toastEl.classList.add("on");clearTimeout(toastT);toastT=setTimeout(function(){toastEl.classList.remove("on")},2600)}
+
+/* ---------- la tappa a schermo intero ---------- */
+var ST=document.createElement("div");ST.className="stage";ST.hidden=true;ST.setAttribute("role","dialog");ST.setAttribute("aria-modal","true");
+ST.innerHTML='<div class="st-top"><button class="st-x" type="button" aria-label="Chiudi">'+'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button><div class="st-prog" aria-hidden="true"><i></i></div><span class="st-t"></span></div><div class="st-body"><div class="st-in"></div></div><div class="st-foot"><button class="btn pri st-go" type="button">继续</button></div>';
+document.body.appendChild(ST);
+var stIn=$(".st-in",ST),stGo=$(".st-go",ST),stBody=$(".st-body",ST),stCur=null;
+$(".st-x",ST).onclick=function(){closeModal()};stBody.addEventListener("scroll",function(){if(tipFor)hideTip()},{passive:true});
+function runStage(o){/* o: {title,color,pages:[{draw(box,release),gate,go}],done()} */
+  stCur=o;var i=0;ST.className="stage t-"+(o.color||"blue")+(o.early?" early":"");$(".st-t",ST).textContent=o.title;
+  function show(){quiet();var pg=o.pages[i];stIn.innerHTML="";var box=document.createElement("div");box.className="st-page";stIn.appendChild(box);
+    stGo.disabled=!!pg.gate;stGo.textContent=pg.go||(i<o.pages.length-1?"Continua":"Fine");
+    pg.draw(box,function(label){stGo.disabled=false;if(label)stGo.textContent=label;stGo.classList.add("ready")});
+    stGo.classList.toggle("ready",!pg.gate);
+    $(".st-prog i",ST).style.width=Math.round(i/o.pages.length*100)+"%";stBody.scrollTop=0}
+  stGo.onclick=function(){if(stGo.disabled)return;var pg=o.pages[i];if(pg.next&&pg.next()===false)return;
+    if(i<o.pages.length-1){i++;show()}else{$(".st-prog i",ST).style.width="100%";var d=o.done;stCur=null;closeModal(d)}};
+  if(!mstack.length||mstack[mstack.length-1].el!==ST)openModal(ST,function(){quiet();stIn.innerHTML=""});
+  show()}
+function quizPage(items,head,cb,mk){return {gate:true,draw:function(box,rel){var d=document.createElement("div");d.className="drill";box.appendChild(d);
+  renderSet(d,{items:items,one:true,head:head,onMark:mk,onDone:function(n,m,res){if(cb)cb(n,m,res);rel()}});
+  var f=$(".lsp",d);if(f)setTimeout(function(){f.click()},300)}}}
+
+function markStep(id,key){P.done[id]=P.done[id]||{};var fresh=!P.done[id][key];P.done[id][key]=1;if(fresh)tick();pSave();return fresh}
+function goalMsg(){var t=P.days[dayKey(0)]||0;return t>=P.goal?"Obiettivo di oggi raggiunto! 🔥 "+streak()+" giorni di fila":"Oggi "+t+" / "+P.goal+" tappe"}
+
+function openStep(id,key,opt){opt=opt||{};var U=UNITS[uIdx(id)],steps=stepsOf(id),st=steps.filter(function(s){return s.key===key})[0];if(!st)return;
+  var s=sec(id),pages=[],title=opt.skip?"Test di livello":(U.kind==="lesson"?"Lezione "+U.n+" · ":"")+st.zh;
+  if(st.k==="dlg"){
+    pages.push({draw:function(box){var rn=readingNodes(id);
+      if(rn.length){box.appendChild(cloneNodes(rn))}
+      else $$(".dialog[data-dlg]",s).forEach(function(d){var n=document.createElement("div");n.className="dialog";n.setAttribute("data-dlg",d.getAttribute("data-dlg"));box.appendChild(n);renderDialog(n)});
+      var h=document.createElement("p");h.className="st-hint";h.textContent="Ascolta qualche volta: quanto capisci senza guardare la traduzione? Poi fai il quiz.";box.insertBefore(h,box.firstChild)},go:"Vai al quiz"});
+    var dq=dlgQuiz(id,4);if(dq.length)pages.push(quizPage(dq,"Ascolta le frasi del dialogo e scegli il significato."))}
+  else if(st.k==="voc"){
+    pages.push({draw:function(box){box.innerHTML='<p class="st-hint">Premi ▶ su ogni parola e ripetila ad alta voce. Tocca la parola per vedere lettura e significato.</p>';var w=document.createElement("div");w.className="words";w.setAttribute("data-voc",id);box.appendChild(w);renderWords(w)},go:"Vai al quiz"});
+    pages.push(quizPage(vocQuiz(lessonWords(id),6),"Ti ricordi queste parole?"))}
+  else if(st.k==="rule"||st.k==="rev"){
+    pages.push({draw:function(box){if(st.i===0){var ld=$("p.lead",s);if(ld)box.appendChild(ld.cloneNode(true))}box.appendChild(cloneNodes(st.n))},go:st.k==="rule"&&st.i===st.of-1&&exSplit(id).p.length?"Esercitati":null});
+    if(st.k==="rule"&&st.i===st.of-1){var pr=exSplit(id).p;if(pr.length)pages.push(quizPage(pr,"Qualche esercizio sulla regola appena vista."))}}
+  else if(st.k==="snd"){
+    pages.push({draw:function(box){box.innerHTML='<p class="st-hint">Ascolta ogni esempio e ripetilo ad alta voce due o tre volte; se ci sono kana nuovi, prova a scriverli su un foglio.</p>';box.appendChild(cloneNodes([$(".suono",s)]))},go:"Fatto"})}
+  else if(st.k==="cult"){
+    CULT[id].forEach(function(c,ci){pages.push({gate:!!c.q,draw:function(box,rel){box.innerHTML=cultHTML(c);
+      if(c.q){var d=document.createElement("div");d.className="drill cc-q";box.appendChild(d);renderSet(d,{items:[c.q],one:true,head:"Domanda",onDone:function(){rel()}})}},go:ci<CULT[id].length-1?"Scheda successiva":"Fine"})})}
+  else if(st.k==="test"){
+    var R={n:0,m:1},items=exSplit(id).t;
+    pages.push(quizPage(items,opt.skip?"Test di livello: con il 70% di risposte giuste passi direttamente alla parte successiva.":"Con almeno il 70% di risposte giuste si apre la lezione successiva.",function(n,m){R.n=n;R.m=m}));
+    pages.push({draw:function(box){var k=stars(R.n,R.m),old=P.stars[id]||0,pass=k>=1;
+      if(k>old)P.stars[id]=k;var b=P.sc[id];if(!b||R.n>=b[0])P.sc[id]=[R.n,R.m];
+      if(pass){P.done[id]=P.done[id]||{};if(!P.done[id].test){P.done[id].test=1;tick()}if(U.kind==="review"&&P.skip<U.w+1)P.skip=U.w+1}
+      pSave();
+      var cd=$("ul.cando",s),lis=cd?$$("li:not(.cnt)",cd).map(function(li){var x=li.cloneNode(true);$$("input",x).forEach(function(e){e.remove()});return '<li>'+x.textContent.trim()+'</li>'}).join(""):"";
+      box.innerHTML='<div class="res '+(pass?"pass":"fail")+'"><div class="res-st">'+starHTML(k)+'</div><h3>'+(pass?(k===3?"Punteggio pieno! すごい！":"Superata!"):"Manca poco")+'</h3><p class="res-sc">'+R.n+' / '+R.m+'</p><p>'+(pass?(U.kind==="review"?"Hai completato questa parte: sei al livello "+(WORLDS[U.w-1]||{}).level+".":"La lezione successiva è aperta."):"Serve il 70% per superarla. Ripassa la lezione e riprova.")+'</p>'+
+        (pass&&lis?'<div class="res-can"><b>Adesso sai:</b><ul>'+lis+'</ul></div>':'')+'<div class="acts" style="margin-left:0;justify-content:center"><button class="btn again" type="button">Riprova</button></div></div>';
+      $(".again",box).onclick=function(){stCur=null;closeModal(function(){openStep(id,"test",opt)})};drawPath()},go:"Torna al percorso"})}
+  runStage({title:title,color:U.color,early:U.kind==="lesson"&&U.n<=4,pages:pages,done:function(){
+    if(st.k!=="test"){var fresh=markStep(id,st.key);if(fresh)toast('<b>✓ '+esc(st.zh)+'</b> · '+goalMsg())}
+    drawPath();if(!opt.skip)openSheet(id)}})}
+
+/* ---------- ripasso del giorno ---------- */
+function reviewWords(){var hi=-1;UNITS.forEach(function(U){if(pathStarted(U.id)){var li=LESSONS.findIndex(function(L){return L.id===U.id});if(li>hi)hi=li}});
+  return W.filter(function(w){return w[3]<=hi})}
+function openReview(){var ws=reviewWords();if(ws.length<4)return;
+  var tot=0,wt=ws.map(function(w){var x=Math.pow(2,5-bx(w));tot+=x;return x}),pick=[],used={};
+  for(var g=0;g<200&&pick.length<Math.min(8,ws.length);g++){var r=Math.random()*tot,j=0;for(;j<ws.length;j++){r-=wt[j];if(r<=0)break}j=Math.min(j,ws.length-1);if(!used[j]){used[j]=1;pick.push(ws[j])}}
+  var items=vocQuiz(pick,pick.length,ws);
+  runStage({title:"Ripasso del giorno",color:"pink",pages:[quizPage(items,"Ripassa le parole che hai studiato: quelle che dimentichi più spesso tornano più spesso.",null,function(i,ok,it){if(it.w){state.box[it.w[0]]=ok?Math.min(5,bx(it.w)+1):1;save()}})],
+    done:function(){P.done._rev=P.done._rev||{};tick();pSave();toast('<b>✓ Ripasso fatto</b> · '+goalMsg());drawPath();try{drawBoxes()}catch(e){}}})}
+
+/* ---------- scheda dell'unità ---------- */
+var SH=document.createElement("div");SH.className="sheet-back";SH.hidden=true;SH.innerHTML='<div class="sheet" role="dialog" aria-modal="true"></div>';document.body.appendChild(SH);
+var sheet=$(".sheet",SH);SH.addEventListener("click",function(e){if(e.target===SH)closeModal()});
+function nextStep(id){var ss=stepsOf(id),d=P.done[id]||{};for(var i=0;i<ss.length;i++)if(!d[ss[i].key])return ss[i];return ss[ss.length-1]}
+function openSheet(id){var i=uIdx(id),U=UNITS[i],ss=stepsOf(id),d=P.done[id]||{},open=unlocked(i),nx=nextStep(id),s=sec(id),ld=$("p.lead",s);
+  sheet.className="sheet t-"+U.color;
+  var kick=U.kind==="lesson"?"Lezione "+U.n+" · 第"+U.n+"課":"Ripasso · 復習";
+  sheet.innerHTML='<div class="sh-grab" aria-hidden="true"></div><div class="sh-head"><svg class="sh-ic" aria-hidden="true"><use href="#'+U.icon+'"/></svg><div><div class="sh-k">'+esc(kick)+'</div><h3>'+esc(U.t)+'</h3><i lang="ja">'+esc(U.j)+'</i></div>'+starHTML(P.stars[id]||0)+'</div>'+
+    (ld?'<p class="sh-lead">'+esc(ld.textContent)+'</p>':'')+
+    (open?'<ol class="sh-steps">'+ss.map(function(st){var ok=st.k==="test"?passed(id):!!d[st.key];return '<li><button class="srow'+(ok?" ok":"")+(st===nx&&!ok?" nx":"")+'" type="button" data-k="'+st.key+'"><svg aria-hidden="true"><use href="#'+st.icon+'"/></svg><span><b>'+esc(st.zh)+'</b><i lang="ja">'+st.it+'</i></span><span class="sst">'+(ok?'<svg aria-label="fatto"><use href="#i-check"/></svg>':'')+'</span></button></li>'}).join("")+'</ol>'
+      :'<div class="sh-lock"><svg aria-hidden="true"><use href="#i-lock"/></svg><p>Supera la sfida della lezione precedente per aprire questa.'+(firstOfWorld(i)&&U.w>1?' Sai già un po\' di giapponese? Fai il test di livello: se lo superi puoi partire da qui.':'')+'</p></div>')+
+    '<div class="sh-acts">'+(open?'<button class="btn pri sh-go" type="button">'+(pathStarted(id)?(passed(id)?"Rifai la sfida":"Continua: "+esc(nx.zh)):"Comincia")+'</button>':(firstOfWorld(i)&&U.w>1?'<button class="btn pri sh-skip" type="button">Test di livello</button>':''))+
+    '<a class="btn sh-book" href="#'+id+'">Leggi la lezione intera</a><button class="btn sh-x" type="button">Chiudi</button></div>';
+  $$(".srow",sheet).forEach(function(b){b.onclick=function(){openStep(id,b.getAttribute("data-k"))}});
+  var go=$(".sh-go",sheet);if(go)go.onclick=function(){openStep(id,passed(id)?"test":nx.key)};
+  var sk=$(".sh-skip",sheet);if(sk)sk.onclick=function(){skipTest(U.w)};
+  $(".sh-x",sheet).onclick=function(){closeModal()};
+  $(".sh-book",sheet).onclick=function(e){e.preventDefault();closeModal(function(){var t=sec(id);if(t)t.scrollIntoView({behavior:rmotion()?"auto":"smooth"});try{history.replaceState(null,"","#"+id)}catch(x){}})};
+  if(!mstack.length||mstack[mstack.length-1].el!==SH)openModal(SH);
+  setTimeout(function(){var f=$(".sh-go,.sh-skip",sheet);if(f)try{f.focus({preventScroll:true})}catch(e){}},50)}
+function skipTest(w){var R=reviewOf(w-1);if(!R)return;
+  if(mstack.length&&mstack[mstack.length-1].el===SH)closeModal(function(){openStep(R.id,"test",{skip:true})});else openStep(R.id,"test",{skip:true})}
+
+/* ---------- mappa ---------- */
+var OFF=[0,1,1.6,1,0,-1,-1.6,-1];
+function drawPath(){var root=$("#pathroot");if(!root)return;
+  var cur=-1;for(var i=0;i<UNITS.length;i++)if(unlocked(i)&&!passed(UNITS[i].id)){cur=i;break}
+  var t=P.days[dayKey(0)]||0,g=Math.min(1,t/P.goal),sk=streak(),rw=reviewWords().length;
+  var C=2*Math.PI*20;
+  var h='<div class="pday"><div class="pd-st'+(sk?" on":"")+'"><svg aria-hidden="true"><use href="#i-flame"/></svg><b>'+sk+'</b><span>giorni di fila<i lang="ja">れんぞく</i></span></div>'+
+    '<div class="pd-goal"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="20" class="rg-b"/><circle cx="24" cy="24" r="20" class="rg-f" stroke-dasharray="'+(C*g).toFixed(1)+' '+C.toFixed(1)+'"/></svg><span><b>'+Math.min(t,99)+' / '+P.goal+'</b>tappe di oggi</span></div>'+
+    (rw>=4?'<button class="btn pri pd-rev" type="button"><svg aria-hidden="true"><use href="#i-cards"/></svg>Ripasso del giorno</button>':'')+'</div>';
+  WORLDS.forEach(function(Wd,wi){var w=wi+1,us=UNITS.map(function(U,k){return [U,k]}).filter(function(x){return x[0].w===w}),pn=us.filter(function(x){return passed(x[0].id)}).length,
+      wl=!unlocked(us[0][1]);
+    h+='<div class="world t-'+WCOL[wi%3]+(wl?" wlock":"")+'"><div class="wh"><div class="wh-t"><span class="lvl">'+Wd.level+'</span><h3>'+esc(Wd.title.replace(/^.*·\s*/,""))+'</h3><i lang="ja">'+esc(Wd.j)+'</i></div>'+
+      '<div class="wbar" aria-label="completate '+pn+' su '+us.length+'"><i style="width:'+Math.round(pn/us.length*100)+'%"></i></div><span class="wcnt">'+pn+' / '+us.length+'</span>'+
+      (wl&&w>1?'<button class="btn wskip" type="button" data-w="'+w+'">Test di livello</button>':'')+'</div><ol class="nodes">';
+    us.forEach(function(x,j){var U=x[0],k=x[1],op=unlocked(k),ps=passed(U.id),st=pathStarted(U.id),cls=!op?"lock":ps?"done":k===cur?"cur":st?"start":"open";
+      var lab=U.kind==="lesson"?'<b>'+U.n+'</b> '+esc(U.t):'<b>★</b> '+esc(U.t);
+      h+='<li class="node t-'+U.color+' '+cls+(U.kind==="review"?" rv":"")+'" style="--off:'+OFF[j%8]+'"><button class="nb" type="button" data-u="'+U.id+'" aria-label="'+esc((U.kind==="lesson"?"Lezione "+U.n+": ":"")+U.t+(op?"":" (chiusa)"))+'">'+
+        '<svg class="ni" aria-hidden="true"><use href="#'+(U.kind==="review"?"i-trophy":U.icon)+'"/></svg>'+(op?'':'<span class="lk"><svg aria-hidden="true"><use href="#i-lock"/></svg></span>')+(k===cur?'<span class="bub">'+(st?"Continua":"Inizia")+'</span>':'')+'</button>'+
+        '<span class="nl">'+lab+'</span>'+(ps||st?starHTML(P.stars[U.id]||0):'')+'</li>'});
+    h+='</ol></div>'});
+  root.innerHTML=h;
+  $$(".nb",root).forEach(function(b){b.onclick=function(){openSheet(b.getAttribute("data-u"))}});
+  $$(".wskip",root).forEach(function(b){b.onclick=function(){skipTest(+b.getAttribute("data-w"))}});
+  var rv=$(".pd-rev",root);if(rv)rv.onclick=openReview;
+  updateToc()}
+drawPath();
+
+})();
+</script>
+
+</body>
+</html>
