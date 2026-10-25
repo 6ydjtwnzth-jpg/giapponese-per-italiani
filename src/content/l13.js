@@ -4,7 +4,7 @@ EX.l13=[
  {q:"Forma -te di 飲[の]む:",o:["飲[の]んで","飲[の]みて","飲[の]って"],e:"-む → んで."},
  {q:"Forma -te di 書[か]く:",o:["書[か]いて","書[か]って","書[か]きて"],e:"-く → いて."},
  {q:"Forma -te di 話[はな]す:",o:["話[はな]して","話[はな]って","話[はな]いて"],e:"-す → して."},
- {q:"Forma -te di 行[い]く:",o:["行[い]って","行[い]いて","行[い]きて"],e:"Eccezione: 行って."},
+ {q:"Forma -te di 行[い]く:",o:["行[い]って","行[い]いて","行[い]きて"],e:"Eccezione: 行[い]って."},
  {q:"Forma -te di 食[た]べる:",o:["食[た]べて","食[た]べって","食[た]んで"],e:"Gruppo 2: る → て."},
  {q:"Ascolta: che cosa chiede?",au:"しゃしん を とって も いい です か 。",o:["se può fare una foto","se può entrare","di fare una foto a lui"],e:"〜て も いい です か = posso…?"},
  {q:"Ascolta: che cosa non si può fare?",au:"ここ で たばこ を すって は いけません 。",o:["fumare","mangiare","parlare al telefono"],e:"たばこ を すう = fumare."},

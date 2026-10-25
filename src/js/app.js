@@ -49,7 +49,10 @@ function jpHTML(s,plain){var out=[];jtoks(s).forEach(function(t){var su=jsurf(t)
   return out.join("")}
 function jLine(s){return '<span class="jl" lang="ja">'+jpHTML(s)+'</span><span class="ro">'+esc(jromaji(s))+'</span>'}
 var MIXRE=/([぀-ヿ一-鿿々〆ー〜～「](?:[぀-ヿ一-鿿々〆ー〜～・。、！？「」]|\[[぀-ヿ]+\]| (?=[぀-ヿ一-鿿「〜]))*)/;
+/* kanji without a [reading] are mentions of the character itself: show them plain */
+var BAREKJ=/[一-鿿々〆](?![一-鿿々〆]*\[)/;
 function mixHTML(text){return String(text).split(MIXRE).map(function(part,i){if(i%2===0)return esc(part);
+  if(BAREKJ.test(part))return '<span class="jx" lang="ja">'+esc(part)+'</span>';
   return '<span class="jx" lang="ja">'+jpHTML(part)+'</span><span class="ro-i"> ('+esc(jromaji(part))+')</span>'}).join("")}
 function hasJ(s){return JRUN.test(String(s))}
 function meaning(t){var s=jsurf(t);return DICT[t]||DICT[s]||(typeof CONJ_IDX!=="undefined"&&(CONJ_IDX[s]||CONJ_IDX[t]))||""}

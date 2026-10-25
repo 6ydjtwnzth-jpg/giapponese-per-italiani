@@ -2,10 +2,10 @@ DLG.l16=[["A","マルコ さん 、 夏休[なつやす]み に どこ か 行[�
 EX.l16=[
  {q:"Ascolta: dove vuole andare?",au:"おきなわ に 行[い]きたい です 。",o:["a Okinawa","a Osaka","in Hokkaido"],e:"〜たい = voglio."},
  {q:"Ascolta: come ci va?",au:"しんかんせん で 行[い]きます 。",o:["in shinkansen","in aereo","in macchina"],e:"で = mezzo."},
- {q:"Ascolta: quanto ci vuole?",au:"三時間[さんじかん] ぐらい かかります 。",o:["circa tre ore","circa trenta minuti","tre giorni"],e:"三時間 ぐらい = circa tre ore."},
+ {q:"Ascolta: quanto ci vuole?",au:"三時間[さんじかん] ぐらい かかります 。",o:["circa tre ore","circa trenta minuti","tre giorni"],e:"三[さん]時間[じかん] ぐらい = circa tre ore."},
  {q:"«Voglio bere un caffè.»",o:["コーヒー が 飲[の]みたい です 。","コーヒー が 飲[の]みます たい 。","コーヒー を 飲[の]みたかった 。"],e:"ます → たい."},
  {q:"«Non voglio andare.»",o:["行[い]きたくない です 。","行[い]きたい じゃ ありません 。","行[い]きません たい 。"],e:"〜たい come aggettivo in -い: たくない."},
- {q:"«a piedi»",o:["あるいて","足[あし] で","あるく で"],e:"あるいて 行きます."},
+ {q:"«a piedi»",o:["あるいて","足[あし] で","あるく で"],e:"あるいて 行[い]きます."},
  {q:"«il 3 maggio»",o:["五月[ごがつ] 三日[みっか]","三月[さんがつ] 五日[いつか]","五月[ごがつ] 三日[さんにち]"],e:"Prima il mese, poi il giorno; 3 = みっか."},
  {q:"Il primo del mese si dice:",o:["ついたち","いちにち","ひとつ"],e:"1 = ついたち."},
  {q:"Uscendo di casa dici:",o:["いって きます","ただいま","おかえりなさい"],e:"いって きます = vado (e torno)."},

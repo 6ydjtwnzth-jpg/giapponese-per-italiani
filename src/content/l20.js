@@ -1,7 +1,7 @@
 DLG.l20=[["A","いらっしゃいませ 。","Benvenuta."],["B","すみません 、 母[はは] に プレゼント を あげたい です 。 何[なに] が いい です か 。","Scusi, vorrei fare un regalo a mia madre. Che cosa mi consiglia?"],["A","こちら の スカーフ は いかが です か 。 にんき が あります よ 。","Che ne dice di questa sciarpa? Va molto."],["B","きれい です ね 。 これ の 青[あお] は あります か 。","È bella. Ce l'avete blu?"],["A","はい 、 ございます 。 どうぞ 、 さわって みて ください 。","Sì, certo. Prego, la tocchi pure."],["B","やわらかい です ね 。 じゃあ 、 これ に します 。 プレゼント 用[よう] に つつんで ください 。","È morbida. Allora prendo questa. Me la può incartare come regalo?"],["A","かしこまりました 。","Certamente."],["B","… マルコ さん 、 見[み]て ！ この 前[まえ] 、 マルコ さん が くれた チョコ 、 母[はは] も 大好[だいす]き でした よ 。","… Marco, guarda! Anche a mia madre è piaciuta tantissimo la cioccolata che mi hai regalato l'altra volta."]];
 EX.l20=[
  {q:"Ascolta: che cosa ha ricevuto?",au:"ともだち に 本[ほん] を もらいました 。",o:["un libro","dei fiori","una sciarpa"],e:"もらいました = ho ricevuto."},
- {q:"Ascolta: che cosa chiede?",au:"もう すこし 小[ちい]さい の は あります か 。",o:["una taglia più piccola","un altro colore","il prezzo"],e:"小さい の = una più piccola."},
+ {q:"Ascolta: che cosa chiede?",au:"もう すこし 小[ちい]さい の は あります か 。",o:["una taglia più piccola","un altro colore","il prezzo"],e:"小[ちい]さい の = una più piccola."},
  {q:"Io do un regalo a Yuki:",o:["わたし は ゆき さん に プレゼント を あげました 。","わたし は ゆき さん に プレゼント を くれました 。","ゆき さん は わたし に プレゼント を あげました 。"],e:"Verso l'esterno: あげる."},
  {q:"Yuki dà un regalo a me:",o:["ゆき さん が わたし に プレゼント を くれました 。","ゆき さん が わたし に プレゼント を あげました 。","わたし は ゆき さん に プレゼント を くれました 。"],e:"Verso di me: くれる."},
  {q:"«Ho ricevuto dei fiori dalla mamma.»",o:["母[はは] に はな を もらいました 。","母[はは] に はな を くれました 。","母[はは] が はな を もらいました 。"],e:"もらう: ricevere da (に / から)."},

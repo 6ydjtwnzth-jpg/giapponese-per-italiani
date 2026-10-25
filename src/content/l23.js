@@ -1,5 +1,5 @@
 EX.l23=[
- {q:"Ascolta: perché Marco ha cominciato il giapponese?",au:"子[こ]ども の とき 、 毎日[まいにち] 日本[にほん] の アニメ を 見[み]て いました 。",o:["guardava anime ogni giorno","aveva amici giapponesi","voleva lavorare in Giappone"],e:"見て いました = guardava (abitudine)."},
+ {q:"Ascolta: perché Marco ha cominciato il giapponese?",au:"子[こ]ども の とき 、 毎日[まいにち] 日本[にほん] の アニメ を 見[み]て いました 。",o:["guardava anime ogni giorno","aveva amici giapponesi","voleva lavorare in Giappone"],e:"見[み]て いました = guardava (abitudine)."},
  {q:"Ascolta: che cosa studia adesso?",au:"今[いま] は 大学[だいがく] で れきし を 勉強[べんきょう] して います 。",o:["storia","economia","giapponese"],e:"れきし = storia."},
  {q:"Ascolta: dove non è ancora stato?",au:"おきなわ に は まだ 行[い]った こと が ありません 。",o:["a Okinawa","in Hokkaido","a Kyoto"],e:"まだ … ありません = non ancora."},
  {q:"Secondo Marco, quale caffè è più buono?",o:["quello italiano","quello giapponese","tutti e due"],e:"イタリア の コーヒー の ほう が おいしい."},

@@ -1,6 +1,6 @@
 DLG.l4=[["A","いらっしゃいませ 。","Benvenuto!"],["B","すみません 、 これ は 何[なん] です か 。","Scusi, che cos'è questo?"],["A","それ は まくら です 。","Quello è un cuscino."],["B","まくら ？ じゃあ 、 あれ は 何[なん] です か 。","Un cuscino? E quello là che cos'è?"],["A","あれ は ふろしき です 。 日本[にほん] の ふくろ です よ 。","Quello è un furoshiki. È una borsa giapponese, sa."],["B","へえ 、 きれい です ね 。 この ふろしき は いくら です か 。","Oh, che bello! Quanto costa questo furoshiki?"],["A","千[せん] えん です 。","Mille yen."],["B","じゃあ 、 これ を ください 。","Allora prendo questo."]];
 EX.l4=[
- {q:"Ascolta: che cosa chiede?",au:"これ は 何[なん] です か 。",o:["Che cos'è questo?","Di chi è questo?","Dov'è questo?"],e:"何 です か = che cos'è?"},
+ {q:"Ascolta: che cosa chiede?",au:"これ は 何[なん] です か 。",o:["Che cos'è questo?","Di chi è questo?","Dov'è questo?"],e:"何[なん] です か = che cos'è?"},
  {q:"Ascolta: di chi è la borsa?",au:"それ は せんせい の かばん です 。",o:["dell'insegnante","dello studente","mia"],e:"せんせい の かばん = la borsa dell'insegnante."},
  {q:"L'oggetto è in mano a te. Dici:",o:["これ","それ","あれ"],e:"これ = vicino a chi parla."},
  {q:"L'oggetto è lontano da tutti e due:",o:["あれ","それ","これ"],e:"あれ = lontano da tutti e due."},

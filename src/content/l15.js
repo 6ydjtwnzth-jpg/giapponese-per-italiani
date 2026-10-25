@@ -1,7 +1,7 @@
 DLG.l15=[["A","マルコ さん 、 週末[しゅうまつ] は どう でした か 。","Marco, com'è andato il fine settimana?"],["B","きょうと に 行[い]きました 。 とても 楽[たの]しかった です 。","Sono andato a Kyoto. Mi sono divertito tantissimo."],["A","いい です ね 。 天気[てんき] は どう でした か 。","Che bello. Com'era il tempo?"],["B","土曜日[どようび] は 雨[あめ] でした が 、 日曜日[にちようび] は いい 天気[てんき] でした 。","Sabato pioveva, ma domenica era bel tempo."],["A","お寺[てら] は どう でした か 。","E i templi com'erano?"],["B","しずか で 、 とても きれい でした 。 でも 、 人[ひと] が 多[おお]かった です 。","Tranquilli e bellissimi. Però c'era tanta gente."],["A","食[た]べもの は ？","E il cibo?"],["B","おいしくて 、 やすかった です 。 でも 、 ホテル は あまり よくなかった です 。","Buono ed economico. Ma l'hotel non era un granché."]];
 EX.l15=[
  {q:"Ascolta: com'era il film?",au:"えいが は おもしろかった です 。",o:["interessante","noioso","lungo"],e:"おもしろかった = era interessante."},
- {q:"Ascolta: com'era il tempo?",au:"きのう は 寒[さむ]かった です 。",o:["freddo","caldo","piovoso"],e:"寒かった = faceva freddo."},
+ {q:"Ascolta: com'era il tempo?",au:"きのう は 寒[さむ]かった です 。",o:["freddo","caldo","piovoso"],e:"寒[さむ]かった = faceva freddo."},
  {q:"Passato di たかい です:",o:["たかかった です","たかい でした","たかく でした"],e:"-い → かった です."},
  {q:"Passato di いい です:",o:["よかった です","いかった です","いい でした"],e:"いい → よかった."},
  {q:"Passato di しずか です:",o:["しずか でした","しずかかった です","しずかった です"],e:"Aggettivo な: でした."},

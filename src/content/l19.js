@@ -5,14 +5,14 @@ EX.l19=[
  {q:"«Quale è più caro, A o B?»",o:["A と B と 、 どちら が たかい です か 。","A と B と 、 何[なに] が たかい です か 。","A より B が たかい です か 。"],e:"Tra due: どちら."},
  {q:"«Tokyo è più grande di Roma.»",o:["東京[とうきょう] は ローマ より 大[おお]きい です 。","ローマ は 東京[とうきょう] より 大[おお]きい です 。","東京[とうきょう] より ローマ は 大[おお]きい です 。"],e:"A は B より + aggettivo = A è più … di B."},
  {q:"«Milano non è grande come Roma.»",o:["ミラノ は ローマ ほど 大[おお]きくない です 。","ミラノ は ローマ より 大[おお]きくない です 。","ミラノ は ローマ ほど 大[おお]きい です 。"],e:"〜 ほど + negativo."},
- {q:"«Penso che domani piova.» (nome 雨)",o:["あした は 雨[あめ] だ と 思[おも]います 。","あした は 雨[あめ] と 思[おも]います 。","あした は 雨[あめ] です と 思[おも]います 。"],e:"Nome + だ + と 思います."},
+ {q:"«Penso che domani piova.» (nome 雨[あめ])",o:["あした は 雨[あめ] だ と 思[おも]います 。","あした は 雨[あめ] と 思[おも]います 。","あした は 雨[あめ] です と 思[おも]います 。"],e:"Nome + だ + と 思[おも]います."},
  {q:"«Penso che sia interessante.»",o:["おもしろい と 思[おも]います 。","おもしろい だ と 思[おも]います 。","おもしろい です と 思[おも]います 。"],e:"Aggettivi in -い: niente だ."},
  {q:"«Che cosa ne pensi?»",o:["どう 思[おも]います か 。","何[なに] 思[おも]います か 。","どれ 思[おも]います か 。"],e:"どう = come."},
  {t:"ord",q:"Componi: «Il sushi è quello che mi piace di più.»",w:["すし","が","いちばん","好[す]き","です","。"],a:["すし が いちばん 好[す]き です 。"]},
  {t:"type",q:"Completa: パスタ ___ ほう が 好[す]き です 。",a:["の"],full:"パスタ の ほう が 好[す]き です 。"},
  {t:"type",q:"Completa: ローマ は 東京[とうきょう] ___ ふるい です 。 (più di)",a:["より"],full:"ローマ は 東京[とうきょう] より ふるい です 。"},
  {t:"dict",au:"どちら も 好[す]き です 。"},
- {t:"say",it:"Di' quale preferisci tra estate e inverno, e perché.",jp:"冬[ふゆ] より 夏[なつ] の ほう が 好[す]き です 。 うみ に 行[い]けます から 。",e:"行けます = posso andare (lezione 22)."},
+ {t:"say",it:"Di' quale preferisci tra estate e inverno, e perché.",jp:"冬[ふゆ] より 夏[なつ] の ほう が 好[す]き です 。 うみ に 行[い]けます から 。",e:"行[い]けます = posso andare (lezione 22)."},
  {t:"say",it:"Dai un'opinione: «Penso che il giapponese sia difficile, ma divertente.»",jp:"日本語[にほんご] は むずかしい です が 、 おもしろい と 思[おも]います 。"}
 ];
 VOC.l19=[

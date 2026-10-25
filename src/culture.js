@@ -52,9 +52,9 @@ CULT.l4=[
   q:{q:"Che cos'è la «ナポリタン» in Giappone?",o:["Spaghetti con ketchup, piatto nato in Giappone","Una pizza napoletana originale","Un dolce di Napoli"],e:"È un piatto giapponese di spaghetti al ketchup."}},
  {s:"shop100",t:"Il negozio da 100 yen",i:"百円[ひゃくえん]ショップ",
   p:["Nei 百円[ひゃくえん]ショップ quasi tutto costa 100 yen (più le tasse): piatti, cancelleria, piccoli elettrodomestici, cose per la casa. La qualità è sorprendente.","Per uno studente appena arrivato in Giappone è il primo negozio dove arredare la casa."],
-  it:"Ci sono i negozi «tutto a un euro», con merce spesso di qualità più bassa.",jp:"I 百円ショップ sono enormi, ordinatissimi e molto amati.",
+  it:"Ci sono i negozi «tutto a un euro», con merce spesso di qualità più bassa.",jp:"I 百[ひゃく]円[えん]ショップ sono enormi, ordinatissimi e molto amati.",
   w:[["百円[ひゃくえん]","cento yen"],["いくら","quanto costa?"],["やすい","economico"]],
-  q:{q:"Quanto costa quasi tutto in un 百円ショップ?",o:["100 yen","1.000 yen","10 yen"],e:"百円 = 100 yen."}}
+  q:{q:"Quanto costa quasi tutto in un 百[ひゃく]円[えん]ショップ?",o:["100 yen","1.000 yen","10 yen"],e:"百[ひゃく]円[えん] = 100 yen."}}
 ];
 CULT.l5=[
  {s:"family",t:"Dentro e fuori: うち e そと",i:"うち と そと",
@@ -152,7 +152,7 @@ CULT.l11=[
   p:["In Giappone lo sport più seguito è il baseball (野球[やきゅう]). Il torneo dei licei, こうしえん, è guardato da tutto il paese d'estate.","Il calcio è comunque molto popolare, e molti giapponesi conoscono le squadre italiane: diversi calciatori giapponesi hanno giocato in Serie A."],
   it:"Il calcio è lo sport nazionale; il baseball è poco conosciuto.",jp:"Il 野球[やきゅう] è lo sport nazionale; il calcio è il secondo.",
   w:[["野球[やきゅう]","baseball"],["サッカー","calcio"],["しあい","partita"]],
-  q:{q:"Qual è lo sport più seguito in Giappone?",o:["Il baseball","Il calcio","Il rugby"],e:"野球 = baseball."}},
+  q:{q:"Qual è lo sport più seguito in Giappone?",o:["Il baseball","Il calcio","Il rugby"],e:"野球[やきゅう] = baseball."}},
  {s:"anime",t:"Gli italiani cresciuti con gli anime",i:"アニメ",
   p:["Negli anni Ottanta l'Italia era uno dei paesi europei che trasmettevano più anime in TV: molti italiani sono cresciuti con robot, maghette e sport in versione giapponese, spesso senza sapere che venivano dal Giappone.","Oggi anime e manga sono il motivo per cui tanti giovani italiani cominciano a studiare giapponese."],
   it:"Gli anime arrivavano doppiati e con nomi italiani.",jp:"Anime e manga sono un'industria enorme, per tutte le età.",
@@ -233,7 +233,7 @@ CULT.l17=[
   p:["Nelle scuole giapponesi non ci sono bidelli per le aule: ogni giorno gli studenti puliscono classi, corridoi e bagni (そうじ の 時間[じかん]). Si impara il rispetto per gli spazi comuni.","Molti studenti portano la divisa, e alle elementari si usa la ランドセル, il caratteristico zaino rigido di pelle."],
   it:"La pulizia la fanno i collaboratori scolastici.",jp:"Gli studenti puliscono la scuola ogni giorno.",
   w:[["そうじ","pulizia"],["せいふく","divisa scolastica"],["ランドセル","zaino scolastico rigido"]],
-  q:{q:"Chi pulisce le aule nelle scuole giapponesi?",o:["Gli studenti","Solo i bidelli","Un'azienda esterna"],e:"そうじ の 時間: puliscono gli studenti."}},
+  q:{q:"Chi pulisce le aule nelle scuole giapponesi?",o:["Gli studenti","Solo i bidelli","Un'azienda esterna"],e:"そうじ の 時間[じかん]: puliscono gli studenti."}},
  {s:"koinobori",t:"La festa dei bambini",i:"こどもの日[ひ]",
   p:["Il 5 maggio è こどもの日[ひ], la festa dei bambini: si appendono fuori casa le こいのぼり, grandi bandiere a forma di carpa che si gonfiano col vento.","La carpa che risale la corrente è simbolo di forza e successo. Per le bambine c'è anche la festa delle bambole, il 3 marzo (ひなまつり)."],
   it:"Per i bambini ci sono la Befana e il Natale.",jp:"Il 5 maggio こどもの日[ひ] con le carpe colorate al vento.",

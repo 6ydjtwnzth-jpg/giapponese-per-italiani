@@ -1,10 +1,10 @@
 DLG.l2=[["A","はじめまして 。 たなか ゆき です 。","Piacere. Sono Yuki Tanaka."],["B","はじめまして 。 マルコ です 。","Piacere. Sono Marco."],["A","マルコ さん は 学生[がくせい] です か 。","Marco, sei uno studente?"],["B","はい 、 学生[がくせい] です 。 イタリア人[じん] です 。","Sì, sono uno studente. Sono italiano."],["A","そう です か 。 わたし は 先生[せんせい] です 。","Ah, davvero? Io sono un'insegnante."],["B","えっ 、 先生[せんせい] です か 。","Oh, è un'insegnante?"],["A","はい 。 日本語[にほんご] の 先生[せんせい] です 。 よろしく お願[ねが]いします 。","Sì. Insegno giapponese. Piacere di conoscerti."],["B","よろしく お願[ねが]いします 。","Piacere mio."]];
 EX.l2=[
- {q:"Ascolta: che cosa significa?",au:"わたし は 学生[がくせい] です 。",o:["Sono uno studente.","Sono un insegnante.","Non sono uno studente."],e:"学生 = studente."},
- {q:"Ascolta: di che nazionalità è?",au:"ロッシ さん は イタリア人[じん] です 。",o:["italiana","giapponese","francese"],e:"イタリア人 = italiano."},
+ {q:"Ascolta: che cosa significa?",au:"わたし は 学生[がくせい] です 。",o:["Sono uno studente.","Sono un insegnante.","Non sono uno studente."],e:"学生[がくせい] = studente."},
+ {q:"Ascolta: di che nazionalità è?",au:"ロッシ さん は イタリア人[じん] です 。",o:["italiana","giapponese","francese"],e:"イタリア人[じん] = italiano."},
  {q:"Come si legge は in わたし は マルコ です?",o:["wa","ha","ba"],e:"Come particella は si legge wa."},
  {q:"«Non sono giapponese.»",o:["日本人[にほんじん] じゃ ありません 。","日本人[にほんじん] です か 。","日本人[にほんじん] です 。"],e:"Negativo: じゃ ありません."},
- {q:"Per trasformare una frase in domanda si aggiunge:",o:["か alla fine","は all'inizio","です all'inizio"],e:"学生 です か。 = È studente?"},
+ {q:"Per trasformare una frase in domanda si aggiunge:",o:["か alla fine","は all'inizio","です all'inizio"],e:"学生[がくせい] です か。 = È studente?"},
  {q:"Presentandoti dici:",o:["マルコ です 。","マルコ さん です 。","さん マルコ です 。"],e:"さん non si usa mai per sé stessi."},
  {q:"Come si legge つ?",o:["tsu","tu","chi"],e:"つ = tsu."},
  {q:"Ascolta e scegli la parola:",au:"ねこ",o:["ねこ","ねこう","のこ"],e:"ねこ = gatto."},
