@@ -720,7 +720,7 @@ td .rom{display:block;font-size:12px;line-height:1.3}
 <div class="book">
 <nav class="toc" aria-label="Indice">
   <details id="tocd">
-    <summary>Indice · <span lang="ja">目次</span></summary>
+    <summary><span>Indice · <span lang="ja">目次</span></span></summary>
     <ol>
       <li><a href="#mappa">Il percorso</a></li>
       <li><a class="t-green" href="#metodo"><span><i class="dot"></i>Il metodo</span></a></li>
@@ -3886,10 +3886,10 @@ var MIC='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width
 function jpHTML(s,plain){var out=[];jtoks(s).forEach(function(t){var su=jsurf(t);
   if(JP_PUNCT.test(su)||!JRUN.test(su)&&!/[A-Za-z0-9]/.test(su)){var pu='<span class="pu">'+esc(su)+'</span>';
     if(out.length&&/^[。、！？」』）…]/.test(su))out[out.length-1]='<span class="nw">'+out[out.length-1]+pu+'</span>';else out.push(pu);return}
-  out.push(plain?'<span class="tk">'+jruby(t)+'</span>':'<span class="w" tabindex="0" role="button" data-say="'+esc(t)+'">'+jruby(t)+'</span>')});
+  out.push(plain||/^[っッー゛゜]$/.test(su)?'<span class="tk">'+jruby(t)+'</span>':'<span class="w" tabindex="0" role="button" data-say="'+esc(t)+'">'+jruby(t)+'</span>')});
   return out.join("")}
 function jLine(s){return '<span class="jl" lang="ja">'+jpHTML(s)+'</span><span class="ro">'+esc(jromaji(s))+'</span>'}
-var MIXRE=/([぀-ヿ一-鿿々〆ー〜～「](?:[぀-ヿ一-鿿々〆ー〜～・。、！？「」]|\[[぀-ヿ]+\]| (?=[぀-ヿ一-鿿「〜]))*)/;
+var MIXRE=/([぀-ヿ一-鿿々〆ー〜～「](?:[぀-ヿ一-鿿々〆ー〜～・。、！？「」]|\[[぀-ヿ]+\]| (?=[぀-ヿ一-鿿「〜。、！？]))*)/;
 /* kanji without a [reading] are mentions of the character itself: show them plain */
 var BAREKJ=/[一-鿿々〆](?![一-鿿々〆]*\[)/;
 function mixHTML(text){return String(text).split(MIXRE).map(function(part,i){if(i%2===0)return esc(part);
@@ -3953,7 +3953,7 @@ function hira2kata(s){return String(s).replace(/[ぁ-ゖ]/g,function(c){return S
 $$("table.kana").forEach(function(t){var g=t.getAttribute("data-g")||"base",kat=t.getAttribute("data-k")==="kata",rows=KROWS[g],only=(t.getAttribute("data-rows")||"").split(",").filter(Boolean);
   var h="";rows.forEach(function(r,ri){if(only.length&&only.indexOf(String(ri))<0)return;var cells=Array.isArray(r[1])?r[1]:r[1].split("");
     h+='<tr>'+cells.map(function(c){if(c==="・")return '<td class="nk"></td>';var k=kat?hira2kata(c):c;
-      return '<td><button class="kc" type="button" data-say="'+esc(k)+'" aria-label="'+esc(toRomaji(c))+'"><span lang="ja">'+esc(k)+'</span><small>'+esc(toRomaji(c))+'</small></button></td>'}).join("")+'</tr>'});
+      return '<td><button class="kc" type="button"'+(/^[っッー゛゜]$/.test(k)?'':' data-say="'+esc(k)+'"')+' aria-label="'+esc(toRomaji(c))+'"><span lang="ja">'+esc(k)+'</span><small>'+esc(toRomaji(c))+'</small></button></td>'}).join("")+'</tr>'});
   t.innerHTML=h});
 
 /* ---------- numeri ---------- */

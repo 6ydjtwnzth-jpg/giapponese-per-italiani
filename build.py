@@ -111,7 +111,7 @@ def section(it):
             f'{body}\n</section>\n')
 
 def toc():
-    out = ['<nav class="toc" aria-label="Indice">\n  <details id="tocd">\n    <summary>Indice · <span lang="ja">目次</span></summary>\n    <ol>',
+    out = ['<nav class="toc" aria-label="Indice">\n  <details id="tocd">\n    <summary><span>Indice · <span lang="ja">目次</span></span></summary>\n    <ol>',
            '      <li><a href="#mappa">Il percorso</a></li>',
            '      <li><a class="t-green" href="#metodo"><span><i class="dot"></i>Il metodo</span></a></li>']
     for part in COURSE['parts']:
